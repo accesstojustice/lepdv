@@ -1,7 +1,12 @@
+
+
+
 body {
   padding-top: 50px;
   font-size: 18px;
 }
+
+
 
 a, a:hover {
 color: #346983;
@@ -29,14 +34,15 @@ color: #346983;
     width: 500px;
 }
 
-.btn-primary {
+/*.btn-primary {
     background-color: #333;
     border-color: #333;
     text-transform: none;
     font-size: 15px;
-}
+}*/
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-danger:hover {
     background-color: #555;
     border-color: #555;
 }
@@ -90,5 +96,8 @@ table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, tabl
 }
 
 .jumbotron {
-  background-color: #FF7340;
+  background-color: #65A5D1;
 }
+
+.btn-primary {background-color: #03406A;}
+.btn-danger {background-color: #FF4500;}
