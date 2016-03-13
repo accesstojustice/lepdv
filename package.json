@@ -1,0 +1,22 @@
+{
+  "name": "lepdv",
+  "version": "1.0.0",
+  "description": "quotes and buttons and more",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renemarcelo/lepdv.git"
+  },
+  "author": "Rene M. Paccha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renemarcelo/lepdv/issues"
+  },
+  "homepage": "https://github.com/renemarcelo/lepdv"
+}
