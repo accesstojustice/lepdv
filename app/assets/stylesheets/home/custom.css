@@ -1,12 +1,7 @@
-
-
-
 body {
   padding-top: 50px;
   font-size: 18px;
 }
-
-
 
 a, a:hover {
 color: #346983;
@@ -51,9 +46,9 @@ color: #346983;
     font-family:'Montserrat',sans-serif;
     background-color: #fff;
     padding: 0 10px;
-    -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    /*-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);*/
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -86,7 +81,6 @@ table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, tabl
     padding: 10px;
 }
 
-
 .legend i {
     width: 18px;
     height: 18px;
@@ -95,9 +89,20 @@ table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, tabl
     opacity: 0.7;
 }
 
-.jumbotron {
-  background-color: #65A5D1;
+.images {
+  margin-top: 30px;
+}
+.intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #391827;
+  color: #FDF29D;
 }
 
-.btn-primary {background-color: #03406A;}
-.btn-danger {background-color: #FF4500;}
+.btn-primary {
+  background-color: #E1A7AD;
+}
+
+.btn-danger {
+  background-color: #E1A7AD;
+  }
