@@ -77,7 +77,7 @@
 	        React.createElement(
 	          _reactBootstrap.Button,
 	          { bsStyle: "primary", block: true },
-	          "Safety Plans"
+	          "Multilingual Safety Plans"
 	        ),
 	        React.createElement(
 	          _reactBootstrap.Button,
@@ -91,7 +91,12 @@
 	        ),
 	        React.createElement(
 	          _reactBootstrap.Button,
-	          { bsStyle: "danger", block: true },
+	          { bsStyle: "primary", block: true },
+	          "Legal Terms"
+	        ),
+	        React.createElement(
+	          _reactBootstrap.Button,
+	          { bsStyle: "primary", block: true },
 	          "I'm Going to Court"
 	        )
 	      );
@@ -501,9 +506,9 @@
 
 /***/ },
 /* 2 */
-/*!******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/helpers/interop-require-default.js ***!
-  \******************************************************************************/
+/*!************************************************************!*\
+  !*** ./~/babel-runtime/helpers/interop-require-default.js ***!
+  \************************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -518,9 +523,9 @@
 
 /***/ },
 /* 3 */
-/*!*******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/helpers/interop-require-wildcard.js ***!
-  \*******************************************************************************/
+/*!*************************************************************!*\
+  !*** ./~/babel-runtime/helpers/interop-require-wildcard.js ***!
+  \*************************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -737,13 +742,13 @@
 	}
 	
 	module.exports = React;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 8 */
-/*!**********************************************************!*\
-  !*** (webpack)/~/node-libs-browser/~/process/browser.js ***!
-  \**********************************************************/
+/*!******************************!*\
+  !*** ./~/process/browser.js ***!
+  \******************************/
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -1011,7 +1016,7 @@
 	});
 	
 	module.exports = ReactDOMTextComponent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 11 */
@@ -1149,7 +1154,7 @@
 	});
 	
 	module.exports = DOMChildrenOperations;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 12 */
@@ -1303,13 +1308,13 @@
 	};
 	
 	module.exports = Danger;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 13 */
-/*!****************************************************!*\
-  !*** ./~/react/~/fbjs/lib/ExecutionEnvironment.js ***!
-  \****************************************************/
+/*!********************************************!*\
+  !*** ./~/fbjs/lib/ExecutionEnvironment.js ***!
+  \********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -1351,9 +1356,9 @@
 
 /***/ },
 /* 14 */
-/*!*****************************************************!*\
-  !*** ./~/react/~/fbjs/lib/createNodesFromMarkup.js ***!
-  \*****************************************************/
+/*!*********************************************!*\
+  !*** ./~/fbjs/lib/createNodesFromMarkup.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1440,13 +1445,13 @@
 	}
 	
 	module.exports = createNodesFromMarkup;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 15 */
-/*!****************************************************!*\
-  !*** ./~/react/~/fbjs/lib/createArrayFromMixed.js ***!
-  \****************************************************/
+/*!********************************************!*\
+  !*** ./~/fbjs/lib/createArrayFromMixed.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -1537,9 +1542,9 @@
 
 /***/ },
 /* 16 */
-/*!***************************************!*\
-  !*** ./~/react/~/fbjs/lib/toArray.js ***!
-  \***************************************/
+/*!*******************************!*\
+  !*** ./~/fbjs/lib/toArray.js ***!
+  \*******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1599,13 +1604,13 @@
 	}
 	
 	module.exports = toArray;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 17 */
-/*!*****************************************!*\
-  !*** ./~/react/~/fbjs/lib/invariant.js ***!
-  \*****************************************/
+/*!*********************************!*\
+  !*** ./~/fbjs/lib/invariant.js ***!
+  \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1658,13 +1663,13 @@
 	}
 	
 	module.exports = invariant;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 18 */
-/*!*********************************************!*\
-  !*** ./~/react/~/fbjs/lib/getMarkupWrap.js ***!
-  \*********************************************/
+/*!*************************************!*\
+  !*** ./~/fbjs/lib/getMarkupWrap.js ***!
+  \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1762,13 +1767,13 @@
 	}
 	
 	module.exports = getMarkupWrap;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 19 */
-/*!*********************************************!*\
-  !*** ./~/react/~/fbjs/lib/emptyFunction.js ***!
-  \*********************************************/
+/*!*************************************!*\
+  !*** ./~/fbjs/lib/emptyFunction.js ***!
+  \*************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -1852,9 +1857,9 @@
 
 /***/ },
 /* 21 */
-/*!*****************************************!*\
-  !*** ./~/react/~/fbjs/lib/keyMirror.js ***!
-  \*****************************************/
+/*!*********************************!*\
+  !*** ./~/fbjs/lib/keyMirror.js ***!
+  \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1905,7 +1910,7 @@
 	};
 	
 	module.exports = keyMirror;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 22 */
@@ -2010,7 +2015,7 @@
 	}
 	
 	module.exports = ReactPerf;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 23 */
@@ -2436,7 +2441,7 @@
 	});
 	
 	module.exports = DOMPropertyOperations;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 27 */
@@ -2679,7 +2684,7 @@
 	};
 	
 	module.exports = DOMProperty;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 28 */
@@ -2717,9 +2722,9 @@
 
 /***/ },
 /* 29 */
-/*!***************************************!*\
-  !*** ./~/react/~/fbjs/lib/warning.js ***!
-  \***************************************/
+/*!*******************************!*\
+  !*** ./~/fbjs/lib/warning.js ***!
+  \*******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -2779,7 +2784,7 @@
 	}
 	
 	module.exports = warning;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 30 */
@@ -2931,7 +2936,7 @@
 	});
 	
 	module.exports = ReactDOMIDOperations;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 32 */
@@ -3790,7 +3795,7 @@
 	});
 	
 	module.exports = ReactMount;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 33 */
@@ -4510,7 +4515,7 @@
 	};
 	
 	module.exports = EventPluginHub;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 36 */
@@ -4739,7 +4744,7 @@
 	};
 	
 	module.exports = EventPluginRegistry;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 37 */
@@ -4950,7 +4955,7 @@
 	};
 	
 	module.exports = EventPluginUtils;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 38 */
@@ -5036,7 +5041,7 @@
 	}
 	
 	module.exports = ReactErrorUtils;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 39 */
@@ -5104,7 +5109,7 @@
 	}
 	
 	module.exports = accumulateInto;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 40 */
@@ -5627,7 +5632,7 @@
 	};
 	
 	module.exports = ReactElement;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 47 */
@@ -5660,7 +5665,7 @@
 	}
 	
 	module.exports = canDefineProperty;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 48 */
@@ -6027,7 +6032,7 @@
 	};
 	
 	module.exports = ReactInstanceHandles;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 50 */
@@ -6523,7 +6528,7 @@
 	};
 	
 	module.exports = ReactOwner;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 57 */
@@ -6789,7 +6794,7 @@
 	};
 	
 	module.exports = ReactUpdateQueue;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 58 */
@@ -7021,7 +7026,7 @@
 	};
 	
 	module.exports = ReactUpdates;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 59 */
@@ -7123,7 +7128,7 @@
 	PooledClass.addPoolingTo(CallbackQueue);
 	
 	module.exports = CallbackQueue;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 60 */
@@ -7251,7 +7256,7 @@
 	};
 	
 	module.exports = PooledClass;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 61 */
@@ -7491,13 +7496,13 @@
 	};
 	
 	module.exports = Transaction;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 62 */
-/*!*******************************************!*\
-  !*** ./~/react/~/fbjs/lib/emptyObject.js ***!
-  \*******************************************/
+/*!***********************************!*\
+  !*** ./~/fbjs/lib/emptyObject.js ***!
+  \***********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -7520,13 +7525,13 @@
 	}
 	
 	module.exports = emptyObject;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 63 */
-/*!********************************************!*\
-  !*** ./~/react/~/fbjs/lib/containsNode.js ***!
-  \********************************************/
+/*!************************************!*\
+  !*** ./~/fbjs/lib/containsNode.js ***!
+  \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7587,9 +7592,9 @@
 
 /***/ },
 /* 64 */
-/*!******************************************!*\
-  !*** ./~/react/~/fbjs/lib/isTextNode.js ***!
-  \******************************************/
+/*!**********************************!*\
+  !*** ./~/fbjs/lib/isTextNode.js ***!
+  \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7620,9 +7625,9 @@
 
 /***/ },
 /* 65 */
-/*!**************************************!*\
-  !*** ./~/react/~/fbjs/lib/isNode.js ***!
-  \**************************************/
+/*!******************************!*\
+  !*** ./~/fbjs/lib/isNode.js ***!
+  \******************************/
 /***/ function(module, exports) {
 
 	/**
@@ -7768,7 +7773,7 @@
 	}
 	
 	module.exports = instantiateReactComponent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 67 */
@@ -8471,7 +8476,7 @@
 	};
 	
 	module.exports = ReactCompositeComponent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 68 */
@@ -8531,7 +8536,7 @@
 	};
 	
 	module.exports = ReactComponentEnvironment;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 69 */
@@ -8594,7 +8599,7 @@
 	}
 	
 	module.exports = ReactPropTypeLocationNames;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 71 */
@@ -8807,7 +8812,7 @@
 	};
 	
 	module.exports = ReactNativeComponent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 74 */
@@ -9179,7 +9184,7 @@
 	}
 	
 	module.exports = validateDOMNesting;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 75 */
@@ -9285,7 +9290,7 @@
 	module.exports = {
 	  inject: inject
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 76 */
@@ -9842,7 +9847,7 @@
 	};
 	
 	module.exports = EventPropagators;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 78 */
@@ -10220,7 +10225,7 @@
 	PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 	
 	module.exports = SyntheticEvent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 82 */
@@ -10270,9 +10275,9 @@
 
 /***/ },
 /* 83 */
-/*!*************************************!*\
-  !*** ./~/react/~/fbjs/lib/keyOf.js ***!
-  \*************************************/
+/*!*****************************!*\
+  !*** ./~/fbjs/lib/keyOf.js ***!
+  \*****************************/
 /***/ function(module, exports) {
 
 	/**
@@ -11405,7 +11410,7 @@
 	};
 	
 	module.exports = ReactBrowserComponentMixin;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 95 */
@@ -11463,7 +11468,7 @@
 	}
 	
 	module.exports = findDOMNode;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 96 */
@@ -12509,7 +12514,7 @@
 	assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mixin);
 	
 	module.exports = ReactDOMComponent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 98 */
@@ -12557,9 +12562,9 @@
 
 /***/ },
 /* 99 */
-/*!*****************************************!*\
-  !*** ./~/react/~/fbjs/lib/focusNode.js ***!
-  \*****************************************/
+/*!*********************************!*\
+  !*** ./~/fbjs/lib/focusNode.js ***!
+  \*********************************/
 /***/ function(module, exports) {
 
 	/**
@@ -12771,7 +12776,7 @@
 	});
 	
 	module.exports = CSSPropertyOperations;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 101 */
@@ -12922,9 +12927,9 @@
 
 /***/ },
 /* 102 */
-/*!*************************************************!*\
-  !*** ./~/react/~/fbjs/lib/camelizeStyleName.js ***!
-  \*************************************************/
+/*!*****************************************!*\
+  !*** ./~/fbjs/lib/camelizeStyleName.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12970,9 +12975,9 @@
 
 /***/ },
 /* 103 */
-/*!****************************************!*\
-  !*** ./~/react/~/fbjs/lib/camelize.js ***!
-  \****************************************/
+/*!********************************!*\
+  !*** ./~/fbjs/lib/camelize.js ***!
+  \********************************/
 /***/ function(module, exports) {
 
 	/**
@@ -13073,9 +13078,9 @@
 
 /***/ },
 /* 105 */
-/*!**************************************************!*\
-  !*** ./~/react/~/fbjs/lib/hyphenateStyleName.js ***!
-  \**************************************************/
+/*!******************************************!*\
+  !*** ./~/fbjs/lib/hyphenateStyleName.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13120,9 +13125,9 @@
 
 /***/ },
 /* 106 */
-/*!*****************************************!*\
-  !*** ./~/react/~/fbjs/lib/hyphenate.js ***!
-  \*****************************************/
+/*!*********************************!*\
+  !*** ./~/fbjs/lib/hyphenate.js ***!
+  \*********************************/
 /***/ function(module, exports) {
 
 	/**
@@ -13161,9 +13166,9 @@
 
 /***/ },
 /* 107 */
-/*!*************************************************!*\
-  !*** ./~/react/~/fbjs/lib/memoizeStringOnly.js ***!
-  \*************************************************/
+/*!*****************************************!*\
+  !*** ./~/fbjs/lib/memoizeStringOnly.js ***!
+  \*****************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -13416,7 +13421,7 @@
 	}
 	
 	module.exports = ReactDOMInput;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 110 */
@@ -13559,7 +13564,7 @@
 	};
 	
 	module.exports = LinkedValueUtils;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 111 */
@@ -14069,7 +14074,7 @@
 	};
 	
 	module.exports = ReactDOMOption;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 114 */
@@ -14457,7 +14462,7 @@
 	}
 	
 	module.exports = traverseAllChildren;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 116 */
@@ -14654,7 +14659,7 @@
 	}
 	
 	module.exports = ReactDOMSelect;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 117 */
@@ -14776,7 +14781,7 @@
 	}
 	
 	module.exports = ReactDOMTextarea;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 118 */
@@ -15281,7 +15286,7 @@
 	};
 	
 	module.exports = ReactMultiChild;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 119 */
@@ -15412,7 +15417,7 @@
 	};
 	
 	module.exports = ReactChildReconciler;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 120 */
@@ -15469,13 +15474,13 @@
 	}
 	
 	module.exports = flattenChildren;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 121 */
-/*!********************************************!*\
-  !*** ./~/react/~/fbjs/lib/shallowEqual.js ***!
-  \********************************************/
+/*!************************************!*\
+  !*** ./~/fbjs/lib/shallowEqual.js ***!
+  \************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -15750,9 +15755,9 @@
 
 /***/ },
 /* 123 */
-/*!*********************************************!*\
-  !*** ./~/react/~/fbjs/lib/EventListener.js ***!
-  \*********************************************/
+/*!*************************************!*\
+  !*** ./~/fbjs/lib/EventListener.js ***!
+  \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -15839,13 +15844,13 @@
 	};
 	
 	module.exports = EventListener;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 124 */
-/*!**********************************************************!*\
-  !*** ./~/react/~/fbjs/lib/getUnboundedScrollPosition.js ***!
-  \**********************************************************/
+/*!**************************************************!*\
+  !*** ./~/fbjs/lib/getUnboundedScrollPosition.js ***!
+  \**************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -16711,7 +16716,7 @@
 	};
 	
 	module.exports = ReactClass;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 127 */
@@ -16842,7 +16847,7 @@
 	}
 	
 	module.exports = ReactComponent;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 128 */
@@ -16969,7 +16974,7 @@
 	};
 	
 	module.exports = ReactNoopUpdateQueue;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 129 */
@@ -17565,9 +17570,9 @@
 
 /***/ },
 /* 133 */
-/*!************************************************!*\
-  !*** ./~/react/~/fbjs/lib/getActiveElement.js ***!
-  \************************************************/
+/*!****************************************!*\
+  !*** ./~/fbjs/lib/getActiveElement.js ***!
+  \****************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -18446,7 +18451,7 @@
 	};
 	
 	module.exports = SimpleEventPlugin;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 137 */
@@ -19555,9 +19560,9 @@
 
 /***/ },
 /* 148 */
-/*!**********************************************!*\
-  !*** ./~/react/~/fbjs/lib/performanceNow.js ***!
-  \**********************************************/
+/*!**************************************!*\
+  !*** ./~/fbjs/lib/performanceNow.js ***!
+  \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19597,9 +19602,9 @@
 
 /***/ },
 /* 149 */
-/*!*******************************************!*\
-  !*** ./~/react/~/fbjs/lib/performance.js ***!
-  \*******************************************/
+/*!***********************************!*\
+  !*** ./~/fbjs/lib/performance.js ***!
+  \***********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19796,7 +19801,7 @@
 	  renderToString: renderToString,
 	  renderToStaticMarkup: renderToStaticMarkup
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 154 */
@@ -20005,7 +20010,7 @@
 	};
 	
 	module.exports = React;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 157 */
@@ -20191,7 +20196,7 @@
 	}, createDOMFactory);
 	
 	module.exports = ReactDOMFactories;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 158 */
@@ -20481,13 +20486,13 @@
 	};
 	
 	module.exports = ReactElementValidator;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 159 */
-/*!*****************************************!*\
-  !*** ./~/react/~/fbjs/lib/mapObject.js ***!
-  \*****************************************/
+/*!*********************************!*\
+  !*** ./~/fbjs/lib/mapObject.js ***!
+  \*********************************/
 /***/ function(module, exports) {
 
 	/**
@@ -20582,7 +20587,7 @@
 	}
 	
 	module.exports = onlyChild;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 161 */
@@ -20639,13 +20644,13 @@
 	}
 	
 	module.exports = deprecated;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 162 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-prop-types/lib/singlePropFrom.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/react-prop-types/lib/singlePropFrom.js ***!
+  \**************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -21070,13 +21075,13 @@
 	};
 	var _curry = curry;
 	exports._curry = _curry;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 166 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/helpers/extends.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/babel-runtime/helpers/extends.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21101,18 +21106,18 @@
 
 /***/ },
 /* 167 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/core-js/object/assign.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/babel-runtime/core-js/object/assign.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/assign */ 168), __esModule: true };
 
 /***/ },
 /* 168 */
-/*!*********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/fn/object/assign.js ***!
-  \*********************************************************************************/
+/*!***********************************************!*\
+  !*** ./~/core-js/library/fn/object/assign.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(/*! ../../modules/es6.object.assign */ 169);
@@ -21120,9 +21125,9 @@
 
 /***/ },
 /* 169 */
-/*!******************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/es6.object.assign.js ***!
-  \******************************************************************************************/
+/*!********************************************************!*\
+  !*** ./~/core-js/library/modules/es6.object.assign.js ***!
+  \********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
@@ -21132,9 +21137,9 @@
 
 /***/ },
 /* 170 */
-/*!*********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.export.js ***!
-  \*********************************************************************************/
+/*!***********************************************!*\
+  !*** ./~/core-js/library/modules/$.export.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var global    = __webpack_require__(/*! ./$.global */ 171)
@@ -21186,9 +21191,9 @@
 
 /***/ },
 /* 171 */
-/*!*********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.global.js ***!
-  \*********************************************************************************/
+/*!***********************************************!*\
+  !*** ./~/core-js/library/modules/$.global.js ***!
+  \***********************************************/
 /***/ function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -21198,9 +21203,9 @@
 
 /***/ },
 /* 172 */
-/*!*******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.core.js ***!
-  \*******************************************************************************/
+/*!*********************************************!*\
+  !*** ./~/core-js/library/modules/$.core.js ***!
+  \*********************************************/
 /***/ function(module, exports) {
 
 	var core = module.exports = {version: '1.2.6'};
@@ -21208,9 +21213,9 @@
 
 /***/ },
 /* 173 */
-/*!******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.ctx.js ***!
-  \******************************************************************************/
+/*!********************************************!*\
+  !*** ./~/core-js/library/modules/$.ctx.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
@@ -21236,9 +21241,9 @@
 
 /***/ },
 /* 174 */
-/*!*************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.a-function.js ***!
-  \*************************************************************************************/
+/*!***************************************************!*\
+  !*** ./~/core-js/library/modules/$.a-function.js ***!
+  \***************************************************/
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -21248,9 +21253,9 @@
 
 /***/ },
 /* 175 */
-/*!****************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.object-assign.js ***!
-  \****************************************************************************************/
+/*!******************************************************!*\
+  !*** ./~/core-js/library/modules/$.object-assign.js ***!
+  \******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.1 Object.assign(target, source, ...)
@@ -21289,9 +21294,9 @@
 
 /***/ },
 /* 176 */
-/*!**************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.js ***!
-  \**************************************************************************/
+/*!****************************************!*\
+  !*** ./~/core-js/library/modules/$.js ***!
+  \****************************************/
 /***/ function(module, exports) {
 
 	var $Object = Object;
@@ -21310,9 +21315,9 @@
 
 /***/ },
 /* 177 */
-/*!************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.to-object.js ***!
-  \************************************************************************************/
+/*!**************************************************!*\
+  !*** ./~/core-js/library/modules/$.to-object.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
@@ -21323,9 +21328,9 @@
 
 /***/ },
 /* 178 */
-/*!**********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.defined.js ***!
-  \**********************************************************************************/
+/*!************************************************!*\
+  !*** ./~/core-js/library/modules/$.defined.js ***!
+  \************************************************/
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -21336,9 +21341,9 @@
 
 /***/ },
 /* 179 */
-/*!**********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.iobject.js ***!
-  \**********************************************************************************/
+/*!************************************************!*\
+  !*** ./~/core-js/library/modules/$.iobject.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -21349,9 +21354,9 @@
 
 /***/ },
 /* 180 */
-/*!******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.cof.js ***!
-  \******************************************************************************/
+/*!********************************************!*\
+  !*** ./~/core-js/library/modules/$.cof.js ***!
+  \********************************************/
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -21362,9 +21367,9 @@
 
 /***/ },
 /* 181 */
-/*!********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.fails.js ***!
-  \********************************************************************************/
+/*!**********************************************!*\
+  !*** ./~/core-js/library/modules/$.fails.js ***!
+  \**********************************************/
 /***/ function(module, exports) {
 
 	module.exports = function(exec){
@@ -21448,18 +21453,18 @@
 
 /***/ },
 /* 183 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/core-js/object/create.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/babel-runtime/core-js/object/create.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/create */ 184), __esModule: true };
 
 /***/ },
 /* 184 */
-/*!*********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/fn/object/create.js ***!
-  \*********************************************************************************/
+/*!***********************************************!*\
+  !*** ./~/core-js/library/fn/object/create.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(/*! ../../modules/$ */ 176);
@@ -21469,18 +21474,18 @@
 
 /***/ },
 /* 185 */
-/*!******************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/core-js/object/keys.js ***!
-  \******************************************************************/
+/*!************************************************!*\
+  !*** ./~/babel-runtime/core-js/object/keys.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/keys */ 186), __esModule: true };
 
 /***/ },
 /* 186 */
-/*!*******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/fn/object/keys.js ***!
-  \*******************************************************************************/
+/*!*********************************************!*\
+  !*** ./~/core-js/library/fn/object/keys.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(/*! ../../modules/es6.object.keys */ 187);
@@ -21488,9 +21493,9 @@
 
 /***/ },
 /* 187 */
-/*!****************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/es6.object.keys.js ***!
-  \****************************************************************************************/
+/*!******************************************************!*\
+  !*** ./~/core-js/library/modules/es6.object.keys.js ***!
+  \******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -21504,9 +21509,9 @@
 
 /***/ },
 /* 188 */
-/*!*************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.object-sap.js ***!
-  \*************************************************************************************/
+/*!***************************************************!*\
+  !*** ./~/core-js/library/modules/$.object-sap.js ***!
+  \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
@@ -21522,9 +21527,9 @@
 
 /***/ },
 /* 189 */
-/*!**************************************************!*\
-  !*** ./~/react-bootstrap/~/invariant/browser.js ***!
-  \**************************************************/
+/*!********************************!*\
+  !*** ./~/invariant/browser.js ***!
+  \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21579,13 +21584,13 @@
 	
 	module.exports = invariant;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 190 */
-/*!************************************************!*\
-  !*** ./~/react-bootstrap/~/warning/browser.js ***!
-  \************************************************/
+/*!******************************!*\
+  !*** ./~/warning/browser.js ***!
+  \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21649,7 +21654,7 @@
 	
 	module.exports = warning;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 191 */
@@ -21814,9 +21819,9 @@
 
 /***/ },
 /* 193 */
-/*!********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/helpers/object-without-properties.js ***!
-  \********************************************************************************/
+/*!**************************************************************!*\
+  !*** ./~/babel-runtime/helpers/object-without-properties.js ***!
+  \**************************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21837,9 +21842,9 @@
 
 /***/ },
 /* 194 */
-/*!*************************************************!*\
-  !*** ./~/react-bootstrap/~/classnames/index.js ***!
-  \*************************************************/
+/*!*******************************!*\
+  !*** ./~/classnames/index.js ***!
+  \*******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -22304,9 +22309,9 @@
 
 /***/ },
 /* 200 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/helpers/inherits.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/babel-runtime/helpers/inherits.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22335,18 +22340,18 @@
 
 /***/ },
 /* 201 */
-/*!******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/core-js/object/set-prototype-of.js ***!
-  \******************************************************************************/
+/*!************************************************************!*\
+  !*** ./~/babel-runtime/core-js/object/set-prototype-of.js ***!
+  \************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ 202), __esModule: true };
 
 /***/ },
 /* 202 */
-/*!*******************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/fn/object/set-prototype-of.js ***!
-  \*******************************************************************************************/
+/*!*********************************************************!*\
+  !*** ./~/core-js/library/fn/object/set-prototype-of.js ***!
+  \*********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ 203);
@@ -22354,9 +22359,9 @@
 
 /***/ },
 /* 203 */
-/*!****************************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/es6.object.set-prototype-of.js ***!
-  \****************************************************************************************************/
+/*!******************************************************************!*\
+  !*** ./~/core-js/library/modules/es6.object.set-prototype-of.js ***!
+  \******************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -22365,9 +22370,9 @@
 
 /***/ },
 /* 204 */
-/*!************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.set-proto.js ***!
-  \************************************************************************************/
+/*!**************************************************!*\
+  !*** ./~/core-js/library/modules/$.set-proto.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -22399,9 +22404,9 @@
 
 /***/ },
 /* 205 */
-/*!************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.is-object.js ***!
-  \************************************************************************************/
+/*!**************************************************!*\
+  !*** ./~/core-js/library/modules/$.is-object.js ***!
+  \**************************************************/
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -22410,9 +22415,9 @@
 
 /***/ },
 /* 206 */
-/*!************************************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/~/core-js/library/modules/$.an-object.js ***!
-  \************************************************************************************/
+/*!**************************************************!*\
+  !*** ./~/core-js/library/modules/$.an-object.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(/*! ./$.is-object */ 205);
@@ -22423,9 +22428,9 @@
 
 /***/ },
 /* 207 */
-/*!***********************************************************************!*\
-  !*** ./~/react-bootstrap/~/babel-runtime/helpers/class-call-check.js ***!
-  \***********************************************************************/
+/*!*****************************************************!*\
+  !*** ./~/babel-runtime/helpers/class-call-check.js ***!
+  \*****************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22576,9 +22581,9 @@
 
 /***/ },
 /* 209 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-prop-types/lib/elementType.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/react-prop-types/lib/elementType.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22625,9 +22630,9 @@
 
 /***/ },
 /* 210 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-prop-types/lib/common.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/react-prop-types/lib/common.js ***!
+  \******************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22749,9 +22754,9 @@
 
 /***/ },
 /* 212 */
-/*!*********************************************************!*\
-  !*** ./~/react-bootstrap/~/react-prop-types/lib/all.js ***!
-  \*********************************************************/
+/*!***************************************!*\
+  !*** ./~/react-prop-types/lib/all.js ***!
+  \***************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23812,9 +23817,9 @@
 
 /***/ },
 /* 220 */
-/*!************************************************!*\
-  !*** ./~/react-bootstrap/~/react-dom/index.js ***!
-  \************************************************/
+/*!******************************!*\
+  !*** ./~/react-dom/index.js ***!
+  \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24581,9 +24586,9 @@
 
 /***/ },
 /* 225 */
-/*!********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/style/index.js ***!
-  \********************************************************/
+/*!**************************************!*\
+  !*** ./~/dom-helpers/style/index.js ***!
+  \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24613,9 +24618,9 @@
 
 /***/ },
 /* 226 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/camelizeStyle.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/dom-helpers/util/camelizeStyle.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24634,9 +24639,9 @@
 
 /***/ },
 /* 227 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/camelize.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/dom-helpers/util/camelize.js ***!
+  \****************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -24651,9 +24656,9 @@
 
 /***/ },
 /* 228 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/hyphenateStyle.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/dom-helpers/util/hyphenateStyle.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24673,9 +24678,9 @@
 
 /***/ },
 /* 229 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/hyphenate.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/dom-helpers/util/hyphenate.js ***!
+  \*****************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24688,9 +24693,9 @@
 
 /***/ },
 /* 230 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/style/getComputedStyle.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/dom-helpers/style/getComputedStyle.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24744,9 +24749,9 @@
 
 /***/ },
 /* 231 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/babelHelpers.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/dom-helpers/util/babelHelpers.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
@@ -24783,9 +24788,9 @@
 
 /***/ },
 /* 232 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/style/removeStyle.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/dom-helpers/style/removeStyle.js ***!
+  \********************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24796,9 +24801,9 @@
 
 /***/ },
 /* 233 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/Transition.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/react-overlays/lib/Transition.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25141,9 +25146,9 @@
 
 /***/ },
 /* 234 */
-/*!******************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/transition/properties.js ***!
-  \******************************************************************/
+/*!************************************************!*\
+  !*** ./~/dom-helpers/transition/properties.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25204,9 +25209,9 @@
 
 /***/ },
 /* 235 */
-/*!*******************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/inDOM.js ***!
-  \*******************************************************/
+/*!*************************************!*\
+  !*** ./~/dom-helpers/util/inDOM.js ***!
+  \*************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25214,9 +25219,9 @@
 
 /***/ },
 /* 236 */
-/*!******************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/events/on.js ***!
-  \******************************************************/
+/*!************************************!*\
+  !*** ./~/dom-helpers/events/on.js ***!
+  \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25238,9 +25243,9 @@
 
 /***/ },
 /* 237 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-prop-types/lib/deprecated.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/react-prop-types/lib/deprecated.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25344,7 +25349,7 @@
 	
 	exports['default'] = deprecationWarning;
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 239 */
@@ -25756,9 +25761,9 @@
 
 /***/ },
 /* 240 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/activeElement.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/dom-helpers/activeElement.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25788,9 +25793,9 @@
 
 /***/ },
 /* 241 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/ownerDocument.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/dom-helpers/ownerDocument.js ***!
+  \****************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -25806,9 +25811,9 @@
 
 /***/ },
 /* 242 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/contains.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/dom-helpers/query/contains.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25834,9 +25839,9 @@
 
 /***/ },
 /* 243 */
-/*!**********************************************!*\
-  !*** ./~/react-bootstrap/~/keycode/index.js ***!
-  \**********************************************/
+/*!****************************!*\
+  !*** ./~/keycode/index.js ***!
+  \****************************/
 /***/ function(module, exports) {
 
 	// Source: http://jsfiddle.net/vWx8V/
@@ -25988,9 +25993,9 @@
 
 /***/ },
 /* 244 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/collection/find.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/lodash-compat/collection/find.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseEach = __webpack_require__(/*! ../internal/baseEach */ 245),
@@ -26053,9 +26058,9 @@
 
 /***/ },
 /* 245 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseEach.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/baseEach.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseForOwn = __webpack_require__(/*! ./baseForOwn */ 246),
@@ -26077,9 +26082,9 @@
 
 /***/ },
 /* 246 */
-/*!******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseForOwn.js ***!
-  \******************************************************************/
+/*!************************************************!*\
+  !*** ./~/lodash-compat/internal/baseForOwn.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseFor = __webpack_require__(/*! ./baseFor */ 247),
@@ -26103,9 +26108,9 @@
 
 /***/ },
 /* 247 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseFor.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/lodash-compat/internal/baseFor.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var createBaseFor = __webpack_require__(/*! ./createBaseFor */ 248);
@@ -26129,9 +26134,9 @@
 
 /***/ },
 /* 248 */
-/*!*********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/createBaseFor.js ***!
-  \*********************************************************************/
+/*!***************************************************!*\
+  !*** ./~/lodash-compat/internal/createBaseFor.js ***!
+  \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var toObject = __webpack_require__(/*! ./toObject */ 249);
@@ -26165,9 +26170,9 @@
 
 /***/ },
 /* 249 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/toObject.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/toObject.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(/*! ../lang/isObject */ 250),
@@ -26200,9 +26205,9 @@
 
 /***/ },
 /* 250 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isObject.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/lodash-compat/lang/isObject.js ***!
+  \******************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -26237,9 +26242,9 @@
 
 /***/ },
 /* 251 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isString.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/lodash-compat/lang/isString.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObjectLike = __webpack_require__(/*! ../internal/isObjectLike */ 252);
@@ -26281,9 +26286,9 @@
 
 /***/ },
 /* 252 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isObjectLike.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/isObjectLike.js ***!
+  \**************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -26302,9 +26307,9 @@
 
 /***/ },
 /* 253 */
-/*!******************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/support.js ***!
-  \******************************************************/
+/*!************************************!*\
+  !*** ./~/lodash-compat/support.js ***!
+  \************************************/
 /***/ function(module, exports) {
 
 	/** Used for native method references. */
@@ -26407,9 +26412,9 @@
 
 /***/ },
 /* 254 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/object/keys.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/lodash-compat/object/keys.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(/*! ../internal/getNative */ 255),
@@ -26462,9 +26467,9 @@
 
 /***/ },
 /* 255 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/getNative.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/getNative.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isNative = __webpack_require__(/*! ../lang/isNative */ 256);
@@ -26487,9 +26492,9 @@
 
 /***/ },
 /* 256 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isNative.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/lodash-compat/lang/isNative.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isFunction = __webpack_require__(/*! ./isFunction */ 257),
@@ -26545,9 +26550,9 @@
 
 /***/ },
 /* 257 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isFunction.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/lodash-compat/lang/isFunction.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(/*! ./isObject */ 250);
@@ -26592,9 +26597,9 @@
 
 /***/ },
 /* 258 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isHostObject.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/isHostObject.js ***!
+  \**************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -26622,9 +26627,9 @@
 
 /***/ },
 /* 259 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isArrayLike.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/isArrayLike.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var getLength = __webpack_require__(/*! ./getLength */ 260),
@@ -26646,9 +26651,9 @@
 
 /***/ },
 /* 260 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/getLength.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/getLength.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseProperty = __webpack_require__(/*! ./baseProperty */ 261);
@@ -26670,9 +26675,9 @@
 
 /***/ },
 /* 261 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseProperty.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/baseProperty.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var toObject = __webpack_require__(/*! ./toObject */ 249);
@@ -26695,9 +26700,9 @@
 
 /***/ },
 /* 262 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isLength.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/isLength.js ***!
+  \**********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -26724,9 +26729,9 @@
 
 /***/ },
 /* 263 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/shimKeys.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/shimKeys.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isArguments = __webpack_require__(/*! ../lang/isArguments */ 264),
@@ -26775,9 +26780,9 @@
 
 /***/ },
 /* 264 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isArguments.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/lodash-compat/lang/isArguments.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isArrayLike = __webpack_require__(/*! ../internal/isArrayLike */ 259),
@@ -26818,9 +26823,9 @@
 
 /***/ },
 /* 265 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isArray.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/lodash-compat/lang/isArray.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(/*! ../internal/getNative */ 255),
@@ -26867,9 +26872,9 @@
 
 /***/ },
 /* 266 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isIndex.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/lodash-compat/internal/isIndex.js ***!
+  \*********************************************/
 /***/ function(module, exports) {
 
 	/** Used to detect unsigned integer values. */
@@ -26900,9 +26905,9 @@
 
 /***/ },
 /* 267 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/object/keysIn.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/lodash-compat/object/keysIn.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayEach = __webpack_require__(/*! ../internal/arrayEach */ 268),
@@ -27045,9 +27050,9 @@
 
 /***/ },
 /* 268 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/arrayEach.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/arrayEach.js ***!
+  \***********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -27076,9 +27081,9 @@
 
 /***/ },
 /* 269 */
-/*!**********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/createBaseEach.js ***!
-  \**********************************************************************/
+/*!****************************************************!*\
+  !*** ./~/lodash-compat/internal/createBaseEach.js ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var getLength = __webpack_require__(/*! ./getLength */ 260),
@@ -27116,9 +27121,9 @@
 
 /***/ },
 /* 270 */
-/*!******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/createFind.js ***!
-  \******************************************************************/
+/*!************************************************!*\
+  !*** ./~/lodash-compat/internal/createFind.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseCallback = __webpack_require__(/*! ./baseCallback */ 271),
@@ -27150,9 +27155,9 @@
 
 /***/ },
 /* 271 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseCallback.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/baseCallback.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseMatches = __webpack_require__(/*! ./baseMatches */ 272),
@@ -27194,9 +27199,9 @@
 
 /***/ },
 /* 272 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseMatches.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/baseMatches.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIsMatch = __webpack_require__(/*! ./baseIsMatch */ 273),
@@ -27234,9 +27239,9 @@
 
 /***/ },
 /* 273 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseIsMatch.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/baseIsMatch.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIsEqual = __webpack_require__(/*! ./baseIsEqual */ 274),
@@ -27295,9 +27300,9 @@
 
 /***/ },
 /* 274 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseIsEqual.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/baseIsEqual.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIsEqualDeep = __webpack_require__(/*! ./baseIsEqualDeep */ 275),
@@ -27332,9 +27337,9 @@
 
 /***/ },
 /* 275 */
-/*!***********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseIsEqualDeep.js ***!
-  \***********************************************************************/
+/*!*****************************************************!*\
+  !*** ./~/lodash-compat/internal/baseIsEqualDeep.js ***!
+  \*****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var equalArrays = __webpack_require__(/*! ./equalArrays */ 276),
@@ -27444,9 +27449,9 @@
 
 /***/ },
 /* 276 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/equalArrays.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/equalArrays.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var arraySome = __webpack_require__(/*! ./arraySome */ 277);
@@ -27504,9 +27509,9 @@
 
 /***/ },
 /* 277 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/arraySome.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/arraySome.js ***!
+  \***********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -27536,9 +27541,9 @@
 
 /***/ },
 /* 278 */
-/*!******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/equalByTag.js ***!
-  \******************************************************************/
+/*!************************************************!*\
+  !*** ./~/lodash-compat/internal/equalByTag.js ***!
+  \************************************************/
 /***/ function(module, exports) {
 
 	/** `Object#toString` result references. */
@@ -27593,9 +27598,9 @@
 
 /***/ },
 /* 279 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/equalObjects.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/equalObjects.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var keys = __webpack_require__(/*! ../object/keys */ 254);
@@ -27669,9 +27674,9 @@
 
 /***/ },
 /* 280 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/lang/isTypedArray.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/lang/isTypedArray.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isLength = __webpack_require__(/*! ../internal/isLength */ 262),
@@ -27752,9 +27757,9 @@
 
 /***/ },
 /* 281 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/getMatchData.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/getMatchData.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isStrictComparable = __webpack_require__(/*! ./isStrictComparable */ 282),
@@ -27782,9 +27787,9 @@
 
 /***/ },
 /* 282 */
-/*!**************************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isStrictComparable.js ***!
-  \**************************************************************************/
+/*!********************************************************!*\
+  !*** ./~/lodash-compat/internal/isStrictComparable.js ***!
+  \********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(/*! ../lang/isObject */ 250);
@@ -27806,9 +27811,9 @@
 
 /***/ },
 /* 283 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/object/pairs.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/lodash-compat/object/pairs.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var keys = __webpack_require__(/*! ./keys */ 254),
@@ -27848,9 +27853,9 @@
 
 /***/ },
 /* 284 */
-/*!***************************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseMatchesProperty.js ***!
-  \***************************************************************************/
+/*!*********************************************************!*\
+  !*** ./~/lodash-compat/internal/baseMatchesProperty.js ***!
+  \*********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(/*! ./baseGet */ 285),
@@ -27902,9 +27907,9 @@
 
 /***/ },
 /* 285 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseGet.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/lodash-compat/internal/baseGet.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var toObject = __webpack_require__(/*! ./toObject */ 249);
@@ -27941,9 +27946,9 @@
 
 /***/ },
 /* 286 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseSlice.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/baseSlice.js ***!
+  \***********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -27982,9 +27987,9 @@
 
 /***/ },
 /* 287 */
-/*!*************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/isKey.js ***!
-  \*************************************************************/
+/*!*******************************************!*\
+  !*** ./~/lodash-compat/internal/isKey.js ***!
+  \*******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isArray = __webpack_require__(/*! ../lang/isArray */ 265),
@@ -28019,9 +28024,9 @@
 
 /***/ },
 /* 288 */
-/*!*********************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/array/last.js ***!
-  \*********************************************************/
+/*!***************************************!*\
+  !*** ./~/lodash-compat/array/last.js ***!
+  \***************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28047,9 +28052,9 @@
 
 /***/ },
 /* 289 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/toPath.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/lodash-compat/internal/toPath.js ***!
+  \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseToString = __webpack_require__(/*! ./baseToString */ 290),
@@ -28084,9 +28089,9 @@
 
 /***/ },
 /* 290 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseToString.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/baseToString.js ***!
+  \**************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28106,9 +28111,9 @@
 
 /***/ },
 /* 291 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/bindCallback.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/bindCallback.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var identity = __webpack_require__(/*! ../utility/identity */ 292);
@@ -28154,9 +28159,9 @@
 
 /***/ },
 /* 292 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/utility/identity.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/lodash-compat/utility/identity.js ***!
+  \*********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28183,9 +28188,9 @@
 
 /***/ },
 /* 293 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/utility/property.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/lodash-compat/utility/property.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseProperty = __webpack_require__(/*! ../internal/baseProperty */ 261),
@@ -28223,9 +28228,9 @@
 
 /***/ },
 /* 294 */
-/*!************************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/basePropertyDeep.js ***!
-  \************************************************************************/
+/*!******************************************************!*\
+  !*** ./~/lodash-compat/internal/basePropertyDeep.js ***!
+  \******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(/*! ./baseGet */ 285),
@@ -28251,9 +28256,9 @@
 
 /***/ },
 /* 295 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseFind.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/baseFind.js ***!
+  \**********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28285,9 +28290,9 @@
 
 /***/ },
 /* 296 */
-/*!*********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseFindIndex.js ***!
-  \*********************************************************************/
+/*!***************************************************!*\
+  !*** ./~/lodash-compat/internal/baseFindIndex.js ***!
+  \***************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28317,9 +28322,9 @@
 
 /***/ },
 /* 297 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/object/omit.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/lodash-compat/object/omit.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayMap = __webpack_require__(/*! ../internal/arrayMap */ 298),
@@ -28373,9 +28378,9 @@
 
 /***/ },
 /* 298 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/arrayMap.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/arrayMap.js ***!
+  \**********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28403,9 +28408,9 @@
 
 /***/ },
 /* 299 */
-/*!**********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseDifference.js ***!
-  \**********************************************************************/
+/*!****************************************************!*\
+  !*** ./~/lodash-compat/internal/baseDifference.js ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIndexOf = __webpack_require__(/*! ./baseIndexOf */ 300),
@@ -28467,9 +28472,9 @@
 
 /***/ },
 /* 300 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseIndexOf.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/baseIndexOf.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var indexOfNaN = __webpack_require__(/*! ./indexOfNaN */ 301);
@@ -28503,9 +28508,9 @@
 
 /***/ },
 /* 301 */
-/*!******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/indexOfNaN.js ***!
-  \******************************************************************/
+/*!************************************************!*\
+  !*** ./~/lodash-compat/internal/indexOfNaN.js ***!
+  \************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28535,9 +28540,9 @@
 
 /***/ },
 /* 302 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/cacheIndexOf.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/lodash-compat/internal/cacheIndexOf.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(/*! ../lang/isObject */ 250);
@@ -28563,9 +28568,9 @@
 
 /***/ },
 /* 303 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/createCache.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/createCache.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {var SetCache = __webpack_require__(/*! ./SetCache */ 304),
@@ -28594,9 +28599,9 @@
 
 /***/ },
 /* 304 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/SetCache.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/lodash-compat/internal/SetCache.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {var cachePush = __webpack_require__(/*! ./cachePush */ 305),
@@ -28633,9 +28638,9 @@
 
 /***/ },
 /* 305 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/cachePush.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/cachePush.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(/*! ../lang/isObject */ 250);
@@ -28662,9 +28667,9 @@
 
 /***/ },
 /* 306 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseFlatten.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/baseFlatten.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayPush = __webpack_require__(/*! ./arrayPush */ 307),
@@ -28712,9 +28717,9 @@
 
 /***/ },
 /* 307 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/arrayPush.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/arrayPush.js ***!
+  \***********************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28741,9 +28746,9 @@
 
 /***/ },
 /* 308 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/pickByArray.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/lodash-compat/internal/pickByArray.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var toObject = __webpack_require__(/*! ./toObject */ 249);
@@ -28778,9 +28783,9 @@
 
 /***/ },
 /* 309 */
-/*!**********************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/pickByCallback.js ***!
-  \**********************************************************************/
+/*!****************************************************!*\
+  !*** ./~/lodash-compat/internal/pickByCallback.js ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseForIn = __webpack_require__(/*! ./baseForIn */ 310);
@@ -28809,9 +28814,9 @@
 
 /***/ },
 /* 310 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/internal/baseForIn.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/internal/baseForIn.js ***!
+  \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseFor = __webpack_require__(/*! ./baseFor */ 247),
@@ -28835,9 +28840,9 @@
 
 /***/ },
 /* 311 */
-/*!*****************************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/function/restParam.js ***!
-  \*****************************************************************/
+/*!***********************************************!*\
+  !*** ./~/lodash-compat/function/restParam.js ***!
+  \***********************************************/
 /***/ function(module, exports) {
 
 	/** Used as the `TypeError` message for "Functions" methods. */
@@ -28902,9 +28907,9 @@
 
 /***/ },
 /* 312 */
-/*!***********************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-prop-types/lib/isRequiredForA11y.js ***!
-  \***********************************************************************/
+/*!*****************************************************!*\
+  !*** ./~/react-prop-types/lib/isRequiredForA11y.js ***!
+  \*****************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28926,9 +28931,9 @@
 
 /***/ },
 /* 313 */
-/*!*****************************************************!*\
-  !*** ./~/react-bootstrap/~/uncontrollable/index.js ***!
-  \*****************************************************/
+/*!***********************************!*\
+  !*** ./~/uncontrollable/index.js ***!
+  \***********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28965,9 +28970,9 @@
 
 /***/ },
 /* 314 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/uncontrollable/createUncontrollable.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/uncontrollable/createUncontrollable.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29118,9 +29123,9 @@
 
 /***/ },
 /* 315 */
-/*!*****************************************************!*\
-  !*** ./~/react-bootstrap/~/uncontrollable/utils.js ***!
-  \*****************************************************/
+/*!***********************************!*\
+  !*** ./~/uncontrollable/utils.js ***!
+  \***********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29234,7 +29239,7 @@
 	function has(o, k) {
 	  return o ? Object.prototype.hasOwnProperty.call(o, k) : false;
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 316 */
@@ -29442,9 +29447,9 @@
 
 /***/ },
 /* 317 */
-/*!********************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/RootCloseWrapper.js ***!
-  \********************************************************************/
+/*!**************************************************!*\
+  !*** ./~/react-overlays/lib/RootCloseWrapper.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29609,9 +29614,9 @@
 
 /***/ },
 /* 318 */
-/*!**************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/addEventListener.js ***!
-  \**************************************************************************/
+/*!********************************************************!*\
+  !*** ./~/react-overlays/lib/utils/addEventListener.js ***!
+  \********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29641,9 +29646,9 @@
 
 /***/ },
 /* 319 */
-/*!*******************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/events/off.js ***!
-  \*******************************************************/
+/*!*************************************!*\
+  !*** ./~/dom-helpers/events/off.js ***!
+  \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29666,9 +29671,9 @@
 
 /***/ },
 /* 320 */
-/*!*******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/createChainedFunction.js ***!
-  \*******************************************************************************/
+/*!*************************************************************!*\
+  !*** ./~/react-overlays/lib/utils/createChainedFunction.js ***!
+  \*************************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -29715,9 +29720,9 @@
 
 /***/ },
 /* 321 */
-/*!***********************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/ownerDocument.js ***!
-  \***********************************************************************/
+/*!*****************************************************!*\
+  !*** ./~/react-overlays/lib/utils/ownerDocument.js ***!
+  \*****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30065,9 +30070,9 @@
 
 /***/ },
 /* 326 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/lodash-compat/object/pick.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/lodash-compat/object/pick.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseFlatten = __webpack_require__(/*! ../internal/baseFlatten */ 306),
@@ -31383,9 +31388,9 @@
 
 /***/ },
 /* 339 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/util/scrollbarSize.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/dom-helpers/util/scrollbarSize.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31416,9 +31421,9 @@
 
 /***/ },
 /* 340 */
-/*!*********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/events/index.js ***!
-  \*********************************************************/
+/*!***************************************!*\
+  !*** ./~/dom-helpers/events/index.js ***!
+  \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31430,9 +31435,9 @@
 
 /***/ },
 /* 341 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/events/filter.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/dom-helpers/events/filter.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31454,9 +31459,9 @@
 
 /***/ },
 /* 342 */
-/*!*******************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/querySelectorAll.js ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** ./~/dom-helpers/query/querySelectorAll.js ***!
+  \*************************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31983,9 +31988,9 @@
 
 /***/ },
 /* 349 */
-/*!*********************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/Modal.js ***!
-  \*********************************************************/
+/*!***************************************!*\
+  !*** ./~/react-overlays/lib/Modal.js ***!
+  \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/*eslint-disable react/prop-types */
@@ -32456,9 +32461,9 @@
 
 /***/ },
 /* 350 */
-/*!********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/~/react-prop-types/lib/mountable.js ***!
-  \********************************************************************************/
+/*!**************************************************************!*\
+  !*** ./~/react-overlays/~/react-prop-types/lib/mountable.js ***!
+  \**************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32491,9 +32496,9 @@
 
 /***/ },
 /* 351 */
-/*!*****************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/~/react-prop-types/lib/common.js ***!
-  \*****************************************************************************/
+/*!***********************************************************!*\
+  !*** ./~/react-overlays/~/react-prop-types/lib/common.js ***!
+  \***********************************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32533,9 +32538,9 @@
 
 /***/ },
 /* 352 */
-/*!**********************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/~/react-prop-types/lib/elementType.js ***!
-  \**********************************************************************************/
+/*!****************************************************************!*\
+  !*** ./~/react-overlays/~/react-prop-types/lib/elementType.js ***!
+  \****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32582,9 +32587,9 @@
 
 /***/ },
 /* 353 */
-/*!**********************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/Portal.js ***!
-  \**********************************************************/
+/*!****************************************!*\
+  !*** ./~/react-overlays/lib/Portal.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32713,9 +32718,9 @@
 
 /***/ },
 /* 354 */
-/*!**********************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/getContainer.js ***!
-  \**********************************************************************/
+/*!****************************************************!*\
+  !*** ./~/react-overlays/lib/utils/getContainer.js ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32738,9 +32743,9 @@
 
 /***/ },
 /* 355 */
-/*!****************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/ModalManager.js ***!
-  \****************************************************************/
+/*!**********************************************!*\
+  !*** ./~/react-overlays/lib/ModalManager.js ***!
+  \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32902,9 +32907,9 @@
 
 /***/ },
 /* 356 */
-/*!********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/class/index.js ***!
-  \********************************************************/
+/*!**************************************!*\
+  !*** ./~/dom-helpers/class/index.js ***!
+  \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32917,9 +32922,9 @@
 
 /***/ },
 /* 357 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/class/addClass.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/dom-helpers/class/addClass.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32931,9 +32936,9 @@
 
 /***/ },
 /* 358 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/class/hasClass.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/dom-helpers/class/hasClass.js ***!
+  \*****************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32943,9 +32948,9 @@
 
 /***/ },
 /* 359 */
-/*!**************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/class/removeClass.js ***!
-  \**************************************************************/
+/*!********************************************!*\
+  !*** ./~/dom-helpers/class/removeClass.js ***!
+  \********************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32956,9 +32961,9 @@
 
 /***/ },
 /* 360 */
-/*!***********************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/isOverflowing.js ***!
-  \***********************************************************************/
+/*!*****************************************************!*\
+  !*** ./~/react-overlays/lib/utils/isOverflowing.js ***!
+  \*****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33004,9 +33009,9 @@
 
 /***/ },
 /* 361 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/isWindow.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/dom-helpers/query/isWindow.js ***!
+  \*****************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33017,9 +33022,9 @@
 
 /***/ },
 /* 362 */
-/*!**************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/manageAriaHidden.js ***!
-  \**************************************************************************/
+/*!********************************************************!*\
+  !*** ./~/react-overlays/lib/utils/manageAriaHidden.js ***!
+  \********************************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33072,9 +33077,9 @@
 
 /***/ },
 /* 363 */
-/*!**************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/addFocusListener.js ***!
-  \**************************************************************************/
+/*!********************************************************!*\
+  !*** ./~/react-overlays/lib/utils/addFocusListener.js ***!
+  \********************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -34501,9 +34506,9 @@
 
 /***/ },
 /* 375 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/Overlay.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/react-overlays/lib/Overlay.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34704,9 +34709,9 @@
 
 /***/ },
 /* 376 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/Position.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/react-overlays/lib/Position.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34910,9 +34915,9 @@
 
 /***/ },
 /* 377 */
-/*!******************************************************************************!*\
-  !*** ./~/react-bootstrap/~/react-overlays/lib/utils/overlayPositionUtils.js ***!
-  \******************************************************************************/
+/*!************************************************************!*\
+  !*** ./~/react-overlays/lib/utils/overlayPositionUtils.js ***!
+  \************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35052,9 +35057,9 @@
 
 /***/ },
 /* 378 */
-/*!*********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/offset.js ***!
-  \*********************************************************/
+/*!***************************************!*\
+  !*** ./~/dom-helpers/query/offset.js ***!
+  \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35090,9 +35095,9 @@
 
 /***/ },
 /* 379 */
-/*!***********************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/position.js ***!
-  \***********************************************************/
+/*!*****************************************!*\
+  !*** ./~/dom-helpers/query/position.js ***!
+  \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35155,9 +35160,9 @@
 
 /***/ },
 /* 380 */
-/*!***************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/offsetParent.js ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** ./~/dom-helpers/query/offsetParent.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35194,9 +35199,9 @@
 
 /***/ },
 /* 381 */
-/*!************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/scrollTop.js ***!
-  \************************************************************/
+/*!******************************************!*\
+  !*** ./~/dom-helpers/query/scrollTop.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35212,9 +35217,9 @@
 
 /***/ },
 /* 382 */
-/*!*************************************************************!*\
-  !*** ./~/react-bootstrap/~/dom-helpers/query/scrollLeft.js ***!
-  \*************************************************************/
+/*!*******************************************!*\
+  !*** ./~/dom-helpers/query/scrollLeft.js ***!
+  \*******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35549,7 +35554,7 @@
 	
 	exports['default'] = OverlayTrigger;
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 384 */
@@ -36843,7 +36848,7 @@
 	
 	exports['default'] = ResponsiveEmbed;
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 8)))
 
 /***/ },
 /* 394 */
