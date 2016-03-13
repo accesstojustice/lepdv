@@ -88,3 +88,7 @@ table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, tabl
     margin-right: 8px;
     opacity: 0.7;
 }
+
+.jumbotron {
+  background-color: #d5d5d5;
+}
