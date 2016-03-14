@@ -47,5 +47,6 @@ end
 
 gem 'react-rails'
 
-# May actually need turbolinks
+
 gem 'turbolinks'
+gem 'unicorn'
