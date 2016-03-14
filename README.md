@@ -23,7 +23,7 @@ in development, with mockups as guide
 * ```rails server```
 
 ## How to set up the development code (for the nerds)
-uses a postgresql db (rake db:create )
+uses a postgresql db ( rake db:create )
 
 ## Team
 Collaborators List:
