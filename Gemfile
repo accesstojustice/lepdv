@@ -18,7 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
-gem 'jbuilder', '~> 2.0'
+#gem 'jbuilder', '~> 2.0'
+#gem 'jbuilder', '~> 2.4.1'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -49,4 +51,6 @@ gem 'react-rails'
 
 
 gem 'turbolinks'
+
 gem 'unicorn'
+gem 'raindrops', '~>0.16'
