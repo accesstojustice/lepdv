@@ -19,8 +19,8 @@ in development, with mockups as guide
 
 ## How to use this
 
-```bundle install```
-```rails server```
+* ```bundle install```
+* ```rails server```
 
 ## How to set up the development code (for the nerds)
 uses a postgresql db (rake db:create )
