@@ -27,7 +27,10 @@ uses a postgresql db ( rake db:create )
 
 ## Team
 Collaborators List:
-pending
+Rodica
+Janet
+
+
 
 ## How to Contribute
 To Fork the project, or contribute via github issues: https://github.com/accesstojustice/lepdv/issues
