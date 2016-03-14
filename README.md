@@ -2,7 +2,7 @@ LEP for DV
 =================
 
 ##### What is this?
-To Address issues of Limited English Proficiency w/ Domestic Violence
+To address issues of Limited English Proficiency w/ Domestic Violence
 
 ##### What problem does this solve?
 These two issues are intertwined.  This app shows in a concise manner, relevant and associated resources
