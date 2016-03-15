@@ -4,9 +4,9 @@
   <div class="container-fluid">
     <div class="images">
       <div class="col-sm-8 community_picture">
-        <%= image_tag("heart_community.jpg", :alt => "heart_community") %>
+        <%= image_tag("heart_community.jpg", :alt => "heart_community", :class => "img-responsive") %>
       </div>
-      <div class="col-sm-4 thumbnails">
+      <div class="col-sm-4 thumbnails hidden-xs hidden-sm hidden-md">
         <%= image_tag("p1.png", :alt => "pattern1") %>
         <%= image_tag("p2.jpg", :alt => "pattern2") %>
         <%= image_tag("p3.png", :alt => "pattern3") %>
@@ -30,11 +30,15 @@
 
 <div class="row">
   <div class="col-sm-4">
+        <div class="react-wrapper">
     <div id="react"></div>
+      </div>
   </div>
 
   <div class="col-sm-7 col-sm-offset-1">
+
     <div id="map"></div>
+
   </div>
 </div>
 
