@@ -102,7 +102,8 @@ table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, tabl
 }
 
 .btn-primary {
+  color: #391827;
   background-color: #E1A7AD;
-  border-color: #E1A7AD;
-  /*border-width: 0px 0px 0px;*/
+  border-color: #391827;
+  border-width: 1px;
 }
