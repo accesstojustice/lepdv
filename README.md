@@ -2,7 +2,7 @@ LEP for DV
 =================
 
 ##### What is this?
-To address issues of Limited English Proficiency w/ Domestic Violence
+To Address issues of Limited English Proficiency w/ Domestic Violence
 
 ##### What problem does this solve?
 These two issues are intertwined.  This app shows in a concise manner, relevant and associated resources
@@ -19,18 +19,20 @@ in development, with mockups as guide
 
 ## How to use this
 
-* ```bundle install```
-* ```rails server```
+```bundle install```
+```rails server```
 
 ## How to set up the development code (for the nerds)
-uses a postgresql db ( rake db:create )
+uses a postgresql db (rake db:create )
 
 ## Team
 Collaborators List:
-Rodica
-Janet
-
-
+Rene M Paccha
+Kulsum Ameji
+Rodica Trifan
+Janet Rosas
+Lorena Ramos
+Eileen McFarland
 
 ## How to Contribute
 To Fork the project, or contribute via github issues: https://github.com/accesstojustice/lepdv/issues
