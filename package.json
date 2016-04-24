@@ -10,9 +10,8 @@
     "test": "jest --verbose"
   },
   "jest": {
-    "testFileExtensions": [
-      "jsx"
-    ],
+    "testFileExtensions": ["", "js", "jsx"],
+    "moduleFileExtensions": ["", "js", "jsx"],
     "unmockedModulePathPatterns": [
      "<rootDir>/node_modules/react",
      "<rootDir>/node_modules/react-dom",

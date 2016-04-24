@@ -1,12 +1,14 @@
-jest.unmock('../components/AccessOptions.jsx');
+jest.unmock('../components/AccessOptions');
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
-import AccessOptions from '../components/AccessOptions.jsx';
+import AccessOptions from '../components/AccessOptions';
 
 describe('Set of Access Options', () => {
   it('Renders Options Text', () => {
+
     const buttons = TestUtils.renderIntoDocument(
       <AccessOptions labelOn="On" labelOff="Off"/>
     );
