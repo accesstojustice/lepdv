@@ -1,11 +1,10 @@
-
-import AccessOptions from './components/AccessOptions';
+import LandingLayout from './components/LandingLayout';
 
 class Main extends React.Component {
   render() {
     return (
       <div>
-        <AccessOptions />
+        <LandingLayout />
       </div>
 
     )
