@@ -3,15 +3,15 @@ import { Button, PageHeader } from 'react-bootstrap';
 import React from 'react';
 
 let infoParagraphs = [
-  { id: 1, body: "1 in 3 women experience violence in their lifetime, but together we can survive, heal and thrive. You are not alone. There is a community to support you. Immigrant women experience additional barriers and also have unique assets and strengths. This site provides resources to empower limited english proficient survivors."},
-  { id: 2, body: "Intimate partner violence (IPV) is a serious, preventable public health problem that affects millions of Americans. The term \"intimate partner violence\" describes physical violence, sexual violence, stalking and psychological aggression (including coercive acts) by a current or former intimate partner."},
-  { id: 3, body: "Stalking is a pattern of repeated, unwanted, attention and contact that causes fear or concern for one’s own safety or the safety of someone else (e.g., family member or friend).  Some examples include repeated, unwanted phone calls, emails, or texts; leaving cards, letters, flowers, or other items when the victim does not want them; watching or following from a distance; spying; approaching or showing up in places when the victim does not want to see them; sneaking into the victim’s home or car; damaging the victim’s personal property; harming or threatening the victim’s pet; and making threats to physically harm the victim."}
+
+  { id: 1, body: "", url:},
 ]
 
 class AccessOptions extends React.Component {
   render() {
     return (
       <div>
+        <h3 className="center">Resource Options</h3>
         <Button bsStyle="primary" block>Multilingual Safety Plans</Button>
         <Button bsStyle="primary" block>Right to Interpreter</Button>
         <Button bsStyle="primary" block>Interpretation Contact</Button>
@@ -35,7 +35,7 @@ class Map extends React.Component {
 class MarqueeText extends React.Component {
   render() {
     return(
-          <li>{this.props.body}</li>
+          <li><span className="small">{this.props.body}</span></li>
     )
   }
 }
@@ -56,6 +56,7 @@ class InfoMarquee extends React.Component {
   getRandomMessage() {
     let l = this.props.moreYouKnowText.length;
     return this.props.moreYouKnowText.map(r => <MarqueeText key={r.id} body={r.body} />)[Math.floor(Math.random() * l)];
+
   }
 
   tickDisplay() {
@@ -72,22 +73,21 @@ class InfoMarquee extends React.Component {
 
   componentWillUnmount() {
     clearInterval(this.interval);
+
   }
 
   render() {
-
     return (
       <div>
-        <div className="intro" style={{marginTop: "35px"}}>
-          <PageHeader>
-            <span style={{color: "#FFF"}}>{this.state.secondsElapsed}</span>
-            <small>
-              <ul>
-                {this.state.message}
-              </ul>
-            </small>
-          </PageHeader>
-
+        <div id="reason" className="info-marquee-wrapper">
+            <PageHeader>
+              <span>{this.state.secondsElapsed}</span>
+              <small>
+                <ul>
+                  {this.state.message}
+                </ul>
+              </small>
+            </PageHeader>
         </div>
       </div>
     )
@@ -98,8 +98,11 @@ export default class LandingLayout extends React.Component {
   render() {
     return (
       <div>
+        <div>
+        <h2 className="intro">In My Language</h2>
+        <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
         <InfoMarquee moreYouKnowText={infoParagraphs}/>
-
+        </div>
         <div className="row">
           <div className="col-sm-4">
             <div className="react-wrapper">

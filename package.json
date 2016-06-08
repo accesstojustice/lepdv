@@ -10,13 +10,21 @@
     "test": "jest --verbose"
   },
   "jest": {
-    "testFileExtensions": ["", "js", "jsx"],
-    "moduleFileExtensions": ["", "js", "jsx"],
+    "testFileExtensions": [
+      "",
+      "js",
+      "jsx"
+    ],
+    "moduleFileExtensions": [
+      "",
+      "js",
+      "jsx"
+    ],
     "unmockedModulePathPatterns": [
-     "<rootDir>/node_modules/react",
-     "<rootDir>/node_modules/react-dom",
-     "<rootDir>/node_modules/react-addons-test-utils"
-   ]
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils"
+    ]
   },
   "repository": {
     "type": "git",
