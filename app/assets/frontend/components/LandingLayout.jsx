@@ -4,7 +4,7 @@ import React from 'react';
 
 let infoParagraphs = [
 
-  { id: 1, body: "", url:},
+  { id: 1, body: "On average, nearly 20 people per minute are physically abused by an intimate partner in the United States. During one year, this equates to more than 10 million women and men.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf"},
 ]
 
 class AccessOptions extends React.Component {
