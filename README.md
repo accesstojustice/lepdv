@@ -1,3 +1,5 @@
+[![Issue Count](https://codeclimate.com/github/accesstojustice/lepdv/badges/issue_count.svg)](https://codeclimate.com/github/accesstojustice/lepdv)
+
 LEP for DV
 =================
 

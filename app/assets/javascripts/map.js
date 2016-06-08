@@ -1,6 +1,6 @@
 
 function main() {
- cartodb.createVis('map', 'https://renemarcelo.cartodb.com/api/v2/viz/bc2f2152-e23b-11e5-8caa-0e3ff518bd15/viz.json', {
+ cartodb.createVis('map', 'https://renemarcelo.cartodb.com/api/v2/viz/fbe38ed0-2130-11e6-97bf-0ecfd53eb7d3/viz.json', {
      shareable: false,
      title: false,
      description: false,
