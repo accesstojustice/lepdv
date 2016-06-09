@@ -16,6 +16,7 @@ engines:
       - php
   eslint:
     enabled: true
+
   fixme:
     enabled: true
   rubocop:
@@ -41,4 +42,3 @@ exclude_paths:
 - test/
 - vendor/
 - "app/assets/javascripts/bundle.js"
-    
