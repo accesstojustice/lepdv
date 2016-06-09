@@ -30,6 +30,7 @@ ratings:
   - "**.slim"
   - "**.css"
   - "**.inc"
+  - "**.js"
   - "**.jsx"
   - "**.module"
   - "**.php"
@@ -39,4 +40,5 @@ exclude_paths:
 - db/
 - test/
 - vendor/
+- "app/assets/javascripts/bundle.js"
     
