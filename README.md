@@ -2,28 +2,25 @@ LEP for DV
 =================
 
 ##### What is this?
-To address issues of Limited English Proficiency w/ Domestic Violence
+To bring to light some issues of Limited English Proficiency w/ Domestic Violence
 
 ##### What problem does this solve?
-These two issues are intertwined.  This app shows in a concise manner, relevant and associated resources
+These two issues are intertwined.  In a concise manner, this site displays relevant and associated resources.
 
 ##### Project background
-ABA Techshow Hackathon project
+It started as an ABA Techshow Hackathon project, and development continues.
 
 ##### Dependencies
 * Ruby version
 2.2.1
 
-##### Current Project Status
-in development, with mockups as guide
-
 ## How to use this
 
-* ```bundle install```
-* ```rails server```
+- clone the repo then run `bundle install`
+- serve with `rails server`
 
-## How to set up the development code (for the nerds)
-uses a postgresql db ( rake db:create )
+## How to set up the development code.
+uses a running postgresql database ( after runnin `rake db:create` )
 
 ## Team
 Collaborators List:
@@ -40,9 +37,6 @@ Collaborators List:
 To Fork the project, or contribute via github issues: https://github.com/accesstojustice/lepdv/issues
 To edit content, you can use https://github.com/accesstojustice/lepdv via the edit button and a github account.
 
-
-## Copyright
-2016
 
 ## Mockups
 * associated services
