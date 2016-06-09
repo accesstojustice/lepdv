@@ -29,13 +29,9 @@ uses a postgresql db ( rake db:create )
 
 ## Team
 Collaborators List:
+Rodica
+Janet
 
-- Rene M Paccha
-- Kulsum Ameji
-- Rodica Trifan
-- Janet Rosas
-- Lorena Ramos
-- Eileen McFarland
 
 
 ## How to Contribute
