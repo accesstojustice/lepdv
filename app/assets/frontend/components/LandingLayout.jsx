@@ -1,5 +1,5 @@
 
-import { Button, PageHeader } from 'react-bootstrap';
+import { Button, PageHeader, Panel } from 'react-bootstrap';
 import React from 'react';
 
 let infoParagraphs = [
@@ -19,11 +19,25 @@ let infoParagraphs = [
 ]
 
 class AccessOptions extends React.Component {
+  constructor(...args) {
+   super(...args);
+   this.state = {
+     open: true
+   };
+ }
+
   render() {
     return (
       <div>
         <h3 className="center">Resource Options</h3>
-        <Button bsStyle="primary" block>Multilingual Safety Plans</Button>
+        <Button
+          bsStyle="primary"
+          block
+          onClick={ ()=> this.setState({ open: !this.state.open })}>Multilingual Safety Plans</Button>
+        <Panel collapsible expanded={this.state.open}>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+          Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </Panel>
         <Button bsStyle="primary" block>Right to Interpreter</Button>
         <Button bsStyle="primary" block>Interpretation Contact</Button>
         <Button bsStyle="primary" block>Legal Terms</Button>
