@@ -53,3 +53,11 @@ h3, h4, h5, .h3, .h4, .h5 {
 #reason {
   height: 115px;
 }
+
+.panel.panel-default {
+  margin-bottom: 2px;
+}
+
+ul {
+  color: #333;
+}

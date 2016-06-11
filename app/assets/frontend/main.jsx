@@ -8,7 +8,6 @@ class Main extends React.Component {
       <div>
         <LandingLayout />
       </div>
-
     )
   }
 }

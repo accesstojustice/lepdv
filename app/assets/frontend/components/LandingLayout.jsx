@@ -27,18 +27,46 @@ class AccessOptions extends React.Component {
  }
 
   render() {
+
+
     return (
       <div>
         <h3 className="center">Resource Options</h3>
-        <Button
-          bsStyle="primary"
-          block
-          onClick={ ()=> this.setState({ open: !this.state.open })}>Multilingual Safety Plans</Button>
-        <Panel collapsible expanded={this.state.open}>
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-          Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-        </Panel>
-        <Button bsStyle="primary" block>Right to Interpreter</Button>
+          <Button
+            bsStyle="primary"
+            block
+            onClick={ ()=> this.setState({ open: !this.state.open })}>Multilingual Safety Plans</Button>
+          <Panel collapsible expanded={this.state.open}>
+            <ul>
+              <li><strong>Introduction: </strong>You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children</li>
+              <li><strong>Taking Care of Yourself: </strong>Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)</li>
+              <li><strong>Escape Plan: </strong>Make Copies of:  Marriage certificate, divorce papers, custody documentation, court orders, restraining orders, or other legal documents; Work Permits; Bank Books</li>
+            </ul>
+            <a href='http://www.pcawa.net/uploads/1/4/7/1/14711308/pcawa_safety_handbook_2010_10_28_-_eng.pdf'>
+              <div className="pull-right">
+                <Button className="source" bsStyle="default" bsSize="xsmall">- source</Button>
+              </div>
+            </a>
+
+          </Panel>
+
+          <Button
+            bsStyle="primary"
+            block
+            onClick={ ()=> this.setState({ open: !this.state.open })}>Right to an Interpreter</Button>
+          <Panel collapsible expanded={this.state.open}>
+            <ul>
+              <li>Describe your roles and clarify expectations</li>
+              <li>Ensure that the interpreter is taking notes</li>
+              <li>Pause frequently to allow the interpreter to translate information</li>
+            </ul>
+            <a href='http://www.asha.org/practice/multicultural/issues/interpret.htm'>
+              <div className="pull-right">
+                <Button className="source" bsStyle="default" bsSize="xsmall">- source</Button>
+              </div>
+            </a>
+          </Panel>
+
         <Button bsStyle="primary" block>Interpretation Contact</Button>
         <Button bsStyle="primary" block>Legal Terms</Button>
         <Button bsStyle="primary" block>I'm Going to Court</Button>
