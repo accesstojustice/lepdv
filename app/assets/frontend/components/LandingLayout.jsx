@@ -225,6 +225,11 @@ class AccessOptions extends React.Component {
                   </ul>
                 </small>
               </PageHeader>
+              <div id="engage-box" className="p2 border rounded">
+                <a href="#"><i class="fa fa-flag-o" aria-hidden="true"></i>primary engage</a>
+
+              </div>
+
             </div>
           </div>
         )
