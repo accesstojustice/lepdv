@@ -20210,8 +20210,53 @@
 	
 	var infoParagraphs = [{ id: 1, body: "Every 9 seconds in the US, a woman is assaulted or beaten.", url: "http://www.bjs.gov/content/pub/pdf/FEMVIED.PDF" }, { id: 2, body: "On average, nearly 20 people per minute are physically abused by an intimate partner in the United States. During one year, this equates to more than 10 million women and men.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 3, body: "1 in 3 women and 1 in 4 men have been victims of [some form of] physical violence by an intimate partner within their lifetime.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 4, body: "1 in 5 women and 1 in 7 men have been victims of severe physical violence by an intimate partner in their lifetime.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 5, body: "1 in 7 women and 1 in 18 men have been stalked by an intimate partner during their lifetime to the point in which they felt very fearful or believed that they or someone close to them would be harmed or killed.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 6, body: "On a typical day, there are more than 20,000 phone calls placed to domestic violence hotlines nationwide.", url: "http://nnedv.org/downloads/Census/DVCounts2013/DVCounts13_NatlSummary.pdf" }, { id: 7, body: "The presence of a gun in a domestic violence situation increases the risk of homicide by 500%.", url: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1447915/" }, { id: 8, body: "Intimate partner violence accounts for 15% of all violent crime.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 9, body: "Women between the ages of 18-24 are most commonly abused by an intimate partner.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 10, body: "19% of domestic violence involves a weapon.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 11, body: "Domestic victimization is correlated with a higher rate of depression and suicidal behavior.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 12, body: "Only 34% of people who are injured by intimate partners receive medical care for their injuries.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }];
 	
-	var AccessOptions = function (_React$Component) {
-	  _inherits(AccessOptions, _React$Component);
+	var ProperRequest = function (_React$Component) {
+	  _inherits(ProperRequest, _React$Component);
+	
+	  function ProperRequest() {
+	    _classCallCheck(this, ProperRequest);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ProperRequest).apply(this, arguments));
+	  }
+	
+	  _createClass(ProperRequest, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'print-tip center' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'http://12.218.239.52/Forms/pdf_files/CCG0108.pdf' },
+	          _react2.default.createElement(
+	            'small',
+	            null,
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              'Affirmatively'
+	            ),
+	            ' ask for an interpreter.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'pull-left' },
+	            _react2.default.createElement(
+	              _reactBootstrap.Button,
+	              { className: 'source', bsStyle: 'warning', bsSize: 'xsmall' },
+	              'printable form'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return ProperRequest;
+	}(_react2.default.Component);
+	
+	var AccessOptions = function (_React$Component2) {
+	  _inherits(AccessOptions, _React$Component2);
 	
 	  function AccessOptions() {
 	    var _Object$getPrototypeO;
@@ -20222,18 +20267,18 @@
 	      args[_key] = arguments[_key];
 	    }
 	
-	    var _this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO, [this].concat(args)));
+	    var _this2 = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO, [this].concat(args)));
 	
-	    _this.state = {
+	    _this2.state = {
 	      open: true
 	    };
-	    return _this;
+	    return _this2;
 	  }
 	
 	  _createClass(AccessOptions, [{
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
+	      var _this3 = this;
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -20249,7 +20294,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this3.setState({ open: !_this3.state.open });
 	            } },
 	          'Multilingual Safety Plans'
 	        ),
@@ -20310,9 +20355,50 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this3.setState({ open: !_this3.state.open });
 	            } },
 	          'Right to an Interpreter'
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Panel,
+	          { collapsible: true, expanded: this.state.open },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Although the United States Constitution does not explicitly provide for the right to an interpreter, the individual rights and liberties afforded to all individuals under the Fourth, Fifth, Sixth, Eighth and Fourteenth Amendments are meaningless for non- or limited-English speakers unless they are provided with complete, competent, and accurate interpreting services.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'In recent years, the U.S. Department of Justice has been reviewing state court\'s compliance with this executive order.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'http://www.najit.org/certification/faq.php' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'pull-right' },
+	              _react2.default.createElement(
+	                _reactBootstrap.Button,
+	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
+	                '- source'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(ProperRequest, null)
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Button,
+	          { bsStyle: 'primary',
+	            block: true,
+	            onClick: function onClick() {
+	              return _this3.setState({ open: !_this3.state.open });
+	            } },
+	          'Interpretation Contact'
 	        ),
 	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
@@ -20352,18 +20438,102 @@
 	        ),
 	        _react2.default.createElement(
 	          _reactBootstrap.Button,
-	          { bsStyle: 'primary', block: true },
-	          'Interpretation Contact'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Button,
-	          { bsStyle: 'primary', block: true },
+	          {
+	            bsStyle: 'primary',
+	            block: true,
+	            onClick: function onClick() {
+	              return _this3.setState({ open: !_this3.state.open });
+	            } },
 	          'Legal Terms'
 	        ),
 	        _react2.default.createElement(
+	          _reactBootstrap.Panel,
+	          { collapsible: true, expanded: this.state.open },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Words and phrases used in the courtroom and conversational-English are ',
+	              _react2.default.createElement(
+	                'strong',
+	                null,
+	                'not'
+	              ),
+	              ' the same.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Note: translations are various and my differ, according to regional dialects of target (foreign) language used, etc.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'em',
+	                null,
+	                'To say the least:'
+	              ),
+	              'Children of the victim, or the offending party -- ',
+	              _react2.default.createElement(
+	                'strong',
+	                null,
+	                'do not make adequate interpreters.'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'http://www.abajournal.com/magazine/article/justice_moves_slowly_for_those_who_need_interpreters' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'pull-right' },
+	              _react2.default.createElement(
+	                _reactBootstrap.Button,
+	                { className: 'source', bsStyle: 'warning', bsSize: 'xsmall' },
+	                'more on this topic'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
 	          _reactBootstrap.Button,
-	          { bsStyle: 'primary', block: true },
+	          {
+	            bsStyle: 'primary',
+	            block: true,
+	            onClick: function onClick() {
+	              return _this3.setState({ open: !_this3.state.open });
+	            } },
 	          'I\'m Going to Court'
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Panel,
+	          { collapsible: true, expanded: this.state.open },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'You cannot contact the office of interpreter services directly.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'http://www.cookcountycourt.org/ABOUTTHECOURT/OfficeoftheChiefJudge/CourtRelatedServices/OfficeofInterpreterServices.aspx' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'pull-right' },
+	              _react2.default.createElement(
+	                _reactBootstrap.Button,
+	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
+	                '- source'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(ProperRequest, null)
 	        )
 	      );
 	    }
@@ -20372,8 +20542,8 @@
 	  return AccessOptions;
 	}(_react2.default.Component);
 	
-	var Map = function (_React$Component2) {
-	  _inherits(Map, _React$Component2);
+	var Map = function (_React$Component3) {
+	  _inherits(Map, _React$Component3);
 	
 	  function Map() {
 	    _classCallCheck(this, Map);
@@ -20395,8 +20565,8 @@
 	  return Map;
 	}(_react2.default.Component);
 	
-	var MarqueeText = function (_React$Component3) {
-	  _inherits(MarqueeText, _React$Component3);
+	var MarqueeText = function (_React$Component4) {
+	  _inherits(MarqueeText, _React$Component4);
 	
 	  function MarqueeText() {
 	    _classCallCheck(this, MarqueeText);
@@ -20422,22 +20592,22 @@
 	  return MarqueeText;
 	}(_react2.default.Component);
 	
-	var InfoMarquee = function (_React$Component4) {
-	  _inherits(InfoMarquee, _React$Component4);
+	var InfoMarquee = function (_React$Component5) {
+	  _inherits(InfoMarquee, _React$Component5);
 	
 	  function InfoMarquee(props) {
 	    _classCallCheck(this, InfoMarquee);
 	
-	    var _this5 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
+	    var _this6 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
 	
-	    var initialMessage = _this5.getRandomMessage();
-	    _this5.state = {
+	    var initialMessage = _this6.getRandomMessage();
+	    _this6.state = {
 	      message: initialMessage,
 	      messagesElapsed: 0
 	    };
-	    _this5.tickDisplay = _this5.tickDisplay.bind(_this5);
+	    _this6.tickDisplay = _this6.tickDisplay.bind(_this6);
 	    // this.getRandomMessage = this.getRandomMessage.bind(this);
-	    return _this5;
+	    return _this6;
 	  }
 	
 	  _createClass(InfoMarquee, [{
@@ -20502,8 +20672,8 @@
 	  return InfoMarquee;
 	}(_react2.default.Component);
 	
-	var LandingLayout = function (_React$Component5) {
-	  _inherits(LandingLayout, _React$Component5);
+	var LandingLayout = function (_React$Component6) {
+	  _inherits(LandingLayout, _React$Component6);
 	
 	  function LandingLayout() {
 	    _classCallCheck(this, LandingLayout);

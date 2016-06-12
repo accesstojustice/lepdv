@@ -61,3 +61,8 @@ h3, h4, h5, .h3, .h4, .h5 {
 ul {
   color: #333;
 }
+
+.print-tip {
+    padding: 15px;
+    margin-left: -15px;
+}
