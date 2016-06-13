@@ -19730,8 +19730,47 @@
 
 	var infoParagraphs = [{ id: 1, body: "Every 9 seconds in the US, a woman is assaulted or beaten.", url: "http://www.bjs.gov/content/pub/pdf/FEMVIED.PDF" }, { id: 2, body: "On average, nearly 20 people per minute are physically abused by an intimate partner in the United States. During one year, this equates to more than 10 million women and men.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 3, body: "1 in 3 women and 1 in 4 men have been victims of [some form of] physical violence by an intimate partner within their lifetime.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 4, body: "1 in 5 women and 1 in 7 men have been victims of severe physical violence by an intimate partner in their lifetime.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 5, body: "1 in 7 women and 1 in 18 men have been stalked by an intimate partner during their lifetime to the point in which they felt very fearful or believed that they or someone close to them would be harmed or killed.", url: "http://www.cdc.gov/violenceprevention/pdf/nisvs_report2010-a.pdf" }, { id: 6, body: "On a typical day, there are more than 20,000 phone calls placed to domestic violence hotlines nationwide.", url: "http://nnedv.org/downloads/Census/DVCounts2013/DVCounts13_NatlSummary.pdf" }, { id: 7, body: "The presence of a gun in a domestic violence situation increases the risk of homicide by 500%.", url: "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1447915/" }, { id: 8, body: "Intimate partner violence accounts for 15% of all violent crime.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 9, body: "Women between the ages of 18-24 are most commonly abused by an intimate partner.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 10, body: "19% of domestic violence involves a weapon.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 11, body: "Domestic victimization is correlated with a higher rate of depression and suicidal behavior.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }, { id: 12, body: "Only 34% of people who are injured by intimate partners receive medical care for their injuries.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf" }];
 
-	var ProperRequest = function (_React$Component) {
-	  _inherits(ProperRequest, _React$Component);
+	var engageQuestion = [{ id: 1, body: "Are you prohibited from opening a bank account in your name?" }];
+
+	var EngageBox = function (_React$Component) {
+	  _inherits(EngageBox, _React$Component);
+
+	  function EngageBox() {
+	    _classCallCheck(this, EngageBox);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(EngageBox).apply(this, arguments));
+	  }
+
+	  _createClass(EngageBox, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'engage-box', className: 'p1 myt0 border rounded block' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: '#' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Button,
+	            { id: 'engageButton', bsSize: 'xsmall' },
+	            _react2.default.createElement('i', { className: 'fa fa-flag-o fa-lg', 'aria-hidden': 'true' }),
+	            ' Another Question'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'engageText' },
+	          this.props.question.body
+	        )
+	      );
+	    }
+	  }]);
+
+	  return EngageBox;
+	}(_react2.default.Component);
+
+	var ProperRequest = function (_React$Component2) {
+	  _inherits(ProperRequest, _React$Component2);
 
 	  function ProperRequest() {
 	    _classCallCheck(this, ProperRequest);
@@ -19775,8 +19814,8 @@
 	  return ProperRequest;
 	}(_react2.default.Component);
 
-	var AccessOptions = function (_React$Component2) {
-	  _inherits(AccessOptions, _React$Component2);
+	var AccessOptions = function (_React$Component3) {
+	  _inherits(AccessOptions, _React$Component3);
 
 	  function AccessOptions() {
 	    var _Object$getPrototypeO;
@@ -19787,25 +19826,25 @@
 	      args[_key] = arguments[_key];
 	    }
 
-	    var _this2 = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO, [this].concat(args)));
+	    var _this3 = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO, [this].concat(args)));
 
-	    _this2.state = {
-	      open: true
+	    _this3.state = {
+	      open: false
 	    };
-	    return _this2;
+	    return _this3;
 	  }
 
 	  _createClass(AccessOptions, [{
 	    key: 'render',
 	    value: function render() {
-	      var _this3 = this;
+	      var _this4 = this;
 
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
 	          'h3',
-	          { className: 'center' },
+	          { className: 'center block' },
 	          'Resource Options'
 	        ),
 	        _react2.default.createElement(
@@ -19814,7 +19853,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this3.setState({ open: !_this3.state.open });
+	              return _this4.setState({ open: !_this4.state.open });
 	            } },
 	          'Multilingual Safety Plans'
 	        ),
@@ -19875,7 +19914,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this3.setState({ open: !_this3.state.open });
+	              return _this4.setState({ open: !_this4.state.open });
 	            } },
 	          'Right to an Interpreter'
 	        ),
@@ -19916,7 +19955,7 @@
 	          { bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this3.setState({ open: !_this3.state.open });
+	              return _this4.setState({ open: !_this4.state.open });
 	            } },
 	          'Interpretation Contact'
 	        ),
@@ -19962,7 +20001,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this3.setState({ open: !_this3.state.open });
+	              return _this4.setState({ open: !_this4.state.open });
 	            } },
 	          'Legal Terms'
 	        ),
@@ -19994,7 +20033,7 @@
 	              _react2.default.createElement(
 	                'em',
 	                null,
-	                'To say the least:'
+	                'Attention: '
 	              ),
 	              'Children of the victim, or the offending party -- ',
 	              _react2.default.createElement(
@@ -20024,7 +20063,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this3.setState({ open: !_this3.state.open });
+	              return _this4.setState({ open: !_this4.state.open });
 	            } },
 	          'I\'m Going to Court'
 	        ),
@@ -20062,8 +20101,8 @@
 	  return AccessOptions;
 	}(_react2.default.Component);
 
-	var Map = function (_React$Component3) {
-	  _inherits(Map, _React$Component3);
+	var Map = function (_React$Component4) {
+	  _inherits(Map, _React$Component4);
 
 	  function Map() {
 	    _classCallCheck(this, Map);
@@ -20085,8 +20124,8 @@
 	  return Map;
 	}(_react2.default.Component);
 
-	var MarqueeText = function (_React$Component4) {
-	  _inherits(MarqueeText, _React$Component4);
+	var MarqueeText = function (_React$Component5) {
+	  _inherits(MarqueeText, _React$Component5);
 
 	  function MarqueeText() {
 	    _classCallCheck(this, MarqueeText);
@@ -20112,22 +20151,22 @@
 	  return MarqueeText;
 	}(_react2.default.Component);
 
-	var InfoMarquee = function (_React$Component5) {
-	  _inherits(InfoMarquee, _React$Component5);
+	var InfoMarquee = function (_React$Component6) {
+	  _inherits(InfoMarquee, _React$Component6);
 
 	  function InfoMarquee(props) {
 	    _classCallCheck(this, InfoMarquee);
 
-	    var _this6 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
+	    var _this7 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
 
-	    var initialMessage = _this6.getRandomMessage();
-	    _this6.state = {
+	    var initialMessage = _this7.getRandomMessage();
+	    _this7.state = {
 	      message: initialMessage,
 	      messagesElapsed: 0
 	    };
-	    _this6.tickDisplay = _this6.tickDisplay.bind(_this6);
+	    _this7.tickDisplay = _this7.tickDisplay.bind(_this7);
 	    // this.getRandomMessage = this.getRandomMessage.bind(this);
-	    return _this6;
+	    return _this7;
 	  }
 
 	  _createClass(InfoMarquee, [{
@@ -20160,9 +20199,10 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { id: 'engageBoxWrapper' },
 	        _react2.default.createElement(
 	          'div',
 	          { id: 'reason', className: 'info-marquee-wrapper' },
@@ -20184,7 +20224,8 @@
 	              )
 	            )
 	          )
-	        )
+	        ),
+	        _react2.default.createElement(EngageBox, { question: engageQuestion[0] })
 	      );
 	    }
 	  }]);
@@ -20192,8 +20233,8 @@
 	  return InfoMarquee;
 	}(_react2.default.Component);
 
-	var LandingLayout = function (_React$Component6) {
-	  _inherits(LandingLayout, _React$Component6);
+	var LandingLayout = function (_React$Component7) {
+	  _inherits(LandingLayout, _React$Component7);
 
 	  function LandingLayout() {
 	    _classCallCheck(this, LandingLayout);

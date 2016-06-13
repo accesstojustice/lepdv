@@ -54,3 +54,5 @@ gem 'turbolinks'
 
 gem 'unicorn'
 gem 'raindrops', '~>0.16'
+
+gem 'font-awesome-rails'

@@ -66,3 +66,26 @@ ul {
     padding: 15px;
     margin-left: -15px;
 }
+
+#engage-box {
+    top: 10%;
+    position: relative;
+    width: 85%;
+    padding: 20px;
+    margin: -30px auto 25px 20px;
+}
+
+#engageButton {
+    color: #252525;
+    background-color: rgba(0,0,0,0.1);
+    margin: 5px 15px 5px auto;
+}
+
+#engageButton > i {
+  color: #AA2250;
+  margin: 2px 4px;
+}
+
+div#engageText, div#engageText:hover {
+    color: #D34;
+}
