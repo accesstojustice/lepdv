@@ -60,7 +60,7 @@ class AccessOptions extends React.Component {
   constructor(...args) {
     super(...args);
     this.state = {
-      open: true
+      open: false
     };
   }
 
@@ -228,7 +228,7 @@ class AccessOptions extends React.Component {
       }
 
       componentDidMount() {
-        this.interval = setInterval(this.tickDisplay, 1000);
+        this.interval = setInterval(this.tickDisplay, 10000);
       }
 
       componentWillUnmount() {

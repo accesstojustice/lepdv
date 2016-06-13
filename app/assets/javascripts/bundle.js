@@ -19829,7 +19829,7 @@
 	    var _this3 = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO, [this].concat(args)));
 
 	    _this3.state = {
-	      open: true
+	      open: false
 	    };
 	    return _this3;
 	  }
@@ -20189,7 +20189,7 @@
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      this.interval = setInterval(this.tickDisplay, 1000);
+	      this.interval = setInterval(this.tickDisplay, 10000);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
