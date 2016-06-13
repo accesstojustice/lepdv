@@ -19,7 +19,7 @@ let infoParagraphs = [
 ]
 
 let engageQuestion = [
-  { id: 1, body: "Are you prohibited from opening a bank account in your name?" },
+  { id: 1, body: "Do you have independence in your finances?" },
 ]
 
 class EngageBox extends React.Component {
