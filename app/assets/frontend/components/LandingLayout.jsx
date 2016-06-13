@@ -18,6 +18,29 @@ let infoParagraphs = [
   { id: 12, body: "Only 34% of people who are injured by intimate partners receive medical care for their injuries.", url: "http://www.bjs.gov/content/pub/pdf/ndv0312.pdf"},
 ]
 
+let engageQuestion = [
+  { id: 1, body: "Are you prohibited from opening a bank account in your name?" },
+]
+
+class EngageBox extends React.Component {
+  render() {
+    return (
+      <div id="engage-box" className="p1 myt0 border rounded block">
+        <a href="#">
+          <Button id="engageButton" bsSize="xsmall">
+          <i className="fa fa-flag-o fa-lg" aria-hidden="true"></i> Another Question
+          </Button>
+        </a>
+          <div id="engageText">
+            { this.props.question.body }
+          </div>
+
+
+      </div>
+    )
+  }
+}
+
 class ProperRequest extends React.Component {
   render() {
     return (
@@ -46,7 +69,7 @@ class AccessOptions extends React.Component {
 
     return (
       <div>
-        <h3 className="center">Resource Options</h3>
+        <h3 className="center block">Resource Options</h3>
         <Button
           bsStyle="primary"
           block
@@ -121,7 +144,7 @@ class AccessOptions extends React.Component {
             <ul>
               <li>Words and phrases used in the courtroom and conversational-English are <strong>not</strong> the same.</li>
               <li>Note: translations are various and my differ, according to regional dialects of target (foreign) language used, etc.</li>
-              <li><em>To say the least:</em>Children of the victim, or the offending party -- <strong>do not make adequate interpreters.</strong></li>
+              <li><em>Attention: </em>Children of the victim, or the offending party -- <strong>do not make adequate interpreters.</strong></li>
             </ul>
             {/* // TODO: link to an interpreter resource that helps decifer phrases, or glossaries
               <a href='https://publicapps.illinoiscourts.gov/pub/f?p=303:25:'>
@@ -205,7 +228,7 @@ class AccessOptions extends React.Component {
       }
 
       componentDidMount() {
-        this.interval = setInterval(this.tickDisplay, 10000);
+        this.interval = setInterval(this.tickDisplay, 1000);
       }
 
       componentWillUnmount() {
@@ -214,8 +237,10 @@ class AccessOptions extends React.Component {
       }
 
       render() {
+
+
         return (
-          <div>
+          <div id="engageBoxWrapper">
             <div id="reason" className="info-marquee-wrapper">
               <PageHeader>
                 <span>{this.state.secondsElapsed}</span>
@@ -225,12 +250,8 @@ class AccessOptions extends React.Component {
                   </ul>
                 </small>
               </PageHeader>
-              <div id="engage-box" className="p2 border rounded">
-                <a href="#"><i class="fa fa-flag-o" aria-hidden="true"></i>primary engage</a>
-
-              </div>
-
             </div>
+            <EngageBox question={ engageQuestion[0]}/>
           </div>
         )
       }
