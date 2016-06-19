@@ -89,3 +89,8 @@ ul {
 div#engageText, div#engageText:hover {
     color: #D34;
 }
+
+#chart {
+  min-height: 400px;
+  
+}
