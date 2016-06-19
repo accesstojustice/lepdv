@@ -20124,8 +20124,31 @@
 	  return Map;
 	}(_react2.default.Component);
 
-	var MarqueeText = function (_React$Component5) {
-	  _inherits(MarqueeText, _React$Component5);
+	var Chart = function (_React$Component5) {
+	  _inherits(Chart, _React$Component5);
+
+	  function Chart() {
+	    _classCallCheck(this, Chart);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Chart).apply(this, arguments));
+	  }
+
+	  _createClass(Chart, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement('div', { id: 'chart' })
+	      );
+	    }
+	  }]);
+
+	  return Chart;
+	}(_react2.default.Component);
+
+	var MarqueeText = function (_React$Component6) {
+	  _inherits(MarqueeText, _React$Component6);
 
 	  function MarqueeText() {
 	    _classCallCheck(this, MarqueeText);
@@ -20151,22 +20174,22 @@
 	  return MarqueeText;
 	}(_react2.default.Component);
 
-	var InfoMarquee = function (_React$Component6) {
-	  _inherits(InfoMarquee, _React$Component6);
+	var InfoMarquee = function (_React$Component7) {
+	  _inherits(InfoMarquee, _React$Component7);
 
 	  function InfoMarquee(props) {
 	    _classCallCheck(this, InfoMarquee);
 
-	    var _this7 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
+	    var _this8 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
 
-	    var initialMessage = _this7.getRandomMessage();
-	    _this7.state = {
+	    var initialMessage = _this8.getRandomMessage();
+	    _this8.state = {
 	      message: initialMessage,
 	      messagesElapsed: 0
 	    };
-	    _this7.tickDisplay = _this7.tickDisplay.bind(_this7);
+	    _this8.tickDisplay = _this8.tickDisplay.bind(_this8);
 	    // this.getRandomMessage = this.getRandomMessage.bind(this);
-	    return _this7;
+	    return _this8;
 	  }
 
 	  _createClass(InfoMarquee, [{
@@ -20233,8 +20256,8 @@
 	  return InfoMarquee;
 	}(_react2.default.Component);
 
-	var LandingLayout = function (_React$Component7) {
-	  _inherits(LandingLayout, _React$Component7);
+	var LandingLayout = function (_React$Component8) {
+	  _inherits(LandingLayout, _React$Component8);
 
 	  function LandingLayout() {
 	    _classCallCheck(this, LandingLayout);
@@ -20278,7 +20301,12 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-sm-7 col-sm-offset-1' },
-	            _react2.default.createElement(Map, null)
+	            _react2.default.createElement(Map, null),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-sm-12 my2 mln4 py4' },
+	              _react2.default.createElement(Chart, null)
+	            )
 	          )
 	        )
 	      );
