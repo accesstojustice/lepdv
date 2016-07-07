@@ -20212,8 +20212,71 @@
 	
 	var engageQuestion = [{ id: 1, body: "Do you have independence in your finances?" }];
 	
-	var EngageBox = function (_React$Component) {
-	  _inherits(EngageBox, _React$Component);
+	var randomExitUrl = [{ id: 1, url: "http://google.com" }, { id: 2, url: "http://yahoo.com" }];
+	
+	var ExitButton = function (_React$Component) {
+	  _inherits(ExitButton, _React$Component);
+	
+	  function ExitButton() {
+	    var _Object$getPrototypeO;
+	
+	    _classCallCheck(this, ExitButton);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    var _this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(ExitButton)).call.apply(_Object$getPrototypeO, [this].concat(args)));
+	
+	    _this.state = { exitUrl: _this.randomExitUrl() || '' };
+	    return _this;
+	  }
+	
+	  _createClass(ExitButton, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      if (this.state.exitUrl.length === 0) {
+	        this.handleMouseOver();
+	      }
+	    }
+	  }, {
+	    key: 'randomExitUrl',
+	    value: function randomExitUrl() {
+	      var urlArray = this.props.randomExitUrl;
+	      var l = this.props.randomExitUrl.length;
+	      var url = urlArray[Math.floor(Math.random() * l)].url;
+	      return url;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'exit-box' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: this.state.exitUrl },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'fa-stack fa-5x' },
+	            _react2.default.createElement('i', { id: 'exitbutton', className: 'fa fa-sign-out fa-stack-2x' }),
+	            _react2.default.createElement(
+	              'strong',
+	              { className: 'fa-stack-1x exit-text' },
+	              'exit'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return ExitButton;
+	}(_react2.default.Component);
+	
+	var EngageBox = function (_React$Component2) {
+	  _inherits(EngageBox, _React$Component2);
 	
 	  function EngageBox() {
 	    _classCallCheck(this, EngageBox);
@@ -20249,8 +20312,8 @@
 	  return EngageBox;
 	}(_react2.default.Component);
 	
-	var ProperRequest = function (_React$Component2) {
-	  _inherits(ProperRequest, _React$Component2);
+	var ProperRequest = function (_React$Component3) {
+	  _inherits(ProperRequest, _React$Component3);
 	
 	  function ProperRequest() {
 	    _classCallCheck(this, ProperRequest);
@@ -20294,30 +20357,30 @@
 	  return ProperRequest;
 	}(_react2.default.Component);
 	
-	var AccessOptions = function (_React$Component3) {
-	  _inherits(AccessOptions, _React$Component3);
+	var AccessOptions = function (_React$Component4) {
+	  _inherits(AccessOptions, _React$Component4);
 	
 	  function AccessOptions() {
-	    var _Object$getPrototypeO;
+	    var _Object$getPrototypeO2;
 	
 	    _classCallCheck(this, AccessOptions);
 	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
+	    for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+	      args[_key2] = arguments[_key2];
 	    }
 	
-	    var _this3 = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO, [this].concat(args)));
+	    var _this4 = _possibleConstructorReturn(this, (_Object$getPrototypeO2 = Object.getPrototypeOf(AccessOptions)).call.apply(_Object$getPrototypeO2, [this].concat(args)));
 	
-	    _this3.state = {
+	    _this4.state = {
 	      open: false
 	    };
-	    return _this3;
+	    return _this4;
 	  }
 	
 	  _createClass(AccessOptions, [{
 	    key: 'render',
 	    value: function render() {
-	      var _this4 = this;
+	      var _this5 = this;
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -20333,7 +20396,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this4.setState({ open: !_this4.state.open });
+	              return _this5.setState({ open: !_this5.state.open });
 	            } },
 	          'Multilingual Safety Plans'
 	        ),
@@ -20394,7 +20457,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this4.setState({ open: !_this4.state.open });
+	              return _this5.setState({ open: !_this5.state.open });
 	            } },
 	          'Right to an Interpreter'
 	        ),
@@ -20435,7 +20498,7 @@
 	          { bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this4.setState({ open: !_this4.state.open });
+	              return _this5.setState({ open: !_this5.state.open });
 	            } },
 	          'Interpretation Contact'
 	        ),
@@ -20481,7 +20544,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this4.setState({ open: !_this4.state.open });
+	              return _this5.setState({ open: !_this5.state.open });
 	            } },
 	          'Legal Terms'
 	        ),
@@ -20543,7 +20606,7 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this4.setState({ open: !_this4.state.open });
+	              return _this5.setState({ open: !_this5.state.open });
 	            } },
 	          'I\'m Going to Court'
 	        ),
@@ -20581,8 +20644,8 @@
 	  return AccessOptions;
 	}(_react2.default.Component);
 	
-	var Map = function (_React$Component4) {
-	  _inherits(Map, _React$Component4);
+	var Map = function (_React$Component5) {
+	  _inherits(Map, _React$Component5);
 	
 	  function Map() {
 	    _classCallCheck(this, Map);
@@ -20604,8 +20667,8 @@
 	  return Map;
 	}(_react2.default.Component);
 	
-	var Chart = function (_React$Component5) {
-	  _inherits(Chart, _React$Component5);
+	var Chart = function (_React$Component6) {
+	  _inherits(Chart, _React$Component6);
 	
 	  function Chart() {
 	    _classCallCheck(this, Chart);
@@ -20627,8 +20690,8 @@
 	  return Chart;
 	}(_react2.default.Component);
 	
-	var MarqueeText = function (_React$Component6) {
-	  _inherits(MarqueeText, _React$Component6);
+	var MarqueeText = function (_React$Component7) {
+	  _inherits(MarqueeText, _React$Component7);
 	
 	  function MarqueeText() {
 	    _classCallCheck(this, MarqueeText);
@@ -20654,22 +20717,22 @@
 	  return MarqueeText;
 	}(_react2.default.Component);
 	
-	var InfoMarquee = function (_React$Component7) {
-	  _inherits(InfoMarquee, _React$Component7);
+	var InfoMarquee = function (_React$Component8) {
+	  _inherits(InfoMarquee, _React$Component8);
 	
 	  function InfoMarquee(props) {
 	    _classCallCheck(this, InfoMarquee);
 	
-	    var _this8 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
+	    var _this9 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoMarquee).call(this, props));
 	
-	    var initialMessage = _this8.getRandomMessage();
-	    _this8.state = {
+	    var initialMessage = _this9.getRandomMessage();
+	    _this9.state = {
 	      message: initialMessage,
 	      messagesElapsed: 0
 	    };
-	    _this8.tickDisplay = _this8.tickDisplay.bind(_this8);
+	    _this9.tickDisplay = _this9.tickDisplay.bind(_this9);
 	    // this.getRandomMessage = this.getRandomMessage.bind(this);
-	    return _this8;
+	    return _this9;
 	  }
 	
 	  _createClass(InfoMarquee, [{
@@ -20736,8 +20799,8 @@
 	  return InfoMarquee;
 	}(_react2.default.Component);
 	
-	var LandingLayout = function (_React$Component8) {
-	  _inherits(LandingLayout, _React$Component8);
+	var LandingLayout = function (_React$Component9) {
+	  _inherits(LandingLayout, _React$Component9);
 	
 	  function LandingLayout() {
 	    _classCallCheck(this, LandingLayout);
@@ -20753,18 +20816,27 @@
 	        null,
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'col-md-2 col-xs-2' },
+	          _react2.default.createElement(ExitButton, { randomExitUrl: randomExitUrl })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
 	          _react2.default.createElement(
-	            'h2',
-	            { className: 'intro' },
-	            'In My Language'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'intro-subtext' },
-	            'Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.'
-	          ),
-	          _react2.default.createElement(InfoMarquee, { moreYouKnowText: infoParagraphs })
+	            'div',
+	            { className: 'col-md-10 col-xs-10' },
+	            _react2.default.createElement(
+	              'h2',
+	              { className: 'intro' },
+	              'In My Language'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'intro-subtext' },
+	              'Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.'
+	            ),
+	            _react2.default.createElement(InfoMarquee, { moreYouKnowText: infoParagraphs })
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',

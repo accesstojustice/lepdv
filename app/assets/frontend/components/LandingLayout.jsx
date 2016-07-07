@@ -22,6 +22,55 @@ let engageQuestion = [
   { id: 1, body: "Do you have independence in your finances?" },
 ]
 
+let randomExitUrl = [
+  {id: 1, url: "http://google.com"},
+  {id: 2, url: "http://yahoo.com"},
+]
+
+class ExitButton extends React.Component {
+  constructor(...args) {
+    super(...args);
+    this.state = { exitUrl: this.randomExitUrl() || '' }
+  }
+
+  componentDidMount() {
+    if (this.state.exitUrl.length === 0 ) {
+      this.handleMouseOver();
+    }
+
+  }
+
+  randomExitUrl() {
+    let urlArray = this.props.randomExitUrl;
+    let l = this.props.randomExitUrl.length
+    let url = urlArray[Math.floor(Math.random() * l)].url;
+    return url;
+
+  }
+
+  render() {
+
+
+    return (
+
+      <div className="exit-box">
+        <a href={this.state.exitUrl} >
+          <span className="fa-stack fa-5x">
+            <i id="exitbutton" className="fa fa-sign-out fa-stack-2x"></i>
+            <strong className="fa-stack-1x exit-text">exit</strong>
+          </span>
+
+
+        </a>
+
+      </div>
+
+
+
+    )
+  }
+
+}
 class EngageBox extends React.Component {
   render() {
     return (
@@ -69,6 +118,7 @@ class EngageBox extends React.Component {
 
       return (
         <div>
+
           <h3 className="center block">Resource Options</h3>
           <Button
             bsStyle="primary"
@@ -271,11 +321,17 @@ class EngageBox extends React.Component {
         render() {
           return (
             <div>
-              <div>
-                <h2 className="intro">In My Language</h2>
-                <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
-                <InfoMarquee moreYouKnowText={infoParagraphs}/>
+              <div className="col-md-2 col-xs-2">
+                <ExitButton randomExitUrl={randomExitUrl}/>
+</div>
+              <div className="row">
+                <div className="col-md-10 col-xs-10">
+                  <h2 className="intro">In My Language</h2>
+                  <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
+                  <InfoMarquee moreYouKnowText={infoParagraphs}/>
+                </div>
               </div>
+
               <div className="row">
                 <div className="col-sm-4">
                   <div className="react-wrapper">
