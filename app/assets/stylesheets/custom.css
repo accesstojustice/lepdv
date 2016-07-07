@@ -92,5 +92,34 @@ div#engageText, div#engageText:hover {
 
 #chart {
   min-height: 400px;
-  
+
+}
+
+#exitbutton {
+    color: #FFB930;
+    margin-top: 0;
+    margin-left: .1em;
+  }
+
+.exit-text {
+  margin-left: .4em;
+  font-size: .6em;
+ }
+.exit-box {
+    float: right;
+    border: 1px solid #FFB9AA;
+    border-top: none;
+    border-right: none;
+    position: fixed;
+    right: 20px;
+    z-index: 2000;
+    top: 100px;
+    background-color: rgba(222,222,222,.2);
+    box-shadow: -2px 2px 10px 1px #FFB9AA;
+    border-radius: 50%;
+    zoom: 64%;
+
+}
+.exit-box:hover {
+    background-color: rgba(183,172,183,.7);
 }
