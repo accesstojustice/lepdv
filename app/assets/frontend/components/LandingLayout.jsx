@@ -25,6 +25,12 @@ let engageQuestion = [
 let randomExitUrl = [
   {id: 1, url: "http://google.com"},
   {id: 2, url: "http://yahoo.com"},
+  {id: 3, url: "http://bing.com"},
+  {id: 4, url: "http://amazon.com"},
+  {id: 5, url: "http://duckduckgo.com"},
+  {id: 6, url: "http://ebay.com"},
+  {id: 7, url: "http://twitter.com"},
+  {id: 8, url: "http://wikipedia.com"},
 ]
 
 class ExitButton extends React.Component {
