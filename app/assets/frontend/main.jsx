@@ -1,12 +1,12 @@
+import { Component } from 'react';
 import ReactDOM from 'react-dom';
-import React from 'react';
-import LandingLayout from './components/LandingLayout';
+import AppLayout from './components/AppLayout';
 
-class Main extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
-        <LandingLayout />
+        <AppLayout />
       </div>
     )
   }
@@ -14,9 +14,9 @@ class Main extends React.Component {
 
 let documentReady = () => {
   ReactDOM.render(
-    <Main />,
+    <App />,
     document.getElementById("react")
-  );
+  )
 }
 
 $(documentReady);
