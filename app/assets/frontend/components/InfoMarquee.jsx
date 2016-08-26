@@ -1,7 +1,7 @@
-import { Component } from 'react'
-import { PageHeader } from 'react-bootstrap'
-import MarqueeText from './MarqueeText'
-import EngageBox from './EngageBox'
+import { Component } from 'react';
+import { PageHeader } from 'react-bootstrap';
+import MarqueeText from './MarqueeText';
+import EngageBox from './EngageBox';
 
 export default class InfoMarquee extends Component {
   constructor(props) {
@@ -48,7 +48,7 @@ export default class InfoMarquee extends Component {
             </small>
           </PageHeader>
         </div>
-        <EngageBox question={ this.props.engageQuestion[0] }/>        
+        <EngageBox question={ this.props.engageQuestion[0] }/>
       </div>
     )
   }

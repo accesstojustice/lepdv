@@ -1,10 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 
 export default class EngageBox extends Component {
-  static propTypes = {
-    question: PropTypes.string.isRequired
-  };
 
   render() {
     return (

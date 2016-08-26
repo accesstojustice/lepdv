@@ -53,6 +53,8 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
+	var _react2 = _interopRequireDefault(_react);
+	
 	var _reactDom = __webpack_require__(/*! react-dom */ 34);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
@@ -81,10 +83,10 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(
+	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        React.createElement(_AppLayout2.default, null)
+	        _react2.default.createElement(_AppLayout2.default, null)
 	      );
 	    }
 	  }]);
@@ -93,7 +95,7 @@
 	}(_react.Component);
 	
 	var documentReady = function documentReady() {
-	  _reactDom2.default.render(React.createElement(App, null), document.getElementById("react"));
+	  _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("react"));
 	};
 	
 	$(documentReady);
@@ -21997,6 +21999,10 @@
 	
 	var _LandingViz2 = _interopRequireDefault(_LandingViz);
 	
+	var _LandingMap = __webpack_require__(/*! ./LandingMap */ 433);
+	
+	var _LandingMap2 = _interopRequireDefault(_LandingMap);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22065,7 +22071,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-sm-7 col-sm-offset-1' },
-	            _react2.default.createElement(Map, null),
+	            _react2.default.createElement(_LandingMap2.default, null),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'col-sm-12 my2 mln4 py4' },
@@ -41985,9 +41991,6 @@
 	  return EngageBox;
 	}(_react.Component);
 	
-	EngageBox.propTypes = {
-	  question: _react.PropTypes.string.isRequired
-	};
 	exports.default = EngageBox;
 
 /***/ },
@@ -42429,6 +42432,58 @@
 	}(_react.Component);
 	
 	exports.default = LandingViz;
+
+/***/ },
+/* 433 */
+/*!*******************************************************!*\
+  !*** ./app/assets/frontend/components/LandingMap.jsx ***!
+  \*******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Map = function (_Component) {
+	  _inherits(Map, _Component);
+	
+	  function Map() {
+	    _classCallCheck(this, Map);
+	
+	    return _possibleConstructorReturn(this, (Map.__proto__ || Object.getPrototypeOf(Map)).apply(this, arguments));
+	  }
+	
+	  _createClass(Map, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement("div", { id: "map" })
+	      );
+	    }
+	  }]);
+	
+	  return Map;
+	}(_react.Component);
+	
+	exports.default = Map;
 
 /***/ }
 /******/ ]);

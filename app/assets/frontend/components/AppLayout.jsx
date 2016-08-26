@@ -3,6 +3,7 @@ import ExitButton from './ExitButton'
 import InfoMarquee from './InfoMarquee'
 import AccordionSection from './AccordionSection'
 import LandingViz from './LandingViz'
+import LandingMap from './LandingMap'
 
 let randomExitUrl = [
   {id: 1, url: "http://google.com"},
@@ -59,7 +60,7 @@ export default class AppLayout extends Component {
           </div>
 
           <div className="col-sm-7 col-sm-offset-1">
-            <Map />
+            <LandingMap />
             <div className='col-sm-12 my2 mln4 py4'>
               <LandingViz />
             </div>
