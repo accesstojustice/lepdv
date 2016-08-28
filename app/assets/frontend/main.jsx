@@ -17,6 +17,6 @@ let documentReady = () => {
     <App />,
     document.getElementById("react")
   )
-}
+};
 
 $(documentReady);
