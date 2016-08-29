@@ -21987,9 +21987,9 @@
 	
 	var _ExitButtonContainer2 = _interopRequireDefault(_ExitButtonContainer);
 	
-	var _InfoMarquee = __webpack_require__(/*! ./InfoMarquee */ 174);
+	var _InfoMarqueeContainer = __webpack_require__(/*! ../containers/InfoMarqueeContainer */ 437);
 	
-	var _InfoMarquee2 = _interopRequireDefault(_InfoMarquee);
+	var _InfoMarqueeContainer2 = _interopRequireDefault(_InfoMarqueeContainer);
 	
 	var _AccordionSection = __webpack_require__(/*! ./AccordionSection */ 430);
 	
@@ -22035,7 +22035,6 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'col-md-2 col-xs-2' },
-	          '// gives container',
 	          _react2.default.createElement(_ExitButtonContainer2.default, { randomExitUrl: randomExitUrl })
 	        ),
 	        _react2.default.createElement(
@@ -22054,7 +22053,9 @@
 	              { className: 'intro-subtext' },
 	              'Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.'
 	            ),
-	            _react2.default.createElement(_InfoMarquee2.default, { engageQuestion: safetyQuestions, moreYouKnowText: infoParagraphs })
+	            _react2.default.createElement(_InfoMarqueeContainer2.default, {
+	              engageQuestion: safetyQuestions,
+	              moreYouKnowText: infoParagraphs })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -22174,11 +22175,9 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
+	var _react2 = _interopRequireDefault(_react);
+	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 175);
-	
-	var _MarqueeText = __webpack_require__(/*! ./MarqueeText */ 428);
-	
-	var _MarqueeText2 = _interopRequireDefault(_MarqueeText);
 	
 	var _EngageBox = __webpack_require__(/*! ./EngageBox */ 429);
 	
@@ -22195,76 +22194,36 @@
 	var InfoMarquee = function (_Component) {
 	  _inherits(InfoMarquee, _Component);
 	
-	  function InfoMarquee(props) {
+	  function InfoMarquee() {
 	    _classCallCheck(this, InfoMarquee);
 	
-	    var _this = _possibleConstructorReturn(this, (InfoMarquee.__proto__ || Object.getPrototypeOf(InfoMarquee)).call(this, props));
-	
-	    var initialMessage = _this.getRandomMessage();
-	    _this.state = {
-	      message: initialMessage,
-	      messagesElapsed: 0
-	    };
-	    _this.tickDisplay = _this.tickDisplay.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (InfoMarquee.__proto__ || Object.getPrototypeOf(InfoMarquee)).apply(this, arguments));
 	  }
 	
 	  _createClass(InfoMarquee, [{
-	    key: 'getRandomMessage',
-	    value: function getRandomMessage() {
-	      var l = this.props.moreYouKnowText.length;
-	      return this.props.moreYouKnowText.map(function (r) {
-	        return React.createElement(_MarqueeText2.default, { key: r.id, body: r.body });
-	      })[Math.floor(Math.random() * l)];
-	    }
-	  }, {
-	    key: 'tickDisplay',
-	    value: function tickDisplay() {
-	      var newMessage = this.getRandomMessage();
-	      this.setState({
-	        message: newMessage,
-	        messagesElapsed: this.state.messagesElapsed + 1
-	      });
-	    }
-	  }, {
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      this.interval = setInterval(this.tickDisplay, 10000);
-	    }
-	  }, {
-	    key: 'componentWillUnmount',
-	    value: function componentWillUnmount() {
-	      clearInterval(this.interval);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(
+	      return _react2.default.createElement(
 	        'div',
 	        { id: 'engageBoxWrapper' },
-	        React.createElement(
+	        _react2.default.createElement(
 	          'div',
 	          { id: 'reason', className: 'info-marquee-wrapper' },
-	          React.createElement(
+	          _react2.default.createElement(
 	            _reactBootstrap.PageHeader,
 	            null,
-	            React.createElement(
-	              'span',
-	              null,
-	              this.state.secondsElapsed
-	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'small',
 	              null,
-	              React.createElement(
+	              _react2.default.createElement(
 	                'ul',
 	                null,
-	                this.state.message
+	                this.props.message
 	              )
 	            )
 	          )
 	        ),
-	        React.createElement(_EngageBox2.default, { question: this.props.engageQuestion[0] })
+	        _react2.default.createElement(_EngageBox2.default, { question: this.props.engageQuestion[0] })
 	      );
 	    }
 	  }]);
@@ -22272,6 +22231,9 @@
 	  return InfoMarquee;
 	}(_react.Component);
 	
+	InfoMarquee.propTypes = {
+	  message: _react.PropTypes.object.isRequired
+	};
 	exports.default = InfoMarquee;
 
 /***/ },
@@ -42538,6 +42500,103 @@
 	}(_react.Component);
 	
 	exports.default = ExitButtonContainer;
+
+/***/ },
+/* 437 */
+/*!*****************************************************************!*\
+  !*** ./app/assets/frontend/containers/InfoMarqueeContainer.jsx ***!
+  \*****************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _MarqueeText = __webpack_require__(/*! ../components/MarqueeText */ 428);
+	
+	var _MarqueeText2 = _interopRequireDefault(_MarqueeText);
+	
+	var _InfoMarquee = __webpack_require__(/*! ../components/InfoMarquee */ 174);
+	
+	var _InfoMarquee2 = _interopRequireDefault(_InfoMarquee);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var InfoMarqueeContainer = function (_Component) {
+	  _inherits(InfoMarqueeContainer, _Component);
+	
+	  function InfoMarqueeContainer(props) {
+	    _classCallCheck(this, InfoMarqueeContainer);
+	
+	    var _this = _possibleConstructorReturn(this, (InfoMarqueeContainer.__proto__ || Object.getPrototypeOf(InfoMarqueeContainer)).call(this, props));
+	
+	    var initialMessage = _this.getRandomMessage();
+	    _this.state = {
+	      message: initialMessage,
+	      messagesElapsed: 0,
+	      secondsElapsed: 0
+	    };
+	    _this.tickDisplay = _this.tickDisplay.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(InfoMarqueeContainer, [{
+	    key: 'getRandomMessage',
+	    value: function getRandomMessage() {
+	      var l = this.props.moreYouKnowText.length;
+	      return this.props.moreYouKnowText.map(function (r) {
+	        return _react2.default.createElement(_MarqueeText2.default, { key: r.id, body: r.body });
+	      })[Math.floor(Math.random() * l)];
+	    }
+	  }, {
+	    key: 'tickDisplay',
+	    value: function tickDisplay() {
+	      var newMessage = this.getRandomMessage();
+	      this.setState({
+	        message: newMessage
+	      });
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.interval = setInterval(this.tickDisplay, 10000);
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      clearInterval(this.interval);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_InfoMarquee2.default, {
+	        message: this.state.message,
+	        engageQuestion: this.props.engageQuestion });
+	    }
+	  }]);
+	
+	  return InfoMarqueeContainer;
+	}(_react.Component);
+	
+	InfoMarqueeContainer.propTypes = {
+	  engageQuestion: _react.PropTypes.array.isRequired,
+	  moreYouKnowText: _react.PropTypes.array.isRequired
+	};
+	exports.default = InfoMarqueeContainer;
 
 /***/ }
 /******/ ]);

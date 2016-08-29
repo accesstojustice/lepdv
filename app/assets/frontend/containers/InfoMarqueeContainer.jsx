@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import MarqueeText from '../components/MarqueeText';
 import InfoMarquee from '../components/InfoMarquee';
-import MarqueeText from './MarqueeText';
-import EngageBox from './EngageBox';
 
-export default class InfoMarquee extends Component {
+export default class InfoMarqueeContainer extends Component {
+  static propTypes = {
+    engageQuestion: PropTypes.array.isRequired,
+    moreYouKnowText: PropTypes.array.isRequired
+  }
+
   constructor(props) {
     super(props);
     let initialMessage = this.getRandomMessage();
     this.state = {
       message: initialMessage,
-      messagesElapsed: 0
+      messagesElapsed: 0,
+      secondsElapsed: 0
     };
     this.tickDisplay = this.tickDisplay.bind(this);
   }
@@ -22,8 +27,7 @@ export default class InfoMarquee extends Component {
   tickDisplay() {
     let newMessage = this.getRandomMessage();
     this.setState({
-      message: newMessage,
-      messagesElapsed: (this.state.messagesElapsed + 1)
+      message: newMessage
     });
   }
 
@@ -37,14 +41,9 @@ export default class InfoMarquee extends Component {
 
   render() {
     return (
-      <div id="engageBoxWrapper">
-        <div id="reason" className="info-marquee-wrapper">
-          <InfoMarquee
-            secondsElapsed={this.state.secondsElapsed}
-            message={this.state.message} />
-        </div>
-        <EngageBox question={ this.props.engageQuestion[0] }/>
-      </div>
-    )
+      <InfoMarquee
+        message={this.state.message}
+        engageQuestion={this.props.engageQuestion} />
+    );
   }
 }

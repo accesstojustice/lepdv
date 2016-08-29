@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import ExitButtonContainer from '../containers/ExitButtonContainer'
-import InfoMarquee from './InfoMarquee'
+import React, { Component } from 'react';
+import ExitButtonContainer from '../containers/ExitButtonContainer';
+import InfoMarqueeContainer from '../containers/InfoMarqueeContainer';
 import AccordionSection from './AccordionSection'
 import LandingViz from './LandingViz'
 import LandingMap from './LandingMap'
@@ -42,8 +42,6 @@ export default class AppLayout extends Component {
     return (
       <div>
         <div className="col-md-2 col-xs-2">
-
-          // gives container
           <ExitButtonContainer randomExitUrl={randomExitUrl}/>
         </div>
         <div className="row">
@@ -51,7 +49,9 @@ export default class AppLayout extends Component {
             <h2 className="intro">In My Language</h2>
             <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
 
-            <InfoMarquee engageQuestion={safetyQuestions} moreYouKnowText={infoParagraphs}/>
+            <InfoMarqueeContainer
+              engageQuestion={safetyQuestions}
+              moreYouKnowText={infoParagraphs} />
           </div>
         </div>
 
