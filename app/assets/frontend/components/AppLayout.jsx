@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ExitButton from './ExitButton'
+import ExitButtonContainer from '../containers/ExitButtonContainer'
 import InfoMarquee from './InfoMarquee'
 import AccordionSection from './AccordionSection'
 import LandingViz from './LandingViz'
@@ -42,12 +42,15 @@ export default class AppLayout extends Component {
     return (
       <div>
         <div className="col-md-2 col-xs-2">
-          <ExitButton randomExitUrl={randomExitUrl}/>
+
+          // gives container
+          <ExitButtonContainer randomExitUrl={randomExitUrl}/>
         </div>
         <div className="row">
           <div className="col-md-10 col-xs-10">
             <h2 className="intro">In My Language</h2>
             <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
+
             <InfoMarquee engageQuestion={safetyQuestions} moreYouKnowText={infoParagraphs}/>
           </div>
         </div>
@@ -55,13 +58,16 @@ export default class AppLayout extends Component {
         <div className="row">
           <div className="col-sm-4">
             <div className="react-wrapper">
+
               <AccordionSection />
             </div>
           </div>
 
           <div className="col-sm-7 col-sm-offset-1">
+
             <LandingMap />
             <div className='col-sm-12 my2 mln4 py4'>
+
               <LandingViz />
             </div>
           </div>

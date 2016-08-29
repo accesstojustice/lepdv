@@ -21983,9 +21983,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _ExitButton = __webpack_require__(/*! ./ExitButton */ 173);
+	var _ExitButtonContainer = __webpack_require__(/*! ../containers/ExitButtonContainer */ 436);
 	
-	var _ExitButton2 = _interopRequireDefault(_ExitButton);
+	var _ExitButtonContainer2 = _interopRequireDefault(_ExitButtonContainer);
 	
 	var _InfoMarquee = __webpack_require__(/*! ./InfoMarquee */ 174);
 	
@@ -22035,7 +22035,8 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'col-md-2 col-xs-2' },
-	          _react2.default.createElement(_ExitButton2.default, { randomExitUrl: randomExitUrl })
+	          '// gives container',
+	          _react2.default.createElement(_ExitButtonContainer2.default, { randomExitUrl: randomExitUrl })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -22095,7 +22096,7 @@
   \*******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -22104,6 +22105,10 @@
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -22115,52 +22120,28 @@
 	  _inherits(ExitButton, _Component);
 	
 	  function ExitButton() {
-	    var _ref;
-	
 	    _classCallCheck(this, ExitButton);
 	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    var _this = _possibleConstructorReturn(this, (_ref = ExitButton.__proto__ || Object.getPrototypeOf(ExitButton)).call.apply(_ref, [this].concat(args)));
-	
-	    _this.state = { exitUrl: _this.randomExitUrl() || '' };
-	    return _this;
+	    return _possibleConstructorReturn(this, (ExitButton.__proto__ || Object.getPrototypeOf(ExitButton)).apply(this, arguments));
 	  }
 	
 	  _createClass(ExitButton, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      if (this.state.exitUrl.length === 0) {
-	        this.handleMouseOver();
-	      }
-	    }
-	  }, {
-	    key: 'randomExitUrl',
-	    value: function randomExitUrl() {
-	      var urlArray = this.props.randomExitUrl;
-	      var l = this.props.randomExitUrl.length;
-	      var url = urlArray[Math.floor(Math.random() * l)].url;
-	      return url;
-	    }
-	  }, {
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
-	      return React.createElement(
-	        'div',
-	        { className: 'exit-box' },
-	        React.createElement(
-	          'a',
-	          { href: this.state.exitUrl },
-	          React.createElement(
-	            'span',
-	            { className: 'fa-stack fa-5x' },
-	            React.createElement('i', { id: 'exitbutton', className: 'fa fa-sign-out fa-stack-2x' }),
-	            React.createElement(
-	              'strong',
-	              { className: 'fa-stack-1x exit-text' },
-	              'exit'
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "exit-box" },
+	        _react2.default.createElement(
+	          "a",
+	          { href: this.props.exitUrl },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "fa-stack fa-5x" },
+	            _react2.default.createElement("i", { id: "exitbutton", className: "fa fa-sign-out fa-stack-2x" }),
+	            _react2.default.createElement(
+	              "strong",
+	              { className: "fa-stack-1x exit-text" },
+	              "exit"
 	            )
 	          )
 	        )
@@ -22171,6 +22152,9 @@
 	  return ExitButton;
 	}(_react.Component);
 	
+	ExitButton.propTypes = {
+	  exitUrl: _react.PropTypes.string.isRequired
+	};
 	exports.default = ExitButton;
 
 /***/ },
@@ -42484,6 +42468,76 @@
 	}(_react.Component);
 	
 	exports.default = Map;
+
+/***/ },
+/* 434 */,
+/* 435 */,
+/* 436 */
+/*!****************************************************************!*\
+  !*** ./app/assets/frontend/containers/ExitButtonContainer.jsx ***!
+  \****************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _ExitButton = __webpack_require__(/*! ../components/ExitButton */ 173);
+	
+	var _ExitButton2 = _interopRequireDefault(_ExitButton);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ExitButtonContainer = function (_Component) {
+	  _inherits(ExitButtonContainer, _Component);
+	
+	  function ExitButtonContainer() {
+	    var _ref;
+	
+	    _classCallCheck(this, ExitButtonContainer);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    var _this = _possibleConstructorReturn(this, (_ref = ExitButtonContainer.__proto__ || Object.getPrototypeOf(ExitButtonContainer)).call.apply(_ref, [this].concat(args)));
+	
+	    _this.state = { exitUrl: _this.randomExitUrl() || '' };
+	    return _this;
+	  }
+	
+	  _createClass(ExitButtonContainer, [{
+	    key: 'randomExitUrl',
+	    value: function randomExitUrl() {
+	      var urls = this.props.randomExitUrl;
+	      var length = this.props.randomExitUrl.length;
+	      return urls[Math.floor(Math.random() * length)].url;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_ExitButton2.default, { exitUrl: this.state.exitUrl });
+	    }
+	  }]);
+	
+	  return ExitButtonContainer;
+	}(_react.Component);
+	
+	exports.default = ExitButtonContainer;
 
 /***/ }
 /******/ ]);
