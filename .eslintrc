@@ -211,3 +211,8 @@ rules:
   prefer-spread: 0
   prefer-template: 0
   require-yield: 0
+
+  # react
+
+  react/jsx-uses-react": 2
+  react/jsx-uses-vars": 2

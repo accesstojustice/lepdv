@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { Button, Panel } from 'react-bootstrap';
-// import { Button, Panel } from 'react-bootstrap';
+
 import PrintableRequest from './PrintableRequest';
-import AccordionPanel from './AccordionPanel';
+import AccordionPanelContainer from '../containers/AccordionPanelContainer';
 
 let accordionData = [
   {
@@ -55,20 +55,19 @@ let accordionData = [
     sourceUrl: 'http://www.cookcountycourt.org/ABOUTTHECOURT/OfficeoftheChiefJudge/CourtRelatedServices/OfficeofInterpreterServices.aspx',
     printable: true,
     printableUrl: 'http://12.218.239.52/Forms/pdf_files/CCG0108.pdf'
-  },
+  }
 ]
 
 
 export default class AccordionSection extends Component {
   static propTypes = {
-    open: PropTypes.bool.isRequired,
-    toggleClick: PropTypes.func.isRequired
+    toggleOpen: PropTypes.func.isRequired,
+    open: PropTypes.bool.isRequired
   }
-
 
   render() {
 
-    let advocacyOptions = accordionData.map((a, i) => <AccordionPanel key={ 'aopts_' + i } open={this.props.open} handleClick={this.props.toggleClick} {...a} />);
+    let advocacyOptions = accordionData.map((a, i) => <AccordionPanelContainer key={ 'aopts_' + i } toggleOpen={this.props.toggleOpen} open={this.props.open} {...a} />);
 
     return (
       <div>

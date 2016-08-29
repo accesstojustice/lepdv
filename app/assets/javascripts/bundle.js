@@ -41970,9 +41970,9 @@
 	
 	var _PrintableRequest2 = _interopRequireDefault(_PrintableRequest);
 	
-	var _AccordionPanel = __webpack_require__(/*! ./AccordionPanel */ 439);
+	var _AccordionPanelContainer = __webpack_require__(/*! ../containers/AccordionPanelContainer */ 441);
 	
-	var _AccordionPanel2 = _interopRequireDefault(_AccordionPanel);
+	var _AccordionPanelContainer2 = _interopRequireDefault(_AccordionPanelContainer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41981,8 +41981,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	// import { Button, Panel } from 'react-bootstrap';
-	
 	
 	var accordionData = [{
 	  title: 'Multilingual Safety Plans',
@@ -42029,7 +42027,7 @@
 	      var _this2 = this;
 	
 	      var advocacyOptions = accordionData.map(function (a, i) {
-	        return _react2.default.createElement(_AccordionPanel2.default, _extends({ key: 'aopts_' + i, open: _this2.props.open, handleClick: _this2.props.toggleClick }, a));
+	        return _react2.default.createElement(_AccordionPanelContainer2.default, _extends({ key: 'aopts_' + i, toggleOpen: _this2.props.toggleOpen, open: _this2.props.open }, a));
 	      });
 	
 	      return _react2.default.createElement(
@@ -42049,8 +42047,8 @@
 	}(_react.Component);
 	
 	AccordionSection.propTypes = {
-	  open: _react.PropTypes.bool.isRequired,
-	  toggleClick: _react.PropTypes.func.isRequired
+	  toggleOpen: _react.PropTypes.func.isRequired,
+	  open: _react.PropTypes.bool.isRequired
 	};
 	exports.default = AccordionSection;
 
@@ -42453,16 +42451,16 @@
 	  }
 	
 	  _createClass(AccordionSectionContainer, [{
-	    key: 'toggleClick',
-	    value: function toggleClick() {
+	    key: 'handleOpen',
+	    value: function handleOpen() {
 	      this.setState({ open: !this.state.open });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(_AccordionSection2.default, {
-	        open: this.state.open,
-	        toggleClick: this.toggleClick });
+	        toggleOpen: this.handleOpen,
+	        open: this.state.open });
 	    }
 	  }]);
 	
@@ -42510,9 +42508,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var canPrint = '';
-	var sourceText = '- source';
-	
 	var AccordionPanel = function (_Component) {
 	  _inherits(AccordionPanel, _Component);
 	
@@ -42523,23 +42518,15 @@
 	  }
 	
 	  _createClass(AccordionPanel, [{
-	    key: 'handleClick',
-	    value: function handleClick() {
-	      this.props.handleClick();
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var steps = this.props.advocacySteps;
-	      var introSteps = steps.map(function (s, i) {
+	
+	      var canPrint = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
+	
+	      var introSteps = this.props.steps.map(function (s, i) {
 	        return _react2.default.createElement(_IntroSteps2.default, _extends({ key: 'isteps_' + i }, s));
 	      });
-	      if (this.props.printable) {
-	        canPrint = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
-	      }
-	      if (this.props.altSourceText) {
-	        sourceText = this.props.altSourceText;
-	      }
+	      var sourceText = this.props.altSourceText;
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -42549,7 +42536,7 @@
 	          {
 	            bsStyle: 'primary',
 	            block: true,
-	            onClick: this.handleClick },
+	            onClick: this.toggleOpen },
 	          this.props.title
 	        ),
 	        _react2.default.createElement(
@@ -42569,11 +42556,11 @@
 	              _react2.default.createElement(
 	                _reactBootstrap.Button,
 	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
-	                '- source'
+	                sourceText ? sourceText : '- source'
 	              )
 	            )
 	          ),
-	          canPrint
+	          canPrint ? canPrint : ''
 	        )
 	      );
 	    }
@@ -42582,6 +42569,15 @@
 	  return AccordionPanel;
 	}(_react.Component);
 	
+	AccordionPanel.propTypes = {
+	  toggleOpen: _react.PropTypes.func.isRequired,
+	  title: _react.PropTypes.string.isRequired,
+	  steps: _react.PropTypes.array.isRequired,
+	  canPrint: _react.PropTypes.bool.isRequired,
+	  printableUrl: _react.PropTypes.string,
+	  sourceText: _react.PropTypes.string,
+	  open: _react.PropTypes.bool.isRequired
+	};
 	exports.default = AccordionPanel;
 
 /***/ },
@@ -42640,6 +42636,80 @@
 	}(_react.Component);
 	
 	exports.default = IntroStep;
+
+/***/ },
+/* 441 */
+/*!********************************************************************!*\
+  !*** ./app/assets/frontend/containers/AccordionPanelContainer.jsx ***!
+  \********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _AccordionPanel = __webpack_require__(/*! ../components/AccordionPanel */ 439);
+	
+	var _AccordionPanel2 = _interopRequireDefault(_AccordionPanel);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var canPrint = false;
+	
+	var AccordionPanelContainer = function (_Component) {
+	  _inherits(AccordionPanelContainer, _Component);
+	
+	  function AccordionPanelContainer() {
+	    _classCallCheck(this, AccordionPanelContainer);
+	
+	    return _possibleConstructorReturn(this, (AccordionPanelContainer.__proto__ || Object.getPrototypeOf(AccordionPanelContainer)).apply(this, arguments));
+	  }
+	
+	  _createClass(AccordionPanelContainer, [{
+	    key: 'handleOpen',
+	    value: function handleOpen() {
+	      return this.props.open;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_AccordionPanel2.default, {
+	        open: this.handleOpen(),
+	        toggleOpen: this.props.toggleOpen,
+	        title: this.props.title,
+	        steps: this.props.advocacySteps,
+	        canPrint: canPrint,
+	        printableUrl: this.props.printableUrl,
+	        altSourceText: this.props.altSourceText });
+	    }
+	  }]);
+	
+	  return AccordionPanelContainer;
+	}(_react.Component);
+	
+	AccordionPanelContainer.propTypes = {
+	  toggleOpen: _react.PropTypes.func.isRequired,
+	  title: _react.PropTypes.string.isRequired,
+	  advocacySteps: _react.PropTypes.array.isRequired,
+	  altSourceText: _react.PropTypes.string,
+	  open: _react.PropTypes.bool.isRequired
+	
+	};
+	exports.default = AccordionPanelContainer;
 
 /***/ }
 /******/ ]);

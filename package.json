@@ -23,8 +23,10 @@
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react",
       "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-test-renderer",
       "<rootDir>/node_modules/react-addons-test-utils"
-    ]
+    ],
+    "automock": false
   },
   "repository": {
     "type": "git",
@@ -37,8 +39,11 @@
   },
   "homepage": "https://github.com/renemarcelo/lepdv",
   "devDependencies": {
+    "babel-jest": "^14.1.0",
     "babel-loader": "^6.2.5",
     "babel-preset-stage-0": "^6.5.0",
+    "jest": "^14.1.0",
+    "react-test-renderer": "^15.3.1",
     "webpack": "^1.13.2"
   },
   "dependencies": {

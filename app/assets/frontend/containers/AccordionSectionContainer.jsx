@@ -9,15 +9,15 @@ export default class AccordionSectionContainer extends Component {
     };
   }
 
-  toggleClick() {
+  handleOpen() {
     this.setState({ open: !this.state.open })
   }
 
   render() {
     return (
       <AccordionSection
-        open={ this.state.open }
-        toggleClick={ this.toggleClick } />
+        toggleOpen={ this.handleOpen }
+        open={ this.state.open } />
     );
   }
 }

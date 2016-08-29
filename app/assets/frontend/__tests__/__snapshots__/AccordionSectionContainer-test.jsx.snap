@@ -1,0 +1,334 @@
+exports[`AccordionSection Container renders correctly 1`] = `
+<div>
+  <h3
+    className="center block">
+    Resource Options
+  </h3>
+  <div>
+    <button
+      className="btn btn-primary btn-block"
+      disabled={false}
+      onClick={undefined}
+      type="button">
+      Multilingual Safety Plans
+    </button>
+    <div
+      className="panel panel-default"
+      id={null}>
+      <div
+        aria-expanded={null}
+        aria-hidden={true}
+        className="panel-collapse collapse"
+        id={undefined}
+        role={undefined}>
+        <div
+          className="panel-body">
+          <ul>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+          </ul>
+          <a
+            href={undefined}>
+            <div
+              className="pull-right">
+              <button
+                className="source btn btn-xs btn-default"
+                disabled={false}
+                type="button">
+                - source
+              </button>
+            </div>
+          </a>
+          <div
+            className="print-tip center">
+            <a
+              href="http://12.218.239.52/Forms/pdf_files/CCG0108.pdf">
+              <small>
+                <strong>
+                  Affirmatively
+                </strong>
+                 ask for an interpreter.
+              </small>
+              <div
+                className="pull-left">
+                <button
+                  className="source btn btn-xs btn-warning"
+                  disabled={false}
+                  type="button">
+                  printable form
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary btn-block"
+      disabled={false}
+      onClick={undefined}
+      type="button">
+      Right to an Interpreter
+    </button>
+    <div
+      className="panel panel-default"
+      id={null}>
+      <div
+        aria-expanded={null}
+        aria-hidden={true}
+        className="panel-collapse collapse"
+        id={undefined}
+        role={undefined}>
+        <div
+          className="panel-body">
+          <ul>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+          </ul>
+          <a
+            href={undefined}>
+            <div
+              className="pull-right">
+              <button
+                className="source btn btn-xs btn-default"
+                disabled={false}
+                type="button">
+                - source
+              </button>
+            </div>
+          </a>
+          <div
+            className="print-tip center">
+            <a
+              href="http://12.218.239.52/Forms/pdf_files/CCG0108.pdf">
+              <small>
+                <strong>
+                  Affirmatively
+                </strong>
+                 ask for an interpreter.
+              </small>
+              <div
+                className="pull-left">
+                <button
+                  className="source btn btn-xs btn-warning"
+                  disabled={false}
+                  type="button">
+                  printable form
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary btn-block"
+      disabled={false}
+      onClick={undefined}
+      type="button">
+      Interpretation Contact
+    </button>
+    <div
+      className="panel panel-default"
+      id={null}>
+      <div
+        aria-expanded={null}
+        aria-hidden={true}
+        className="panel-collapse collapse"
+        id={undefined}
+        role={undefined}>
+        <div
+          className="panel-body">
+          <ul>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+          </ul>
+          <a
+            href={undefined}>
+            <div
+              className="pull-right">
+              <button
+                className="source btn btn-xs btn-default"
+                disabled={false}
+                type="button">
+                - source
+              </button>
+            </div>
+          </a>
+          <div
+            className="print-tip center">
+            <a
+              href="http://12.218.239.52/Forms/pdf_files/CCG0108.pdf">
+              <small>
+                <strong>
+                  Affirmatively
+                </strong>
+                 ask for an interpreter.
+              </small>
+              <div
+                className="pull-left">
+                <button
+                  className="source btn btn-xs btn-warning"
+                  disabled={false}
+                  type="button">
+                  printable form
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary btn-block"
+      disabled={false}
+      onClick={undefined}
+      type="button">
+      Legal Terms
+    </button>
+    <div
+      className="panel panel-default"
+      id={null}>
+      <div
+        aria-expanded={null}
+        aria-hidden={true}
+        className="panel-collapse collapse"
+        id={undefined}
+        role={undefined}>
+        <div
+          className="panel-body">
+          <ul>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+            <li>
+              <strong />
+            </li>
+          </ul>
+          <a
+            href={undefined}>
+            <div
+              className="pull-right">
+              <button
+                className="source btn btn-xs btn-default"
+                disabled={false}
+                type="button">
+                more on this topic
+              </button>
+            </div>
+          </a>
+          <div
+            className="print-tip center">
+            <a
+              href="http://12.218.239.52/Forms/pdf_files/CCG0108.pdf">
+              <small>
+                <strong>
+                  Affirmatively
+                </strong>
+                 ask for an interpreter.
+              </small>
+              <div
+                className="pull-left">
+                <button
+                  className="source btn btn-xs btn-warning"
+                  disabled={false}
+                  type="button">
+                  printable form
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary btn-block"
+      disabled={false}
+      onClick={undefined}
+      type="button">
+      I\'m Going to Court
+    </button>
+    <div
+      className="panel panel-default"
+      id={null}>
+      <div
+        aria-expanded={null}
+        aria-hidden={true}
+        className="panel-collapse collapse"
+        id={undefined}
+        role={undefined}>
+        <div
+          className="panel-body">
+          <ul>
+            <li>
+              <strong />
+            </li>
+          </ul>
+          <a
+            href={undefined}>
+            <div
+              className="pull-right">
+              <button
+                className="source btn btn-xs btn-default"
+                disabled={false}
+                type="button">
+                - source
+              </button>
+            </div>
+          </a>
+          <div
+            className="print-tip center">
+            <a
+              href="http://12.218.239.52/Forms/pdf_files/CCG0108.pdf">
+              <small>
+                <strong>
+                  Affirmatively
+                </strong>
+                 ask for an interpreter.
+              </small>
+              <div
+                className="pull-left">
+                <button
+                  className="source btn btn-xs btn-warning"
+                  disabled={false}
+                  type="button">
+                  printable form
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
