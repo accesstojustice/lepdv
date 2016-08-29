@@ -41836,6 +41836,10 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -41854,10 +41858,10 @@
 	  _createClass(MarqueeText, [{
 	    key: "render",
 	    value: function render() {
-	      return React.createElement(
+	      return _react2.default.createElement(
 	        "li",
 	        null,
-	        React.createElement(
+	        _react2.default.createElement(
 	          "span",
 	          { className: "small" },
 	          this.props.body
@@ -42270,7 +42274,11 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
+	var _react2 = _interopRequireDefault(_react);
+	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 175);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -42290,26 +42298,26 @@
 	  _createClass(PrintableRequest, [{
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(
+	      return _react2.default.createElement(
 	        'div',
 	        { className: 'print-tip center' },
-	        React.createElement(
+	        _react2.default.createElement(
 	          'a',
 	          { href: 'http://12.218.239.52/Forms/pdf_files/CCG0108.pdf' },
-	          React.createElement(
+	          _react2.default.createElement(
 	            'small',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	              'strong',
 	              null,
 	              'Affirmatively'
 	            ),
 	            ' ask for an interpreter.'
 	          ),
-	          React.createElement(
+	          _react2.default.createElement(
 	            'div',
 	            { className: 'pull-left' },
-	            React.createElement(
+	            _react2.default.createElement(
 	              _reactBootstrap.Button,
 	              { className: 'source', bsStyle: 'warning', bsSize: 'xsmall' },
 	              'printable form'
@@ -42342,6 +42350,10 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -42360,10 +42372,10 @@
 	  _createClass(LandingViz, [{
 	    key: 'render',
 	    value: function render() {
-	      return React.createElement(
+	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        React.createElement('div', { id: 'chart' })
+	        _react2.default.createElement('div', { id: 'chart' })
 	      );
 	    }
 	  }]);

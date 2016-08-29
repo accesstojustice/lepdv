@@ -1,5 +1,5 @@
-import { Component } from 'react'
-import { Button } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 
 export default class PrintableRequest extends Component {
   render() {
@@ -12,6 +12,6 @@ export default class PrintableRequest extends Component {
           </div>
         </a>
       </div>
-    )
+    );
   }
 }
