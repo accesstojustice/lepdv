@@ -21991,9 +21991,9 @@
 	
 	var _InfoMarqueeContainer2 = _interopRequireDefault(_InfoMarqueeContainer);
 	
-	var _AccordionSection = __webpack_require__(/*! ./AccordionSection */ 430);
+	var _AccordionSectionContainer = __webpack_require__(/*! ../containers/AccordionSectionContainer */ 438);
 	
-	var _AccordionSection2 = _interopRequireDefault(_AccordionSection);
+	var _AccordionSectionContainer2 = _interopRequireDefault(_AccordionSectionContainer);
 	
 	var _LandingViz = __webpack_require__(/*! ./LandingViz */ 432);
 	
@@ -22067,7 +22067,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'react-wrapper' },
-	              _react2.default.createElement(_AccordionSection2.default, null)
+	              _react2.default.createElement(_AccordionSectionContainer2.default, null)
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -41956,6 +41956,8 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
+	var _react2 = _interopRequireDefault(_react);
+	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 175);
 	
 	var _PrintableRequest = __webpack_require__(/*! ./PrintableRequest */ 431);
@@ -41974,20 +41976,9 @@
 	  _inherits(AccordionSection, _Component);
 	
 	  function AccordionSection() {
-	    var _ref;
-	
 	    _classCallCheck(this, AccordionSection);
 	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    var _this = _possibleConstructorReturn(this, (_ref = AccordionSection.__proto__ || Object.getPrototypeOf(AccordionSection)).call.apply(_ref, [this].concat(args)));
-	
-	    _this.state = {
-	      open: false
-	    };
-	    return _this;
+	    return _possibleConstructorReturn(this, (AccordionSection.__proto__ || Object.getPrototypeOf(AccordionSection)).apply(this, arguments));
 	  }
 	
 	  _createClass(AccordionSection, [{
@@ -41995,54 +41986,54 @@
 	    value: function render() {
 	      var _this2 = this;
 	
-	      return React.createElement(
+	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        React.createElement(
+	        _react2.default.createElement(
 	          'h3',
 	          { className: 'center block' },
 	          'Resource Options'
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Button,
 	          {
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this2.setState({ open: !_this2.props.open });
 	            } },
 	          'Multilingual Safety Plans'
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.state.open },
-	          React.createElement(
+	          { collapsible: true, expanded: this.props.open },
+	          _react2.default.createElement(
 	            'ul',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
-	              React.createElement(
+	              _react2.default.createElement(
 	                'strong',
 	                null,
 	                'Introduction: '
 	              ),
 	              'You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
-	              React.createElement(
+	              _react2.default.createElement(
 	                'strong',
 	                null,
 	                'Taking Care of Yourself: '
 	              ),
 	              'Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
-	              React.createElement(
+	              _react2.default.createElement(
 	                'strong',
 	                null,
 	                'Escape Plan: '
@@ -42050,13 +42041,13 @@
 	              'Make Copies of:  Marriage certificate, divorce papers, custody documentation, court orders, restraining orders, or other legal documents; Work Permits; Bank Books'
 	            )
 	          ),
-	          React.createElement(
+	          _react2.default.createElement(
 	            'a',
 	            { href: 'http://www.pcawa.net/uploads/1/4/7/1/14711308/pcawa_safety_handbook_2010_10_28_-_eng.pdf' },
-	            React.createElement(
+	            _react2.default.createElement(
 	              'div',
 	              { className: 'pull-right' },
-	              React.createElement(
+	              _react2.default.createElement(
 	                _reactBootstrap.Button,
 	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
 	                '- source'
@@ -42064,86 +42055,86 @@
 	            )
 	          )
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Button,
 	          {
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this2.setState({ open: !_this2.props.open });
 	            } },
 	          'Right to an Interpreter'
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.state.open },
-	          React.createElement(
+	          { collapsible: true, expanded: this.props.open },
+	          _react2.default.createElement(
 	            'ul',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'Although the United States Constitution does not explicitly provide for the right to an interpreter, the individual rights and liberties afforded to all individuals under the Fourth, Fifth, Sixth, Eighth and Fourteenth Amendments are meaningless for non- or limited-English speakers unless they are provided with complete, competent, and accurate interpreting services.'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'In recent years, the U.S. Department of Justice has been reviewing state court\'s compliance with this executive order.'
 	            )
 	          ),
-	          React.createElement(
+	          _react2.default.createElement(
 	            'a',
 	            { href: 'http://www.najit.org/certification/faq.php' },
-	            React.createElement(
+	            _react2.default.createElement(
 	              'div',
 	              { className: 'pull-right' },
-	              React.createElement(
+	              _react2.default.createElement(
 	                _reactBootstrap.Button,
 	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
 	                '- source'
 	              )
 	            )
 	          ),
-	          React.createElement(_PrintableRequest2.default, null)
+	          _react2.default.createElement(_PrintableRequest2.default, null)
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Button,
 	          { bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this2.setState({ open: !_this2.props.open });
 	            } },
 	          'Interpretation Contact'
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.state.open },
-	          React.createElement(
+	          { collapsible: true, expanded: this.props.open },
+	          _react2.default.createElement(
 	            'ul',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'Describe your roles and clarify expectations'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'Ensure that the interpreter is taking notes'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'Pause frequently to allow the interpreter to translate information'
 	            )
 	          ),
-	          React.createElement(
+	          _react2.default.createElement(
 	            'a',
 	            { href: 'http://www.asha.org/practice/multicultural/issues/interpret.htm' },
-	            React.createElement(
+	            _react2.default.createElement(
 	              'div',
 	              { className: 'pull-right' },
-	              React.createElement(
+	              _react2.default.createElement(
 	                _reactBootstrap.Button,
 	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
 	                '- source'
@@ -42151,61 +42142,61 @@
 	            )
 	          )
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Button,
 	          {
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this2.setState({ open: !_this2.props.open });
 	            } },
 	          'Legal Terms'
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.state.open },
-	          React.createElement(
+	          { collapsible: true, expanded: this.props.open },
+	          _react2.default.createElement(
 	            'ul',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'Words and phrases used in the courtroom and conversational-English are ',
-	              React.createElement(
+	              _react2.default.createElement(
 	                'strong',
 	                null,
 	                'not'
 	              ),
 	              ' the same.'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'Note: translations are various and my differ, according to regional dialects of target (foreign) language used, etc.'
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
-	              React.createElement(
+	              _react2.default.createElement(
 	                'em',
 	                null,
 	                'Attention: '
 	              ),
 	              'Children of the victim, or the offending party -- ',
-	              React.createElement(
+	              _react2.default.createElement(
 	                'strong',
 	                null,
 	                'do not make adequate interpreters.'
 	              )
 	            )
 	          ),
-	          React.createElement(
+	          _react2.default.createElement(
 	            'a',
 	            { href: 'http://www.abajournal.com/magazine/article/justice_moves_slowly_for_those_who_need_interpreters' },
-	            React.createElement(
+	            _react2.default.createElement(
 	              'div',
 	              { className: 'pull-right' },
-	              React.createElement(
+	              _react2.default.createElement(
 	                _reactBootstrap.Button,
 	                { className: 'source', bsStyle: 'warning', bsSize: 'xsmall' },
 	                'more on this topic'
@@ -42213,42 +42204,42 @@
 	            )
 	          )
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Button,
 	          {
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.state.open });
+	              return _this2.setState({ open: !_this2.props.open });
 	            } },
 	          'I\'m Going to Court'
 	        ),
-	        React.createElement(
+	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.state.open },
-	          React.createElement(
+	          { collapsible: true, expanded: this.props.open },
+	          _react2.default.createElement(
 	            'ul',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	              'li',
 	              null,
 	              'You cannot contact the office of interpreter services directly.'
 	            )
 	          ),
-	          React.createElement(
+	          _react2.default.createElement(
 	            'a',
 	            { href: 'http://www.cookcountycourt.org/ABOUTTHECOURT/OfficeoftheChiefJudge/CourtRelatedServices/OfficeofInterpreterServices.aspx' },
-	            React.createElement(
+	            _react2.default.createElement(
 	              'div',
 	              { className: 'pull-right' },
-	              React.createElement(
+	              _react2.default.createElement(
 	                _reactBootstrap.Button,
 	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
 	                '- source'
 	              )
 	            )
 	          ),
-	          React.createElement(_PrintableRequest2.default, null)
+	          _react2.default.createElement(_PrintableRequest2.default, null)
 	        )
 	      );
 	    }
@@ -42257,6 +42248,9 @@
 	  return AccordionSection;
 	}(_react.Component);
 	
+	AccordionSection.propTypes = {
+	  open: _react.PropTypes.bool.isRequired
+	};
 	exports.default = AccordionSection;
 
 /***/ },
@@ -42597,6 +42591,69 @@
 	  moreYouKnowText: _react.PropTypes.array.isRequired
 	};
 	exports.default = InfoMarqueeContainer;
+
+/***/ },
+/* 438 */
+/*!**********************************************************************!*\
+  !*** ./app/assets/frontend/containers/AccordionSectionContainer.jsx ***!
+  \**********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _AccordionSection = __webpack_require__(/*! ../components/AccordionSection */ 430);
+	
+	var _AccordionSection2 = _interopRequireDefault(_AccordionSection);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var AccordionSectionContainer = function (_Component) {
+	  _inherits(AccordionSectionContainer, _Component);
+	
+	  function AccordionSectionContainer() {
+	    var _ref;
+	
+	    _classCallCheck(this, AccordionSectionContainer);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    var _this = _possibleConstructorReturn(this, (_ref = AccordionSectionContainer.__proto__ || Object.getPrototypeOf(AccordionSectionContainer)).call.apply(_ref, [this].concat(args)));
+	
+	    _this.state = {
+	      open: false
+	    };
+	    return _this;
+	  }
+	
+	  _createClass(AccordionSectionContainer, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_AccordionSection2.default, { open: this.state.open });
+	    }
+	  }]);
+	
+	  return AccordionSectionContainer;
+	}(_react.Component);
+	
+	exports.default = AccordionSectionContainer;
 
 /***/ }
 /******/ ]);

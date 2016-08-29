@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ExitButtonContainer from '../containers/ExitButtonContainer';
 import InfoMarqueeContainer from '../containers/InfoMarqueeContainer';
-import AccordionSection from './AccordionSection'
+import AccordionSectionContainer from '../containers/AccordionSectionContainer'
 import LandingViz from './LandingViz'
 import LandingMap from './LandingMap'
 
@@ -59,7 +59,7 @@ export default class AppLayout extends Component {
           <div className="col-sm-4">
             <div className="react-wrapper">
 
-              <AccordionSection />
+              <AccordionSectionContainer />
             </div>
           </div>
 

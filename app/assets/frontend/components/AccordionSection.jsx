@@ -1,15 +1,12 @@
-import { Component } from 'react'
-import { Button, Panel } from 'react-bootstrap'
-import PrintableRequest from './PrintableRequest'
+import React, { Component, PropTypes } from 'react';
+import { Button, Panel } from 'react-bootstrap';
+import PrintableRequest from './PrintableRequest';
 
 export default class AccordionSection extends Component {
-  constructor(...args) {
-    super(...args);
-    this.state = {
-      open: false
-    };
+  static propTypes = {
+    open: PropTypes.bool.isRequired
   }
-
+  
   render() {
     return (
       <div>
@@ -18,9 +15,9 @@ export default class AccordionSection extends Component {
         <Button
           bsStyle="primary"
           block
-          onClick={ ()=> this.setState({ open: !this.state.open })}>Multilingual Safety Plans
+          onClick={ ()=> this.setState({ open: !this.props.open })}>Multilingual Safety Plans
         </Button>
-        <Panel collapsible expanded={this.state.open}>
+        <Panel collapsible expanded={this.props.open}>
           <ul>
             <li><strong>Introduction: </strong>You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children</li>
             <li><strong>Taking Care of Yourself: </strong>Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)</li>
@@ -37,9 +34,9 @@ export default class AccordionSection extends Component {
         <Button
           bsStyle="primary"
           block
-          onClick={ ()=> this.setState({ open: !this.state.open })}>Right to an Interpreter
+          onClick={ ()=> this.setState({ open: !this.props.open })}>Right to an Interpreter
         </Button>
-        <Panel collapsible expanded={this.state.open}>
+        <Panel collapsible expanded={this.props.open}>
           <ul>
             <li>Although the United States Constitution does not explicitly provide for the right to an interpreter, the individual rights and liberties afforded to all individuals under the Fourth, Fifth, Sixth, Eighth and Fourteenth Amendments are meaningless for non- or limited-English speakers unless they are provided with complete, competent, and accurate interpreting services.</li>
             <li>In recent years, the U.S. Department of Justice has been reviewing state court's compliance with this executive order.</li>
@@ -57,9 +54,9 @@ export default class AccordionSection extends Component {
 
         <Button bsStyle="primary"
           block
-          onClick={ () => this.setState({ open: !this.state.open })}>Interpretation Contact
+          onClick={ () => this.setState({ open: !this.props.open })}>Interpretation Contact
         </Button>
-        <Panel collapsible expanded={this.state.open}>
+          <Panel collapsible expanded={this.props.open}>
           <ul>
             <li>Describe your roles and clarify expectations</li>
             <li>Ensure that the interpreter is taking notes</li>
@@ -83,9 +80,9 @@ export default class AccordionSection extends Component {
           <Button
             bsStyle="primary"
             block
-            onClick={ () => this.setState({ open: !this.state.open })}>Legal Terms
+            onClick={ () => this.setState({ open: !this.props.open })}>Legal Terms
           </Button>
-          <Panel collapsible expanded={this.state.open}>
+          <Panel collapsible expanded={this.props.open}>
             <ul>
               <li>Words and phrases used in the courtroom and conversational-English are <strong>not</strong> the same.</li>
               <li>Note: translations are various and my differ, according to regional dialects of target (foreign) language used, etc.</li>
@@ -108,9 +105,9 @@ export default class AccordionSection extends Component {
             <Button
               bsStyle="primary"
               block
-              onClick={ () => this.setState({ open: !this.state.open })}>I'm Going to Court
+              onClick={ () => this.setState({ open: !this.props.open })}>I'm Going to Court
             </Button>
-            <Panel collapsible expanded={this.state.open}>
+            <Panel collapsible expanded={this.props.open}>
               <ul>
                 <li>You cannot contact the office of interpreter services directly.</li>
               </ul>
