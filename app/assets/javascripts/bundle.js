@@ -41956,6 +41956,8 @@
 	  value: true
 	});
 	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(/*! react */ 1);
@@ -41968,6 +41970,10 @@
 	
 	var _PrintableRequest2 = _interopRequireDefault(_PrintableRequest);
 	
+	var _AccordionPanel = __webpack_require__(/*! ./AccordionPanel */ 439);
+	
+	var _AccordionPanel2 = _interopRequireDefault(_AccordionPanel);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41975,6 +41981,38 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	// import { Button, Panel } from 'react-bootstrap';
+	
+	
+	var accordionData = [{
+	  title: 'Multilingual Safety Plans',
+	  advocacySteps: [['Introduction', 'You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children'], ['Taking Care of Yourself', 'Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)'], ['Escape Plan', 'Make Copies of:  Marriage certificate, divorce papers, custody documentation, court orders, restraining orders, or other legal documents; Work Permits; Bank Books']],
+	  sourceUrl: 'http://www.pcawa.net/uploads/1/4/7/1/14711308/pcawa_safety_handbook_2010_10_28_-_eng.pdf',
+	  printable: false
+	}, {
+	  title: 'Right to an Interpreter',
+	  advocacySteps: [['Although the United States Constitution does not explicitly provide for the right to an interpreter, the individual rights and liberties afforded to all individuals under the Fourth, Fifth, Sixth, Eighth and Fourteenth Amendments are meaningless for non- or limited-English speakers unless they are provided with complete, competent, and accurate interpreting services.'], ["In recent years, the U.S. Department of Justice has been reviewing state court's compliance with this executive order."]],
+	  sourceUrl: 'http://www.najit.org/certification/faq.php',
+	  printable: true,
+	  printableUrl: 'http://12.218.239.52/Forms/pdf_files/CCG0108.pdf'
+	}, {
+	  title: 'Interpretation Contact',
+	  advocacySteps: [['Describe your roles and clarify expectations'], ['Ensure that the interpreter is taking notes'], ['Pause frequently to allow the interpreter to translate information']],
+	  sourceUrl: 'http://www.asha.org/practice/multicultural/issues/interpret.htm',
+	  printable: false
+	}, {
+	  title: 'Legal Terms',
+	  advocacySteps: [['Words and phrases used in the courtroom and conversational-English are not', 'the same.'], ['Translations are various and my differ, according to regional dialects of target (foreign) language used, etc.'], ['Attention', 'Children of the victim, or the offending party -- <strong>do not make adequate interpreters.']],
+	  sourceUrl: 'http://www.abajournal.com/magazine/article/justice_moves_slowly_for_those_who_need_interpreters',
+	  printable: false,
+	  altSourceText: 'more on this topic'
+	}, {
+	  title: "I'm Going to Court",
+	  advocacySteps: [['You cannot contact the office of interpreter services directly.']],
+	  sourceUrl: 'http://www.cookcountycourt.org/ABOUTTHECOURT/OfficeoftheChiefJudge/CourtRelatedServices/OfficeofInterpreterServices.aspx',
+	  printable: true,
+	  printableUrl: 'http://12.218.239.52/Forms/pdf_files/CCG0108.pdf'
+	}];
 	
 	var AccordionSection = function (_Component) {
 	  _inherits(AccordionSection, _Component);
@@ -41990,6 +42028,10 @@
 	    value: function render() {
 	      var _this2 = this;
 	
+	      var advocacyOptions = accordionData.map(function (a, i) {
+	        return _react2.default.createElement(_AccordionPanel2.default, _extends({ key: 'aopts_' + i, open: _this2.props.open, handleClick: _this2.props.toggleClick }, a));
+	      });
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -41998,253 +42040,7 @@
 	          { className: 'center block' },
 	          'Resource Options'
 	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Button,
-	          {
-	            bsStyle: 'primary',
-	            block: true,
-	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.props.open });
-	            } },
-	          'Multilingual Safety Plans'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.props.open },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'Introduction: '
-	              ),
-	              'You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'Taking Care of Yourself: '
-	              ),
-	              'Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'Escape Plan: '
-	              ),
-	              'Make Copies of:  Marriage certificate, divorce papers, custody documentation, court orders, restraining orders, or other legal documents; Work Permits; Bank Books'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://www.pcawa.net/uploads/1/4/7/1/14711308/pcawa_safety_handbook_2010_10_28_-_eng.pdf' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pull-right' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
-	                '- source'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Button,
-	          {
-	            bsStyle: 'primary',
-	            block: true,
-	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.props.open });
-	            } },
-	          'Right to an Interpreter'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.props.open },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Although the United States Constitution does not explicitly provide for the right to an interpreter, the individual rights and liberties afforded to all individuals under the Fourth, Fifth, Sixth, Eighth and Fourteenth Amendments are meaningless for non- or limited-English speakers unless they are provided with complete, competent, and accurate interpreting services.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'In recent years, the U.S. Department of Justice has been reviewing state court\'s compliance with this executive order.'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://www.najit.org/certification/faq.php' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pull-right' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
-	                '- source'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(_PrintableRequest2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Button,
-	          { bsStyle: 'primary',
-	            block: true,
-	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.props.open });
-	            } },
-	          'Interpretation Contact'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.props.open },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Describe your roles and clarify expectations'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Ensure that the interpreter is taking notes'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Pause frequently to allow the interpreter to translate information'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://www.asha.org/practice/multicultural/issues/interpret.htm' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pull-right' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
-	                '- source'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Button,
-	          {
-	            bsStyle: 'primary',
-	            block: true,
-	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.props.open });
-	            } },
-	          'Legal Terms'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.props.open },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Words and phrases used in the courtroom and conversational-English are ',
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'not'
-	              ),
-	              ' the same.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Note: translations are various and my differ, according to regional dialects of target (foreign) language used, etc.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'em',
-	                null,
-	                'Attention: '
-	              ),
-	              'Children of the victim, or the offending party -- ',
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'do not make adequate interpreters.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://www.abajournal.com/magazine/article/justice_moves_slowly_for_those_who_need_interpreters' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pull-right' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { className: 'source', bsStyle: 'warning', bsSize: 'xsmall' },
-	                'more on this topic'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Button,
-	          {
-	            bsStyle: 'primary',
-	            block: true,
-	            onClick: function onClick() {
-	              return _this2.setState({ open: !_this2.props.open });
-	            } },
-	          'I\'m Going to Court'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { collapsible: true, expanded: this.props.open },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'You cannot contact the office of interpreter services directly.'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://www.cookcountycourt.org/ABOUTTHECOURT/OfficeoftheChiefJudge/CourtRelatedServices/OfficeofInterpreterServices.aspx' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pull-right' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
-	                '- source'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(_PrintableRequest2.default, null)
-	        )
+	        advocacyOptions
 	      );
 	    }
 	  }]);
@@ -42253,7 +42049,8 @@
 	}(_react.Component);
 	
 	AccordionSection.propTypes = {
-	  open: _react.PropTypes.bool.isRequired
+	  open: _react.PropTypes.bool.isRequired,
+	  toggleClick: _react.PropTypes.func.isRequired
 	};
 	exports.default = AccordionSection;
 
@@ -42656,9 +42453,16 @@
 	  }
 	
 	  _createClass(AccordionSectionContainer, [{
+	    key: 'toggleClick',
+	    value: function toggleClick() {
+	      this.setState({ open: !this.state.open });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(_AccordionSection2.default, { open: this.state.open });
+	      return _react2.default.createElement(_AccordionSection2.default, {
+	        open: this.state.open,
+	        toggleClick: this.toggleClick });
 	    }
 	  }]);
 	
@@ -42666,6 +42470,176 @@
 	}(_react.Component);
 	
 	exports.default = AccordionSectionContainer;
+
+/***/ },
+/* 439 */
+/*!***********************************************************!*\
+  !*** ./app/assets/frontend/components/AccordionPanel.jsx ***!
+  \***********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 175);
+	
+	var _PrintableRequest = __webpack_require__(/*! ./PrintableRequest */ 431);
+	
+	var _PrintableRequest2 = _interopRequireDefault(_PrintableRequest);
+	
+	var _IntroSteps = __webpack_require__(/*! ./IntroSteps */ 440);
+	
+	var _IntroSteps2 = _interopRequireDefault(_IntroSteps);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var canPrint = '';
+	var sourceText = '- source';
+	
+	var AccordionPanel = function (_Component) {
+	  _inherits(AccordionPanel, _Component);
+	
+	  function AccordionPanel() {
+	    _classCallCheck(this, AccordionPanel);
+	
+	    return _possibleConstructorReturn(this, (AccordionPanel.__proto__ || Object.getPrototypeOf(AccordionPanel)).apply(this, arguments));
+	  }
+	
+	  _createClass(AccordionPanel, [{
+	    key: 'handleClick',
+	    value: function handleClick() {
+	      this.props.handleClick();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var steps = this.props.advocacySteps;
+	      var introSteps = steps.map(function (s, i) {
+	        return _react2.default.createElement(_IntroSteps2.default, _extends({ key: 'isteps_' + i }, s));
+	      });
+	      if (this.props.printable) {
+	        canPrint = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
+	      }
+	      if (this.props.altSourceText) {
+	        sourceText = this.props.altSourceText;
+	      }
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Button,
+	          {
+	            bsStyle: 'primary',
+	            block: true,
+	            onClick: this.handleClick },
+	          this.props.title
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Panel,
+	          { collapsible: true, expanded: this.props.open },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            introSteps
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: this.props.sourceUrl },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'pull-right' },
+	              _react2.default.createElement(
+	                _reactBootstrap.Button,
+	                { className: 'source', bsStyle: 'default', bsSize: 'xsmall' },
+	                '- source'
+	              )
+	            )
+	          ),
+	          canPrint
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return AccordionPanel;
+	}(_react.Component);
+	
+	exports.default = AccordionPanel;
+
+/***/ },
+/* 440 */
+/*!*******************************************************!*\
+  !*** ./app/assets/frontend/components/IntroSteps.jsx ***!
+  \*******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var IntroStep = function (_Component) {
+	  _inherits(IntroStep, _Component);
+	
+	  function IntroStep() {
+	    _classCallCheck(this, IntroStep);
+	
+	    return _possibleConstructorReturn(this, (IntroStep.__proto__ || Object.getPrototypeOf(IntroStep)).apply(this, arguments));
+	  }
+	
+	  _createClass(IntroStep, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'strong',
+	          null,
+	          this.props.stepLead
+	        ),
+	        this.props.stepBody
+	      );
+	    }
+	  }]);
+	
+	  return IntroStep;
+	}(_react.Component);
+	
+	exports.default = IntroStep;
 
 /***/ }
 /******/ ]);
