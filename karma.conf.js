@@ -15,7 +15,11 @@ module.exports = function (config) {
       'tests.webpack.js': [ 'webpack' ] // Preprocess with webpack and our sourcemap loader
     },
     reporters: [ 'mocha' ],
+
     webpack: { // Simplified Webpack configuration
+      resolve: {
+        extensions: ['', '.js', '.jsx']
+      },      
       module: {
         loaders: webpackConfig.module.loaders,
         noParse: [

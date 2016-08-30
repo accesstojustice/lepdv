@@ -9,8 +9,8 @@ import chai from 'chai';
 
 var expect = chai.expect;
 
-import AccordionPanel from '../components/AccordionPanel.jsx'; // use the .jsx
-import PrintableRequest from './PrintableRequest.jsx';
+import AccordionPanel from '../components/AccordionPanel'; // use the .jsx
+// import PrintableRequest from './PrintableRequest.jsx';
 // import IntroSteps from '../components/IntroSteps.jsx';
 //
 describe('AccordionPanel', () => {
