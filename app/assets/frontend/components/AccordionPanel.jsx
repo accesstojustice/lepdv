@@ -14,6 +14,10 @@ export default class AccordionPanel extends Component {
     open: PropTypes.bool.isRequired
   }
 
+  // handleToggleOpen(e) {
+  //   this.props.toggleOpen()
+  // }
+
   render() {
 
     const canPrint = <PrintableRequest printUrl={ this.printableUrl } />;
@@ -31,7 +35,7 @@ export default class AccordionPanel extends Component {
         <Button
           bsStyle="primary"
           block
-          onClick={ this.toggleOpen }>{this.props.title}
+          onClick={ this.props.toggleOpen }>{this.props.title}
         </Button>
         <Panel collapsible expanded={this.props.open}>
           <ul>

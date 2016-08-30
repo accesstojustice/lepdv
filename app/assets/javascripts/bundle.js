@@ -42452,14 +42452,14 @@
 	
 	  _createClass(AccordionSectionContainer, [{
 	    key: 'handleOpen',
-	    value: function handleOpen() {
+	    value: function handleOpen(e) {
 	      this.setState({ open: !this.state.open });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(_AccordionSection2.default, {
-	        toggleOpen: this.handleOpen,
+	        toggleOpen: this.handleOpen.bind(this),
 	        open: this.state.open });
 	    }
 	  }]);
@@ -42517,6 +42517,12 @@
 	
 	  _createClass(AccordionPanel, [{
 	    key: 'render',
+	
+	
+	    // handleToggleOpen(e) {
+	    //   this.props.toggleOpen()
+	    // }
+	
 	    value: function render() {
 	
 	      var canPrint = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
@@ -42538,7 +42544,7 @@
 	          {
 	            bsStyle: 'primary',
 	            block: true,
-	            onClick: this.toggleOpen },
+	            onClick: this.props.toggleOpen },
 	          this.props.title
 	        ),
 	        _react2.default.createElement(
