@@ -42536,6 +42536,12 @@
 	      });
 	      var sourceText = this.props.altSourceText;
 	
+	      var caret = _react2.default.createElement('i', { className: 'fa fa-caret-square-o-down fa-fw', 'aria-hidden': 'true' });
+	
+	      if (!this.props.open) {
+	        caret = _react2.default.createElement('i', { className: 'fa fa-caret-square-o-left fa-fw', 'aria-hidden': 'true' });
+	      }
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -42545,6 +42551,12 @@
 	            bsStyle: 'primary',
 	            block: true,
 	            onClick: this.props.toggleOpen },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'pull-right ' },
+	            caret
+	          ),
+	          '  ',
 	          this.props.title
 	        ),
 	        _react2.default.createElement(

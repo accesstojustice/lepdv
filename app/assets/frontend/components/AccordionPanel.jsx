@@ -30,12 +30,19 @@ export default class AccordionPanel extends Component {
       />);
     let sourceText = this.props.altSourceText;
 
+    let caret = <i className="fa fa-caret-square-o-down fa-fw" aria-hidden="true"></i>;
+
+    if(!this.props.open) {
+      caret = <i className="fa fa-caret-square-o-left fa-fw" aria-hidden="true"></i>;
+
+    }
+
     return (
       <div>
         <Button
           bsStyle="primary"
           block
-          onClick={ this.props.toggleOpen }>{this.props.title}
+          onClick={ this.props.toggleOpen }><span className="pull-right ">{caret}</span>  {this.props.title}
         </Button>
         <Panel collapsible expanded={this.props.open}>
           <ul>
