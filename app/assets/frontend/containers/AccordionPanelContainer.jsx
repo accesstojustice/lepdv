@@ -5,11 +5,12 @@ import AccordionPanel from '../components/AccordionPanel';
 
 export default class AccordionPanelContainer extends Component {
   static propTypes = {
+    open: PropTypes.bool.isRequired,
     toggleOpen: PropTypes.func.isRequired,
     title: PropTypes.string.isRequired,
     advocacySteps: PropTypes.array.isRequired,
     altSourceText: PropTypes.string,
-    open: PropTypes.bool.isRequired,
+    sourceUrl: PropTypes.string.isRequired,
     printable: PropTypes.bool
 
   }
@@ -29,6 +30,7 @@ export default class AccordionPanelContainer extends Component {
         steps={this.props.advocacySteps}
         canPrint={canPrint}
         printableUrl={this.props.printableUrl}
+        sourceUrl={this.props.sourceUrl}
         altSourceText={this.props.altSourceText} />
     );
   }

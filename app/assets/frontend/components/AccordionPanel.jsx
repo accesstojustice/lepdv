@@ -10,13 +10,10 @@ export default class AccordionPanel extends Component {
     steps: PropTypes.array.isRequired,
     canPrint: PropTypes.bool.isRequired,
     printableUrl: PropTypes.string,
-    sourceText: PropTypes.string,
+    altSourceText: PropTypes.string,
+    sourceUrl: PropTypes.string.isRequired,
     open: PropTypes.bool.isRequired
   }
-
-  // handleToggleOpen(e) {
-  //   this.props.toggleOpen()
-  // }
 
   render() {
 
@@ -47,7 +44,7 @@ export default class AccordionPanel extends Component {
           <ul>
             {introSteps}
           </ul>
-          <a href={this.props.sourceUrl}>
+          <a href={this.props.sourceUrl} target="_blank">
             <div className="pull-right">
               <Button className="source" bsStyle="default" bsSize="xsmall">{sourceText ? sourceText : '- source'}</Button>
             </div>

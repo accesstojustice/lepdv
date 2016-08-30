@@ -42420,6 +42420,7 @@
 	        steps: this.props.advocacySteps,
 	        canPrint: canPrint,
 	        printableUrl: this.props.printableUrl,
+	        sourceUrl: this.props.sourceUrl,
 	        altSourceText: this.props.altSourceText });
 	    }
 	  }]);
@@ -42428,11 +42429,12 @@
 	}(_react.Component);
 	
 	AccordionPanelContainer.propTypes = {
+	  open: _react.PropTypes.bool.isRequired,
 	  toggleOpen: _react.PropTypes.func.isRequired,
 	  title: _react.PropTypes.string.isRequired,
 	  advocacySteps: _react.PropTypes.array.isRequired,
 	  altSourceText: _react.PropTypes.string,
-	  open: _react.PropTypes.bool.isRequired,
+	  sourceUrl: _react.PropTypes.string.isRequired,
 	  printable: _react.PropTypes.bool
 	
 	};
@@ -42486,12 +42488,6 @@
 	
 	  _createClass(AccordionPanel, [{
 	    key: 'render',
-	
-	
-	    // handleToggleOpen(e) {
-	    //   this.props.toggleOpen()
-	    // }
-	
 	    value: function render() {
 	
 	      var canPrintInstructions = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
@@ -42538,7 +42534,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
-	            { href: this.props.sourceUrl },
+	            { href: this.props.sourceUrl, target: '_blank' },
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'pull-right' },
@@ -42564,7 +42560,8 @@
 	  steps: _react.PropTypes.array.isRequired,
 	  canPrint: _react.PropTypes.bool.isRequired,
 	  printableUrl: _react.PropTypes.string,
-	  sourceText: _react.PropTypes.string,
+	  altSourceText: _react.PropTypes.string,
+	  sourceUrl: _react.PropTypes.string.isRequired,
 	  open: _react.PropTypes.bool.isRequired
 	};
 	exports.default = AccordionPanel;
