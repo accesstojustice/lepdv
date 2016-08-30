@@ -8,9 +8,9 @@ let accordionData = [
   {
     title: 'Multilingual Safety Plans',
     advocacySteps: [
-      ['Introduction', 'You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children'],
-      ['Taking Care of Yourself', 'Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)'],
-      ['Escape Plan', 'Make Copies of:  Marriage certificate, divorce papers, custody documentation, court orders, restraining orders, or other legal documents; Work Permits; Bank Books']
+      ['Introduction: ', 'You cannot control your (ex) partner’s violence, but it may be possible to increase your own safety as well as the safety of your children'],
+      ['Taking Care of Yourself: ', 'Take part in social activities (e.g. programs at your local community or Early Years centre, dinner with friends, etc.)'],
+      ['Escape Plan: ', 'Make Copies of:  Marriage certificate, divorce papers, custody documentation, court orders, restraining orders, or other legal documents; Work Permits; Bank Books']
     ],
     sourceUrl: 'http://www.pcawa.net/uploads/1/4/7/1/14711308/pcawa_safety_handbook_2010_10_28_-_eng.pdf',
     printable: false
@@ -38,9 +38,9 @@ let accordionData = [
   {
     title: 'Legal Terms',
     advocacySteps: [
-      ['Words and phrases used in the courtroom and conversational-English are not', 'the same.'],
+      ['Realize: ', 'Words and phrases used in the courtroom and conversational-English are not the same.'],
       ['Translations are various and my differ, according to regional dialects of target (foreign) language used, etc.'],
-      ['Attention', 'Children of the victim, or the offending party -- <strong>do not make adequate interpreters.']
+      ['Attention: ', 'Children of the victim, or the offending party -- do not make adequate interpreters.']
 
     ],
     sourceUrl: 'http://www.abajournal.com/magazine/article/justice_moves_slowly_for_those_who_need_interpreters',
