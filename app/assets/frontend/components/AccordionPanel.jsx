@@ -18,7 +18,12 @@ export default class AccordionPanel extends Component {
 
     const canPrint = <PrintableRequest printUrl={ this.printableUrl } />;
 
-    let introSteps = this.props.steps.map((s, i) => <IntroSteps key={'isteps_' + i} {...s}/>);
+    let introSteps = this.props.steps.map((s, i) =>
+        <IntroSteps
+          key={'isteps_' + i}
+          stepLead={ s.length === 2 ? s[0] : "" }
+          stepBody={ s.length === 2 ? s[1] : s[0] }
+      />);
     let sourceText = this.props.altSourceText;
 
     return (

@@ -42482,8 +42482,6 @@
 	  value: true
 	});
 	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(/*! react */ 1);
@@ -42524,7 +42522,11 @@
 	      var canPrint = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
 	
 	      var introSteps = this.props.steps.map(function (s, i) {
-	        return _react2.default.createElement(_IntroSteps2.default, _extends({ key: 'isteps_' + i }, s));
+	        return _react2.default.createElement(_IntroSteps2.default, {
+	          key: 'isteps_' + i,
+	          stepLead: s.length === 2 ? s[0] : "",
+	          stepBody: s.length === 2 ? s[1] : s[0]
+	        });
 	      });
 	      var sourceText = this.props.altSourceText;
 	
@@ -42635,6 +42637,10 @@
 	  return IntroStep;
 	}(_react.Component);
 	
+	IntroStep.propTypes = {
+	  stepLead: _react.PropTypes.string,
+	  stepBody: _react.PropTypes.string.isRequired
+	};
 	exports.default = IntroStep;
 
 /***/ },
