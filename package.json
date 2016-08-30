@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose"
+    "test": "./node_modules/karma/bin/karma start"
   },
   "jest": {
     "testFileExtensions": [
@@ -23,8 +23,10 @@
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react",
       "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-test-renderer",
       "<rootDir>/node_modules/react-addons-test-utils"
-    ]
+    ],
+    "automock": false
   },
   "repository": {
     "type": "git",
@@ -37,18 +39,30 @@
   },
   "homepage": "https://github.com/renemarcelo/lepdv",
   "devDependencies": {
-    "babel-core": "^6.7.2",
-    "babel-jest": "^11.0.2",
-    "babel-loader": "^6.2.4",
-    "babel-polyfill": "^6.7.4",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "react-addons-test-utils": "^15.0.1",
-    "webpack": "^1.12.14"
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "karma": "^1.2.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-sinon": "^1.0.5",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.0.2",
+    "mocha-loader": "^0.7.1",
+    "phantomjs-prebuilt": "^2.1.12",
+    "sinon": "^1.17.5",
+    "webpack": "^1.13.2"
   },
   "dependencies": {
-    "react": "^0.14.8",
-    "react-bootstrap": "^0.28.3",
-    "react-dom": "^0.14.7"
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "react": "^15.3.1",
+    "react-bootstrap": "^0.30.3",
+    "react-dom": "^15.3.1"
   }
 }
