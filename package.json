@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose"
+    "test": "./node_modules/karma/bin/karma start"
   },
   "jest": {
     "testFileExtensions": [
@@ -39,11 +39,22 @@
   },
   "homepage": "https://github.com/renemarcelo/lepdv",
   "devDependencies": {
-    "babel-jest": "^14.1.0",
     "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
     "babel-preset-stage-0": "^6.5.0",
-    "jest": "^14.1.0",
-    "react-test-renderer": "^15.3.1",
+    "chai": "^3.5.0",
+    "karma": "^1.2.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-sinon": "^1.0.5",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.0.2",
+    "mocha-loader": "^0.7.1",
+    "phantomjs-prebuilt": "^2.1.12",
+    "sinon": "^1.17.5",
     "webpack": "^1.13.2"
   },
   "dependencies": {
