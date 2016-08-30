@@ -42525,7 +42525,7 @@
 	
 	    value: function render() {
 	
-	      var canPrint = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
+	      var canPrintInstructions = _react2.default.createElement(_PrintableRequest2.default, { printUrl: this.printableUrl });
 	
 	      var introSteps = this.props.steps.map(function (s, i) {
 	        return _react2.default.createElement(_IntroSteps2.default, {
@@ -42580,7 +42580,7 @@
 	              )
 	            )
 	          ),
-	          canPrint ? canPrint : ''
+	          this.props.canPrint ? canPrintInstructions : ''
 	        )
 	      );
 	    }
@@ -42692,8 +42692,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var canPrint = false;
-	
 	var AccordionPanelContainer = function (_Component) {
 	  _inherits(AccordionPanelContainer, _Component);
 	
@@ -42711,6 +42709,8 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var canPrint = this.props.printable || false;
+	
 	      return _react2.default.createElement(_AccordionPanel2.default, {
 	        open: this.handleOpen(),
 	        toggleOpen: this.props.toggleOpen,
@@ -42730,7 +42730,8 @@
 	  title: _react.PropTypes.string.isRequired,
 	  advocacySteps: _react.PropTypes.array.isRequired,
 	  altSourceText: _react.PropTypes.string,
-	  open: _react.PropTypes.bool.isRequired
+	  open: _react.PropTypes.bool.isRequired,
+	  printable: _react.PropTypes.bool
 	
 	};
 	exports.default = AccordionPanelContainer;

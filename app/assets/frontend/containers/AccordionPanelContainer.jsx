@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import AccordionPanel from '../components/AccordionPanel';
 
-let canPrint = false;
+
 
 export default class AccordionPanelContainer extends Component {
   static propTypes = {
@@ -9,7 +9,8 @@ export default class AccordionPanelContainer extends Component {
     title: PropTypes.string.isRequired,
     advocacySteps: PropTypes.array.isRequired,
     altSourceText: PropTypes.string,
-    open: PropTypes.bool.isRequired
+    open: PropTypes.bool.isRequired,
+    printable: PropTypes.bool
 
   }
 
@@ -18,6 +19,8 @@ export default class AccordionPanelContainer extends Component {
   }
 
   render() {
+    const canPrint = this.props.printable || false;
+
     return (
       <AccordionPanel
         open={this.handleOpen()}

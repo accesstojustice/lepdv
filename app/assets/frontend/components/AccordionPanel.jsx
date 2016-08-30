@@ -20,7 +20,7 @@ export default class AccordionPanel extends Component {
 
   render() {
 
-    const canPrint = <PrintableRequest printUrl={ this.printableUrl } />;
+    const canPrintInstructions = <PrintableRequest printUrl={ this.printableUrl } />;
 
     let introSteps = this.props.steps.map((s, i) =>
         <IntroSteps
@@ -34,7 +34,6 @@ export default class AccordionPanel extends Component {
 
     if(!this.props.open) {
       caret = <i className="fa fa-caret-square-o-left fa-fw" aria-hidden="true"></i>;
-
     }
 
     return (
@@ -53,7 +52,7 @@ export default class AccordionPanel extends Component {
               <Button className="source" bsStyle="default" bsSize="xsmall">{sourceText ? sourceText : '- source'}</Button>
             </div>
           </a>
-          {canPrint ? canPrint : ''}
+          {this.props.canPrint ? canPrintInstructions : ''}
         </Panel>
       </div>
     );
