@@ -8,6 +8,16 @@ Bundler.require(*Rails.groups)
 
 module Lepdv
   class Application < Rails::Application
+
+    # In development send *wp-bundle.js to the webpack-dev-server running on 8080
+    config.action_controller.asset_host = Proc.new { |source|
+      if source =~ /wp_bundle\.js$/i
+        "http://localhost:8080"
+      end
+    }
+
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
