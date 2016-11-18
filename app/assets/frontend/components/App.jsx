@@ -48,6 +48,9 @@ const header = (
             <span className="icon-bar"></span>
           </button>
           <a className='navbar-brand' href="/">LEPDV in Chicago</a>
+            <div id="btn-exit" className="my0 inline-block">
+            <ExitButtonContainer someUrl={popularUrls}/>
+            </div>
 
         </div>
 
@@ -78,9 +81,6 @@ export default class App extends Component {
               <div className="row">
                 <div className="py3">
                   <div className="col-md-2 col-xs-2 right">
-                    <div id="btn-exit" className="my0">
-                    <ExitButtonContainer someUrl={popularUrls}/>
-                    </div>
 
                   </div>
                   <div className="row">
