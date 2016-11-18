@@ -13,7 +13,7 @@ export default class InfoMarquee extends Component {
         <div id="reason" className="info-marquee-wrapper">
           <PageHeader>
             <small>
-              <ul>
+              <ul className="animated fadeInUp">
                 {this.props.message}
               </ul>
             </small>

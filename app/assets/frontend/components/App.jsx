@@ -48,9 +48,9 @@ const header = (
             <span className="icon-bar"></span>
           </button>
           <a className='navbar-brand' href="/">LEPDV in Chicago</a>
-            <div id="btn-exit" className="my0 inline-block">
+          <div id="btn-exit" className="my0 inline-block">
             <ExitButtonContainer someUrl={popularUrls}/>
-            </div>
+          </div>
 
         </div>
 
@@ -73,16 +73,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-
         {header}
         <div className="container">
           <div className="mt4 pt3 px2">
             <div className="mt2">
               <div className="row">
                 <div className="py3">
-                  <div className="col-md-2 col-xs-2 right">
-
-                  </div>
                   <div className="row">
                     <div className="col-md-10 col-xs-10">
                       <h2 className="intro">In My Language</h2>
@@ -93,20 +89,17 @@ export default class App extends Component {
                         moreYouKnowText={infoParagraphs} />
                     </div>
                   </div>
+                  <br/>
 
                   <div className="row">
-                    <div className="col-sm-4">
-                      <div className="react-wrapper">
-
+                      <div className="col-sm-4 col-md-5 px0 mx0">
                         <AccordionSectionContainer />
                       </div>
-                    </div>
-
-                    <div className="col-sm-7 col-sm-offset-1">
-
+                    <div className="col-sm-7 col-sm-offset-1 col-md-offset-0 ">
+                      <div className=" section-graphic pl3">
                       <LandingMap />
-                      <div className='col-sm-12 my2 mln4 py4'>
-
+</div>
+                      <div className='section-secondary my2 ml2 py4'>
                         <LandingViz />
                       </div>
                     </div>
@@ -119,7 +112,6 @@ export default class App extends Component {
             </div>
           </div>
         </div>
-
       </div>
     )
   }

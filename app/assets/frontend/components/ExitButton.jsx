@@ -8,7 +8,7 @@ export default class ExitButton extends Component {
 
   render() {
     return (
-      <a className="btn btn-danger"  href={this.props.exitUrl}>
+      <a className="btn btn-danger animated fadeInRight"  href={this.props.exitUrl}>
         <i className="fa fa-sign-out fa-lg fa-2x fa-border"></i>
         {"  "}
           Exit
@@ -16,13 +16,3 @@ export default class ExitButton extends Component {
       );
     }
   }
-
-  //
-  // <div className="clearfix">
-  //   <Button block="true" bsStyle="danger">
-  //     <span className="pull-right">
-  //       <i id="exitbutton" className="fa fa-sign-out fa-stack-2x"></i>
-  //     </span>
-  //     <span className="pull-left">exit</span>
-  //   </Button>
-  // </div>
