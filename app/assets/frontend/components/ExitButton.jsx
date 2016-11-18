@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
+import { Button } from 'react-bootstrap'
 
 export default class ExitButton extends Component {
   static propTypes = {
@@ -7,14 +8,11 @@ export default class ExitButton extends Component {
 
   render() {
     return (
-      <div className="exit-box">
-        <a href={this.props.exitUrl} >
-          <span className="fa-stack fa-5x">
-            <i id="exitbutton" className="fa fa-sign-out fa-stack-2x"></i>
-            <strong className="fa-stack-1x exit-text">exit</strong>
-          </span>
-        </a>
-      </div>
-    );
+      <a className="btn btn-danger animated fadeInRight"  href={this.props.exitUrl}>
+        <i className="fa fa-sign-out fa-lg fa-2x fa-border"></i>
+        {"  "}
+          Exit
+      </a>
+      );
+    }
   }
-}
