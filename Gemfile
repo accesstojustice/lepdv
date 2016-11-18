@@ -56,4 +56,5 @@ gem 'unicorn'
 gem 'raindrops', '~>0.16'
 
 gem 'font-awesome-rails'
+gem 'basscss-rails'
 gem 'highcharts-rails'

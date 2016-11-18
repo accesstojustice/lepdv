@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import AppLayout from './components/AppLayout';
+import App from './components/App';
 
-class App extends Component {
+class IMLApp extends Component {
   render() {
     return (
       <div>
-        <AppLayout />
+        <App />
       </div>
     )
   }
@@ -14,7 +14,7 @@ class App extends Component {
 
 let documentReady = () => {
   ReactDOM.render(
-    <App />,
+    <IMLApp />,
     document.getElementById("react")
   )
 };

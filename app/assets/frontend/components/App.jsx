@@ -36,42 +36,94 @@ let safetyQuestions = [
   { id: 1, body: "Do you have independence in your finances?" }
 ]
 
+const header = (
+  <div className="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div className="container">
+      <div className="top-0 bottom-0">
+        <div className="navbar-header">
+          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <h4><span className="sr-only">Toggle navigation</span></h4>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+          <a className='navbar-brand' href="/">LEPDV in Chicago</a>
 
-export default class AppLayout extends Component {
+        </div>
+
+      </div>
+      <div className="collapse navbar-collapse">
+        <ul className="nav navbar-nav pull-right">
+          <li><a href="#address-search">Search</a></li>
+          <li><a href="#about">About</a></li>
+
+          <li>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+)
+
+export default class App extends Component {
   render() {
     return (
       <div>
-        <div className="col-md-2 col-xs-2">
-          <ExitButtonContainer randomExitUrl={randomExitUrl}/>
-        </div>
-        <div className="row">
-          <div className="col-md-10 col-xs-10">
-            <h2 className="intro">In My Language</h2>
-            <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
 
-            <InfoMarqueeContainer
-              engageQuestion={safetyQuestions}
-              moreYouKnowText={infoParagraphs} />
-          </div>
-        </div>
+        {header}
+        <div className="container">
 
-        <div className="row">
-          <div className="col-sm-4">
-            <div className="react-wrapper">
 
-              <AccordionSectionContainer />
+          <div className="mt4 pt3 px2">
+
+
+            <div className="mt2">
+              <div class="row">
+                <div class="py3">
+
+
+
+                  <div className="col-md-2 col-xs-2">
+
+                  </div>
+                  <div className="row">
+                    <div className="col-md-10 col-xs-10">
+                      <h2 className="intro">In My Language</h2>
+                      <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
+
+                      <InfoMarqueeContainer
+                        engageQuestion={safetyQuestions}
+                        moreYouKnowText={infoParagraphs} />
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-sm-4">
+                      <div className="react-wrapper">
+
+                        <AccordionSectionContainer />
+                      </div>
+                    </div>
+
+                    <div className="col-sm-7 col-sm-offset-1">
+
+                      <LandingMap />
+                      <div className='col-sm-12 my2 mln4 py4'>
+
+                        <LandingViz />
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <br/>
             </div>
           </div>
-
-          <div className="col-sm-7 col-sm-offset-1">
-
-            <LandingMap />
-            <div className='col-sm-12 my2 mln4 py4'>
-
-              <LandingViz />
-            </div>
-          </div>
         </div>
+
       </div>
     )
   }
