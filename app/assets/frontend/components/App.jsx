@@ -5,7 +5,7 @@ import AccordionSectionContainer from '../containers/AccordionSectionContainer'
 import LandingViz from './LandingViz'
 import LandingMap from './LandingMap'
 
-let randomExitUrl = [
+let popularUrls = [
   {id: 1, url: "http://google.com"},
   {id: 2, url: "http://yahoo.com"},
   {id: 3, url: "http://bing.com"},
@@ -73,18 +73,14 @@ export default class App extends Component {
 
         {header}
         <div className="container">
-
-
           <div className="mt4 pt3 px2">
-
-
             <div className="mt2">
-              <div class="row">
-                <div class="py3">
-
-
-
-                  <div className="col-md-2 col-xs-2">
+              <div className="row">
+                <div className="py3">
+                  <div className="col-md-2 col-xs-2 right">
+                    <div id="btn-exit" className="my0">
+                    <ExitButtonContainer someUrl={popularUrls}/>
+                    </div>
 
                   </div>
                   <div className="row">

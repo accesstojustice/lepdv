@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import ExitButton from '../components/ExitButton';
 
 export default class ExitButtonContainer extends Component {
@@ -7,9 +7,13 @@ export default class ExitButtonContainer extends Component {
     this.state = { exitUrl: this.randomExitUrl() || '' }
   }
 
+  static propTypes = {
+    someUrl: PropTypes.array.isRequired
+  }
+
   randomExitUrl() {
-    let urls = this.props.randomExitUrl;
-    let length = this.props.randomExitUrl.length;
+    let urls = this.props.someUrl;
+    let length = this.props.someUrl.length;
     return urls[Math.floor(Math.random() * length)].url;
   }
 
