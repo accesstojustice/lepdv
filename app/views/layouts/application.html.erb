@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
   <%= yield %>
 
   <!-- use this cartodb.js link if you are using https -->
@@ -26,7 +26,9 @@
 
   <script charset="utf-8">
     <% if ENV["RAILS_ENV"] == "production" %>
-      var script = "/bundle.js";
+
+      <%= javascript_include_tag 'bundle'  %>
+
     <% else %>
       console.warn("Development mode. Make sure to start 'npm run hot'");
       var script = "http://" + (location.host || 'localhost').split(':')[0] + ":8080/assets/App_wp_bundle.js"
