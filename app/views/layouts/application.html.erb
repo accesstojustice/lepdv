@@ -26,8 +26,7 @@
 
   <script charset="utf-8">
     <% if Rails.env.production? %>
-
-      <%= javascript_include_tag 'bundle'  %>
+      var script = "/bundle.js";
 
     <% else %>
       console.warn("Development mode. Make sure to start 'npm run hot'");
