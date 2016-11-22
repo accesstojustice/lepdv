@@ -4,6 +4,8 @@ import InfoMarqueeContainer from '../containers/InfoMarqueeContainer';
 import AccordionSectionContainer from '../containers/AccordionSectionContainer'
 import LandingViz from './LandingViz'
 import LandingMap from './LandingMap'
+import { Navbar, Nav, NavItem, MenuItem, } from 'react-bootstrap'
+
 
 let popularUrls = [
   {id: 1, url: "http://google.com"},
@@ -36,46 +38,38 @@ let safetyQuestions = [
   { id: 1, body: "Do you have independence in your finances?" }
 ]
 
-const header = (
-  <div className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div className="container">
-      <div className="top-0 bottom-0">
-        <div className="navbar-header">
-          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <h4><span className="sr-only">Toggle navigation</span></h4>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
-          <a className='navbar-brand' href="/">IML Safety</a>
-          <div id="btn-exit" className="my0 inline-block p1">
-            <ExitButtonContainer someUrl={popularUrls}/>
-          </div>
+const navbarInstance = (
+  <Navbar inverse>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#">IML Safety</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+        <div id="btn-exit" className="my0 inline-block p1">
+          <ExitButtonContainer someUrl={popularUrls}/>
         </div>
-      </div>
 
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav pullRight>
+        <NavItem eventKey={1} href="#address-search">Search</NavItem>
+        <NavItem eventKey={2} href="#about">About</NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+);
 
-      <div className="collapse navbar-collapse">
-        <ul className="nav navbar-nav pull-right">
-          <li><a href="#address-search">Search</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-)
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        {header}
+        {navbarInstance}
         <div className="container">
-          <div className="mt4 pt3 px2">
-            <div className="mt2">
+          <div className="mtn2 ptn1 px2">
+            <div id="prevalence-info" className="mt2">
               <div className="row">
-                <div className="py3">
+
                   <div className="row">
                     <div className="col-md-10 col-xs-10">
                       <h2 className="intro">In My Language</h2>
@@ -94,6 +88,7 @@ export default class App extends Component {
                       </div>
                     <div className="col-sm-7 col-sm-offset-1 col-md-offset-0 ">
                       <div className=" section-graphic pl3">
+                        <h4 className="black">LEPDV in Chicago</h4>
                       <LandingMap />
 </div>
                       <div className='section-secondary my2 ml2 py4'>
@@ -108,7 +103,7 @@ export default class App extends Component {
               <br/>
             </div>
           </div>
-        </div>
+
       </div>
     )
   }
