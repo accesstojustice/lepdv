@@ -47,24 +47,21 @@ const header = (
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className='navbar-brand' href="/">LEPDV in Chicago</a>
-          <div id="btn-exit" className="my0 inline-block">
+          <a className='navbar-brand' href="/">IML Safety</a>
+          <div id="btn-exit" className="my0 inline-block p1">
             <ExitButtonContainer someUrl={popularUrls}/>
           </div>
-
         </div>
-
       </div>
+
+
       <div className="collapse navbar-collapse">
         <ul className="nav navbar-nav pull-right">
           <li><a href="#address-search">Search</a></li>
           <li><a href="#about">About</a></li>
-
-          <li>
-          </li>
-
         </ul>
       </div>
+
     </div>
   </div>
 )

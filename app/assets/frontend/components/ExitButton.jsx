@@ -8,7 +8,7 @@ export default class ExitButton extends Component {
 
   render() {
     return (
-      <a className="btn btn-danger animated fadeInRight"  href={this.props.exitUrl}>
+      <a className="btn btn-danger btn-sm animated fadeInRight"  href={this.props.exitUrl}>
         <i className="fa fa-sign-out fa-lg fa-2x fa-border"></i>
         {"  "}
           Exit
