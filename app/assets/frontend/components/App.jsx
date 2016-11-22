@@ -45,7 +45,7 @@ const navbarInstance = (
         <a href="#">IML Safety</a>
       </Navbar.Brand>
       <Navbar.Toggle />
-        <div id="btn-exit" className="my0 inline-block p1">
+        <div id="btn-exit" className="inline-block p1">
           <ExitButtonContainer someUrl={popularUrls}/>
         </div>
 
