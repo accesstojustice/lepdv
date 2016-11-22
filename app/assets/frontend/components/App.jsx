@@ -71,7 +71,7 @@ export default class App extends Component {
               <div className="row">
 
                   <div className="row">
-                    <div className="col-md-10 col-xs-10">
+                    <div id="content" className="col-md-10">
                       <h2 className="intro">In My Language</h2>
                       <span className="intro-subtext">Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.</span>
 
