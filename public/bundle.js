@@ -21504,6 +21504,8 @@
 
 	var _LandingMap2 = _interopRequireDefault(_LandingMap);
 
+	var _reactBootstrap = __webpack_require__(175);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21518,71 +21520,43 @@
 
 	var safetyQuestions = [{ id: 1, body: "Do you have independence in your finances?" }];
 
-	var header = _react2.default.createElement(
-	  'div',
-	  { className: 'navbar navbar-inverse navbar-fixed-top', role: 'navigation' },
+	var navbarInstance = _react2.default.createElement(
+	  _reactBootstrap.Navbar,
+	  { inverse: true },
 	  _react2.default.createElement(
-	    'div',
-	    { className: 'container' },
+	    _reactBootstrap.Navbar.Header,
+	    null,
 	    _react2.default.createElement(
-	      'div',
-	      { className: 'top-0 bottom-0' },
+	      _reactBootstrap.Navbar.Brand,
+	      null,
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'navbar-header' },
-	        _react2.default.createElement(
-	          'button',
-	          { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '.navbar-collapse' },
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              'span',
-	              { className: 'sr-only' },
-	              'Toggle navigation'
-	            )
-	          ),
-	          _react2.default.createElement('span', { className: 'icon-bar' }),
-	          _react2.default.createElement('span', { className: 'icon-bar' }),
-	          _react2.default.createElement('span', { className: 'icon-bar' })
-	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'navbar-brand', href: '/' },
-	          'LEPDV in Chicago'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'btn-exit', className: 'my0 inline-block' },
-	          _react2.default.createElement(_ExitButtonContainer2.default, { someUrl: popularUrls })
-	        )
+	        'a',
+	        { href: '#' },
+	        'IML Safety'
 	      )
 	    ),
+	    _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'collapse navbar-collapse' },
+	      { id: 'btn-exit', className: 'inline-block p1' },
+	      _react2.default.createElement(_ExitButtonContainer2.default, { someUrl: popularUrls })
+	    )
+	  ),
+	  _react2.default.createElement(
+	    _reactBootstrap.Navbar.Collapse,
+	    null,
+	    _react2.default.createElement(
+	      _reactBootstrap.Nav,
+	      { pullRight: true },
 	      _react2.default.createElement(
-	        'ul',
-	        { className: 'nav navbar-nav pull-right' },
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: '#address-search' },
-	            'Search'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: '#about' },
-	            'About'
-	          )
-	        ),
-	        _react2.default.createElement('li', null)
+	        _reactBootstrap.NavItem,
+	        { eventKey: 1, href: '#address-search' },
+	        'Search'
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.NavItem,
+	        { eventKey: 2, href: '#about' },
+	        'About'
 	      )
 	    )
 	  )
@@ -21603,71 +21577,72 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        header,
+	        navbarInstance,
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'mt4 pt3 px2' },
+	            { className: 'mtn2 ptn1 px2' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'mt2' },
+	              { id: 'prevalence-info', className: 'mt2' },
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'row' },
 	                _react2.default.createElement(
 	                  'div',
-	                  { className: 'py3' },
+	                  { className: 'row' },
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { id: 'content', className: 'col-md-10' },
 	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'col-md-10 col-xs-10' },
-	                      _react2.default.createElement(
-	                        'h2',
-	                        { className: 'intro' },
-	                        'In My Language'
-	                      ),
-	                      _react2.default.createElement(
-	                        'span',
-	                        { className: 'intro-subtext' },
-	                        'Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.'
-	                      ),
-	                      _react2.default.createElement(_InfoMarqueeContainer2.default, {
-	                        engageQuestion: safetyQuestions,
-	                        moreYouKnowText: infoParagraphs })
-	                    )
+	                      'h2',
+	                      { className: 'intro' },
+	                      'In My Language'
+	                    ),
+	                    _react2.default.createElement(
+	                      'span',
+	                      { className: 'intro-subtext' },
+	                      'Failures in protection for Victims of Domestic Violence are augmented when a person has Limited English Proficiency.'
+	                    ),
+	                    _react2.default.createElement(_InfoMarqueeContainer2.default, {
+	                      engageQuestion: safetyQuestions,
+	                      moreYouKnowText: infoParagraphs })
+	                  )
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'row' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-sm-4 col-md-5 px0 mx0' },
+	                    _react2.default.createElement(_AccordionSectionContainer2.default, null)
 	                  ),
-	                  _react2.default.createElement('br', null),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'col-sm-7 col-sm-offset-1 col-md-offset-0 ' },
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-sm-4 col-md-5 px0 mx0' },
-	                      _react2.default.createElement(_AccordionSectionContainer2.default, null)
+	                      { className: ' section-graphic pl3' },
+	                      _react2.default.createElement(
+	                        'h4',
+	                        { className: 'black' },
+	                        'LEPDV in Chicago'
+	                      ),
+	                      _react2.default.createElement(_LandingMap2.default, null)
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-sm-7 col-sm-offset-1 col-md-offset-0 ' },
-	                      _react2.default.createElement(
-	                        'div',
-	                        { className: ' section-graphic pl3' },
-	                        _react2.default.createElement(_LandingMap2.default, null)
-	                      ),
-	                      _react2.default.createElement(
-	                        'div',
-	                        { className: 'section-secondary my2 ml2 py4' },
-	                        _react2.default.createElement(_LandingViz2.default, null)
-	                      )
+	                      { className: 'section-secondary my2 ml2 py4' },
+	                      _react2.default.createElement(_LandingViz2.default, null)
 	                    )
 	                  )
 	                )
-	              ),
-	              _react2.default.createElement('br', null)
-	            )
+	              )
+	            ),
+	            _react2.default.createElement('br', null)
 	          )
 	        )
 	      );
@@ -21787,7 +21762,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'a',
-	        { className: 'btn btn-danger animated fadeInRight', href: this.props.exitUrl },
+	        { className: 'btn btn-danger btn-sm animated fadeInRight', href: this.props.exitUrl },
 	        _react2.default.createElement('i', { className: 'fa fa-sign-out fa-lg fa-2x fa-border' }),
 	        "  ",
 	        'Exit'
